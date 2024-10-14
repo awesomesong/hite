@@ -24,7 +24,7 @@
 
 .hitejinro_view_more{overflow:hidden; min-width:1600px; height:auto; margin:0 auto;}
 .drinks_view_more{width:100%; min-width:1600px; height:580px;}
-.drinks_view_more:nth-of-type(8){padding-bottom:70px; background-color:#565656}
+/* .drinks_view_more:nth-of-type(8){padding-bottom:70px; background-color:#565656} */
 .drinks_view_more p{width:100%;height:100%;}
 .drinks_view_more a{display:inline-block; width:100%; height:100%;}
 
