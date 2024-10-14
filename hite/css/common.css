@@ -1,0 +1,25 @@
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#232323} /* color값은 디자인가이드에 맞게사용 */
+
+a {color:#343434;text-decoration:none}/*폰트 칼라 변경!*/
+a:link,a:visited {text-decoration:none; color:#343434;}
+a:hover,a:focus {text-decoration:none; color:#0096d6;}
+a:active, a:hover {text-decoration:none}
+
+/* placeholder 동일한 폰트 칼라 설정 */
+::-webkit-input-placeholder {color:#555} /* WebKit browsers */
+:-moz-placeholder {color:#555;opacity:1} /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder {color:#555;opacity:1} /* Mozilla Firefox 19+ */
+:-ms-input-placeholder {color:#555} /* Internet Explorer 10+ */
+.placeholder {color:#555} /* placeholder js : Internet Explorer 9- */
+
+/* 스크린리더기 및 아웃라이너 작성 태그 */
+.screen_out {overflow:hidden;position:absolute;left:-9999px;font-size:1px; width:0;height:0;line-height:0;font-size:1px}
+
+/* 하이트진로 전체 배경색 */
+.hitejinro_background,.hitejinro_background_login {display:none; position:fixed; left:0; top:0; right:0; bottom:0; background-color: rgba(0,0,0,0.5); z-index:100;}
+
+/* 하이트진로 top, bottom 버튼 */
+.hitejinro_btn {position:fixed; right:8%; bottom:7%; z-index:50; width:auto; height:auto;}
+.hitejinro_btn a{display:block; width:auto; height:auto; padding:0px 8px 5px 9px; background-color:rgba(0,0,0,0.6); font-size:25px; color:#fff; text-align:center; cursor:pointer;}
+.hitejinro_btn a:not(:root:root){padding:2px 8px 0px 9px;}
+.goto_top {margin-bottom:1px; }

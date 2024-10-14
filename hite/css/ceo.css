@@ -1,0 +1,15 @@
+.hitejinro_content{ width:100%; max-width:1080px; height:auto; padding-top:55px; margin:0 auto;}
+
+.hitejinro_ceo_greeting{ width:100%; height:auto; margin:0 auto;}
+.hitejinro_ceo_greeting h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_ceo_greeting h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.ceo_greeting { overflow:hidden; width:100%; height:auto; padding-top:100px; padding-bottom:80px;}
+.ceo_greeting p{float:left; width:49.5%;}
+
+.ceo_pic img{width:100%;}
+
+.ceo_story {padding-left:1%;}
+.ceo_story strong, .ceo_story b,.ceo_story span {display:block;}
+.ceo_story strong { font-size: 40px; color:#0096d6; font-weight:300; line-height:42px;}
+.ceo_story b { padding:25px 0 15px; font-size:17px;}

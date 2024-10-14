@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 연혁"/>
+        <meta name="keywords" content="하이트진로 연혁, 역혁, 하이트진로주식회사"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>연혁</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/history.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 연혁 -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_history">
+                    <h2>연혁</h2>
+                    <h3>하이트진로의 새로운 신화창조를 확인해보세요!</h3>
+                    <div class="hitejinro_history_tab">
+                        <ul class="history_tab_head">
+                            <li class="menu0"><a class="selected" href="#none" title="1924 ~ 1972 창업기년도">1924 ~ 1972년도<br><span>창업기</span></a></li>
+                            <li class="menu1"><a href="#none" title="1973 ~ 1989년도 도약기">1973 ~ 1989년도<br><span>도약기</span></a></li>
+                            <li class="menu2"><a href="#none" title="1990 ~ 2004년도 성장기">1990 ~ 2004년도<br><span>성장기</span></a></li>
+                            <li class="menu3"><a href="#none" title="2005 ~ 현재 글로벌 성장기">2005 ~ 현재<br><span>글로벌 성장기</span></a></li>
+                        </ul>
+                        <ul class="history_tab_info">
+                            <li id="tab0">
+                                <p class="tab_subject">
+                                    <strong>역사의 시작</strong> ( 1924 ~ 1972년도 )
+                                </p>
+                                <p class="tab_middle">
+                                    진천양조상회•조선맥주주식회사가 설립되면서<br>
+                                    국내 1위 주류기업 하이트진로의 역사가 시작됩니다.
+                                </p>
+                                <p class="tab_info">
+                                    1924년 평남 용강에서 진천양조상회 창립과 함께 진로(眞露)소주 생산이 시작되었으며,<br>
+                                    1933년 국내 최초의 맥주회사인 조선맥주주식회사가 설립되면서 국내 1위 주류기업<br>
+                                    하이트진로의 역사가 시작됩니다.<br><br>
+                                    1970년 순수 토종 기업으로 전통주이자 국민주인 소주 시장에서 삼학을 제치고<br> 
+                                    시장 1위를 차지하며, 국민소주 진로의 공식을 만들어내며,<br>
+                                    정직한 맛은 모두에게 사랑받을 수 밖에 없는 이유가 된다는 사실을 <br>다시 한번 재조명하는 계기가 되었습니다.<br><br>
+                                    소비자의 입맛을 사로잡은 하이트진로의 오랜 역사는 앞으로도 많은 사랑을 주시는 <br>
+                                    고객 여러분과 함께할 것입니다.
+                                </p>
+                            </li>
+                            <li id="tab1">
+                                <p class="tab_subject">
+                                    <strong>변화와 성장</strong> ( 1973 ~ 1989년도 )
+                                </p>
+                                <p class="tab_middle">
+                                    하이트진로는 급변하는 국내외 환경에 맞춰<br>
+                                    본격적인 변화와 시기를 맞이합니다.
+                                </p>
+                                <p class="tab_info">
+                                    한 단계 더 높은 성장을 위해 하이트진로는 급변하는 국내외 환경에 맞춰 본격적인<br>
+                                    변화의 시기를 맞이합니다<br><br>
+                                    1973년 진로와 조선맥주까지 기업 공개를 시작으로 1977년 진로소주의 일본시장 진출, <br>
+                                    주류업계 최초 주류연구소 설립으로 변화의 시기에 경쟁에서 살아남고<br>
+                                    더 많은 고객의 사랑을 받을 수 있도록 내실을 다지고 성장할 수 있는<br>
+                                    발판을 마련하게 되었습니다.
+                                </p>
+                            </li>
+                            <li id="tab2">
+                                <p class="tab_subject">
+                                    <strong>세계를 향한 도약</strong> ( 1990 ~ 2004년도 )
+                                </p>
+                                <p class="tab_middle">
+                                    고객만족을 최우선을 생각하는 가장 인간적인 친근한 기업
+                                </p>
+                                <p class="tab_info">
+                                    대한민국의 대표 맥주 ‘하이트’는 지난 1993년 출시와 동시에 창조적이고 혁신적인<br>
+                                    마케팅 전략으로 국내 맥주시장에 새로운 브랜드 마케팅 시대를 열며 출시 후 3년 만에<br>
+                                    40여 년간 철옹성 이었던 맥주시장의 판도를 바꾼 돌풍의 주인공입니다.<br><br>
+                                    이러한 하이트의 성공은 국내 마케팅사에서 획기적인 브랜드 전략으로 평가받고 있으며<br>
+                                    1998년에는 회사의 사명까지 바꾸게 되는 계기가 되었습니다. 또한, 단일 브랜드로서<br>
+                                    만 9년 만에 100억 병 판매를 돌파하는 등 시장점유율 60%로 수년간 업계 1위의 자리를<br>
+                                    고수하며 대한민국 대표 맥주로서의 입지를 더욱 굳혀가고 있습니다.<br><br>
+                                    고객에게 사랑받는 기업으로 2003년 하이트맥주 창립 70주년, 2004년 진로 창립 80주년을<br>
+                                    맞이할 수 있었던 것은 국제 경쟁력을 갖추고 기업의 이익을 고객들에게 환원하며<br>
+                                    항상 소비자 관점에서 제품을 만드는 고객 제일주의의 경영철학이 있었기 때문입니다.
+                                </p>
+                            </li>
+                            <li id="tab3">
+                                <p class="tab_subject">
+                                    <strong>다시쓰는 주류 역사</strong> ( 2005 ~ 현재 )
+                                </p>
+                                <p class="tab_middle">
+                                    고객만족을 최우선을 생각하는 가장 인간적인 친근한 기업
+                                </p>
+                                <p class="tab_info">
+                                    하이트진로는 1924년부터 지금까지 대한민국과 세계 곳곳에서 사랑받고 있습니다.<br>
+                                    또한, 대한민국 최대 종합 주류기업으로서 책임을 가지고 다양한 <br>
+                                    사회공헌활동과 문화, 스포츠 지원 사업 등 더 나은 사회를 만들기에도 <br>많은 노력을 하고 있습니다.<br><br>
+                                    2005년 하이트맥주와 진로의 합병으로 대한민국 최대 종합 주류기업으로 재탄생하여<br>
+                                    업계 리더로서 책임을 다하며, 변하는 소비자의 입맛에 맞춰 다양한 제품을 출시하는 등<br>
+                                    노력을 하고 있습니다.<br><br>
+                                    대한민국 주류업계 1위로서 지금까지 성장할 수 있었던 가장 큰 원동력은<br>
+                                    바로 고객의 사랑입니다. 하이트진로는 국내 1위에 만족하지 않고 세계 초일류 기업이<br>
+                                    되기 위해 모든 것에 최우선으로 고객 만족을 생각하는 가장 인간적이고  <br>친근한 기업이 될 수 있도록노력하고 있습니다.<br>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                    //$(".history_tab_info li:not(:first)").hide();
+                    $(".history_tab_head li a").bind("click focusin",function(){
+                        // 위의 해당하는 부분의 순서대로 숫자 불러오기
+                        var tab_num = $(this).parents("li").attr("class").substr("4","1");
+                        //tab 아래 정보의 초기화
+                        $(".history_tab_info li").hide();
+                        // tab을 클릭하면 내용이 바뀌는 부분
+                        $(".history_tab_info li:eq("+tab_num+")").show();
+
+                        // tab의 아래 border 값아 바뀌는 부분
+                        $(".history_tab_head li a").removeClass();
+                        $(this).addClass("selected");
+                    });
+
+                });
+            </script>
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

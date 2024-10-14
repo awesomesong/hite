@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 media, 언론 속 하이트진로㈜의 다양한 소식을 알 수 있는 공간입니다."/>
+        <meta name="keywords" content="하이트진로 media, 미디어, 하이트진로 언론보도, 하이트진로 새로운 소식, 하이트진로 새로운 상품"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>Media</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/media.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Media (보도자료) -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_media">
+                    <h2>Media (보도자료)</h2>
+                    <h3>언론 속 하이트진로㈜의 다양한 소식을 알려 드립니다.</h3>
+                    <div class="media">
+                        <div class="media_wrap_search">
+                            <p class="media_wrap_left">
+                                Total<span id="list_number" class="point_1">222</span>
+                            </p>
+                            <div class="media_wrap_right">
+                                <form action="#none">
+                                    <fieldset>
+                                        <legend>보도자료</legend>
+                                        <p class="media_search_select">
+                                            <select class="media_search_select_list" name="media_search_list">
+                                                <option value="제목">제목</option>
+                                                <option value="내용">내용</option>
+                                            </select>
+                                        </p>
+                                        <p class="media_search_box">
+                                            <input id="msb" type="text" name="media_search_list" title="검색어입력" placeholder="Search" maxlength="20" onchange="media_search_function()">
+                                        </p>
+                                    </fieldset>
+                                    <script>
+                                        function media_search_function(){
+                                            var msb = document.getElementById("msb").value;
+                                            alert(msb.trim());
+                                        }
+                                    </script>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="media_search_list">
+                            <table class="media_list">
+                                <caption>보도자료</caption>
+                                <tbody>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.22</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_0.jpg" alt="스페인 와인 '마르께스 데 리스칼' 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="스페인 와인 '마르께스 데 리스칼' 출시">
+                                                <h3>하이트진로, 스페인 왕실 공식 와인‘마르께스 데 리스칼’ 출시</h3>
+                                                <strong>하이트진로, 스페인 왕실 공식 와인‘마르께스 데 리스칼’출시하이트진로(대표 김인규)가 스페인 와인 ‘마르께스 데 리스칼(Marques de Riscal)’ 9종을 오늘 출시한다. ‘마르께스 데 리스칼’은 세계 3대 와인산지로 유명한 스페인 리오하(Rioja) 지역에서 가장...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.20</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_1.jpg" alt="참나무통 맑은이슬">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="참나무통 맑은이슬">
+                                                <h3>하이트진로, 참나무통 맑은이슬 '은은함에 취하다'</h3>
+                                                <strong>하이트진로, 참나무통 맑은이슬 '은은함에 취하다' 광고 공개- 20일, 케이블 채널 통해 TV 광고 방영- 목통 3년 숙성원액 블렌딩, 은은하고 부드러운 맛 강조- 촬영현장 담은 메이킹 필름도 SNS 게재 예정하이트진로(대표 김인규)는 준 프리미엄 소주...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.18</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_2.png" alt="스파클링 와인 크리스마스 패키지 한정판 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="스파클링 와인 크리스마스 패키지 한정판 출시">
+                                                <h3>하이트진로, 스파클링 와인 크리스마스 패키지 한정판 출시</h3>
+                                                <strong>하이트진로, 스파클링 와인 크리스마스 패키지 한정판 출시- 이탈리아 와인 ‘모스카토’ 1만5천병 독일 스파클링 와인 ‘헨켈’ 3천병 선보여 - 하이트진로(대표 김인규)가 크리스마스를 앞두고 스페셜 패키지 와인 2종을 출시한다고 18일 밝혔다. 하이트진로는 이탈리아 스파클링...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.14</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_3.jpg" alt="참나무통 맑은이슬 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="참나무통 맑은이슬 출시">
+                                                <h3>하이트진로, 은은한 풍미 준프리미엄 소주 '참나무통 맑은이슬' 출시</h3>
+                                                <strong>하이트진로, 은은한 풍미 준프리미엄 소주 '참나무통 맑은이슬' 첫 출고- 14일 이천공장에서 본격 출고 개시- 서울 중심 수도권 유흥시장 본격 판매하이트진로(대표 김인규)가 준 프리미엄 소주 '참나무통 맑은이슬'을 14일 이천공장에서 첫 출고했습니다.</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.13</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_4.jpg" alt="하이트진로 크리스마스 마케팅 효과">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="하이트진로 크리스마스 마케팅 효과">
+                                                <h3>하이트진로, 크리스마스 마케팅 효과 톡톡</h3>
+                                                <strong>하이트진로, 크리스마스 마케팅 효과 톡톡- 엑스트라콜드 크리스마스 에디션 한정 물량 완판- 소비자들 DIY 에디션 트리 인증샷 SNS 게재, 입소문 효과 하이트진로(대표 김인규)가 지난 달 출시한 하이트 엑스트라콜드 크리스마스 에디션이 본격적인 크리스마스 시즌을 맞아 입소...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.08</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_5.jpg" alt="김희선 광고촬영">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="김희선 광고촬영">
+                                                <h3>하이트진로, 김희선 광고 촬영 컷 공개</h3>
+                                                <strong>'품위있게 마시고 싶은 사람 모두 모여라'하이트진로, 김희선 광고 촬영 컷 공개품위있는 그녀 김희선이 프리미엄급 소주 모델이 됐다.하이트진로는 오는 14일 출시하는 준 프리미업급 소주 참나무통 맑은이슬의 모델 김희선의 첫 광고 촬영 현장 사진을 SNS 채널을...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.07</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_6.png" alt="참나무통 맑은이슬 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="참나무통 맑은이슬 출시">
+                                                <h3>하이트진로, 준 프리미엄급 소주 ‘참나무통 맑은이슬’ 출시</h3>
+                                                <strong>하이트진로, 준 프리미엄급 소주 ‘참나무통 맑은이슬’ 출시- 프리미엄과 은은한 풍미 지향 소비자 요구에 적극 대처 -- 93년 소주 제조 노하우로 참나무통 숙성 원액 블렌딩 -하이트진로(대표 김인규)는 오는 14일 참나무통 숙성원액을 블렌딩한 프리미엄 소주 ‘참나무통 맑은...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">12.06</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_8.jpg" alt="따뜻한 성탄절 ‘소망트리’ 나눔 행사">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="따뜻한 성탄절 ‘소망트리’ 나눔 행사">
+                                                <h3>하이트진로, 2017 따뜻한 성탄절 ‘소망트리’ 나눔 행사</h3>
+                                                <strong>하이트진로, 2017 따뜻한 성탄절 ‘소망트리’ 나눔 행사하이트진로(대표 김인규)는 연말을 맞아 소외된 이웃을 위한 ‘성탄 소망트리’ 나눔 활동을 펼쳤다고 6일 밝혔다. ‘성탄 소망트리’ 나눔 행사는 하이트진로와 양재1동 주민들이 힘을 모아 추운 겨울에도 이웃들이 따뜻한 ...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.30</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_9.jpg" alt="따뜻한 성탄절 ‘소망트리’ 나눔 행사">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="따뜻한 성탄절 ‘소망트리’ 나눔 행사">
+                                                <h3>하이트진로, 호주 No.1 맥주 ‘포엑스(XXXX) 골드' 춣시</h3>
+                                                <strong>하이트진로, 호주 No.1 맥주 ‘포엑스(XXXX) 골드’ 출시 93년 역사의 호주 No.1 맥주 ‘포엑스 골드(XXXX GOLD)가 한국에 상륙한다.하이트진로(대표 김인규)는 호주 맥주 판매 1위 기업인 라이온(LION)사와 ‘포엑스 골드’의 정식 수입 계약을 체결하고 ...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.29</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_10.jpg" alt="겨울나기 김장김치 나눔 행사">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="겨울나기 김장김치 나눔 행사">
+                                                <h3>하이트진로, 겨울나기 김장김치 나눔 행사</h3>
+                                                <strong>“김치 한 포기에 정성과 사랑이 듬뿍”하이트진로, 겨울나기 김장김치 나눔 행사- 김치 6000포기, 27개 복지기관에 전달 -하이트진로(대표 김인규)가 서초구립 한우리정보문화센터에서 ‘2017겨울나기 김장김치 나눔’ 행사를 열고 김장 김치를 어려운 이웃들에게 전달했다고...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.21</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_11.jpg" alt="김생민의 영수증 '편의점 습격사건' 동영상">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="김생민의 영수증 '편의점 습격사건' 동영상">
+                                                <h3>하이트진로, &lt;김생민의 영수증 '편의점 습격사건'&gt;</h3>
+                                                <strong>'가성비 끝판왕 필라이트와 통장 요정 김생민의 만남, 슈퍼 그뤠잇!'하이트진로, <김생민의 영수증 '편의점 습격사건'> 동영상 인기- 가성비 끝판왕 '필라이트 구매=합리적 소비' 강조하는 홍보 영상 제작- 통장 요정 ...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.20</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_12.jpg" alt="아름다운가게와 6번째 나눔바자회">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="아름다운가게와 6번째 나눔바자회">
+                                                <h3>하이트진로, 아름다운가게와 6번째 나눔바자회 개최</h3>
+                                                <strong>하이트진로, 아름다운가게와 6번째 나눔바자회 개최- 임직원 물품 3천 500백여 점 기증, 판매 수익금 전액 기부 - 하이트진로(대표 김인규)는 20일 아름다운가게 광주첨단점에서 ‘나눔바자회’를 개최했다.올해로 6번째를 맞이한 ‘나눔바자회’는 물건의 재사용을 통해 주변 이...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.17</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_13.jpg" alt="스타트업 발굴 및 육성사업">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="스타트업 발굴 및 육성사업">
+                                                <h3>하이트진로, 스타트업 발굴 및 육성사업 나서</h3>
+                                                <strong>하이트진로, 스타트업 발굴 및 육성사업 나서- 16일, 헤브론스타벤처스와 투자 양해각서 체결 - - 서초사옥에 ‘H코워킹스페이스’ 구축해 스타트업 유치 - 하이트진로(대표 김인규)가 스타트업 발굴 및 육성사업에 나선다.하이트진로는 벤처캐피탈(VC) 모집 운영과 스타트업 육...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.16</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_14.jpg" alt="지진 피해지역에 생필품 긴급 지원">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="지진 피해지역에 생필품 긴급 지원">
+                                                <h3>하이트진로, 지진 피해지역에 생필품 긴급 지원</h3>
+                                                <strong>하이트진로(대표 김인규)가 지진 피해를 입은 포항지역에 생필품을 긴급 지원했다. 하이트진로는 포항 지역에 발생한 지진으로 어려움을 겪고 있는 이재민들을 위해 1차적으로 생수, 즉석밥, 라면, 빵 등 생필품을 지원했다.</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.16</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_15.jpg" alt="'청년창업리그' 결선 대회 10팀 선발">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="'청년창업리그' 결선 대회 10팀 선발">
+                                                <h3>하이트진로, '청년창업리그' 결선 대회 10팀 선발</h3>
+                                                <strong>하이트진로, '청년창업리그' 결선 대회 10팀 선발- 본선 대회 출전 30팀 중 최종 10팀 선발- 2주간의 멘토링 기간 후 결선 대회 개최, 최종 우승팀 팝업스토어 오픈 기회 하이트진로의 청년 창업 지원 프로젝트가 최종 라운드만 남겨두고 있다. 하이...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.14</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_16.png" alt="홍콩 맥주시장에서 5년만에 7배 급성장">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="홍콩 맥주시장에서 5년만에 7배 급성장">
+                                                <h3>하이트진로, 홍콩 맥주시장에서 5년만에 7배 급성장</h3>
+                                                <strong>하이트진로, 홍콩 맥주시장에서 5년만에 7배 급성장- 하이트, 스타우트 TV광고 방영 중, 순수 국내브랜드로 판매랭킹 7위 올라 - - 필라이트 9월 첫 수출, 일반맥주와 비슷한 가격에도 조기판매 돼 추가수출 나서 -하이트진로(대표 김인규)가 홍콩맥주시장에서 폭발적인 성장...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.13</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_17.jpg" alt="하이트 엑스트라 콜드 크리스마스 에디션 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="하이트 엑스트라 콜드 크리스마스 에디션 출시">
+                                                <h3>하이트진로, 하이트 엑스트라 콜드 크리스마스 에디션 출시</h3>
+                                                <strong>"올 겨울엔 하이트 크리스마스 하세요!"하이트진로, 하이트 엑스트라 콜드 크리스마스 에디션 출시- 16일 첫 출고, 연말까지 판매- 브랜드 로고 레드 컬러로 포인트 주고, 두꺼비 깜짝 등장 재치있는 라벨 눈길하이트진로가 세 번째 크리스마스 에디션을 선보인다.하이트진로(대표...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.09</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_18.jpg" alt="필라이트 6개월 만에 1억 캔 돌파">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="필라이트 6개월 만에 1억 캔 돌파">
+                                                <h3>국내 최초 발포주 ‘필라이트’ 6개월 만에 1억 캔 돌파</h3>
+                                                <strong>국내 최초 발포주 ‘필라이트’ 6개월 만에 1억 캔 돌파- 음식점, 주점 판매 없이 가정채널에서만 이룬 성과, 메가히트 상품 등극 -- SNS 등에서 ‘가성비 갑’ 입소문에 품절대란, 잇아이템으로 거듭나 –- 필라이트 190일간 1억캔, 1초에 6캔씩 판매, 100일때보다...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.07</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_19.jpg" alt="캄보디아 국민축제 ‘본움뚝’">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="캄보디아 국민축제 ‘본움뚝’">
+                                                <h3>하이트진로, 캄보디아 국민축제 ‘본움뚝’ 메인스폰서로 나서</h3>
+                                                <strong>하이트진로, 캄보디아 국민축제 ‘본움뚝’ 메인스폰서로 나서- 본움뚝 최초 EDM 페스티벌 ‘Jinro360’ 행사 진행, 정상급 DJ 20여명 참여 - - 나이트 마켓 내 안테나샵 운영 등 마케팅 강화로 현지화 안착 -하이트진로(대표 김인규)가 캄보디아 국민...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.06</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_20.jpg" alt="챔피언십 연계한 사회공헌 활동">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="챔피언십 연계한 사회공헌 활동">
+                                                <h3>하이트진로, 챔피언십 연계한 사회공헌 활동 지속</h3>
+                                                <strong>하이트진로, 챔피언십 연계한 사회공헌 활동 지속- 하이트진로 챔피언십 대회 마지막 날, 이동차량 기증식 진행 - 상금 일부 및 후원금 통해 총 9대 지원, 장애인, 어르신들 이동편의성 향상 기대 하이트진로(대표 김인규)가 지난 2일부터 나흘간 여주 블루헤런 골프장에서 열...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">11.01</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_21.png" alt="이슬 갤러리">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="이슬 갤러리">
+                                                <h3>하이트진로, 참이슬 출시 19주년 기념 '이슬 갤러리' 오픈</h3>
+                                                <strong>하이트진로, 참이슬 출시 19주년 기념 '이슬 갤러리' 오픈- 11/1일부터 코엑스에서 노상호 등 신진 일러스트 작가와 협업 작품 전시- 브랜드와 문화 예술 접목 시도, 젊은 층과 소통 마케팅 강화하이트진로(대표 김인규)가 전세계 증류주 판매 1위 브랜드 참...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">10.31</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_22.png" alt="할로윈 카니발">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="할로윈 카니발">
+                                                <h3>진로아메리카, ‘할로윈 카니발’ 개최 등 현지화 적극 나서</h3>
+                                                <strong>진로아메리카, ‘할로윈 카니발’ 개최 등 현지화 적극 나서- 코스튬 콘테스트 및 할로윈 에디션 판촉물 활용으로 브랜드 알리기 나서 -- LA다저스 제휴 마케팅 등 현지화 마케팅으로 미국법인 매출 가파른 상승세 -하이트진로(대표 김인규)가 미국 시장 현지화를 위해 ‘할로윈 ...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">10.26</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_23.png" alt="샴페인‘떼땅져’스페셜 에디션‘루미너스’">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="샴페인‘떼땅져’스페셜 에디션‘루미너스’">
+                                                <h3>하이트진로, 샴페인‘떼땅져’스페셜 에디션‘루미너스’전세계 단독 출시</h3>
+                                                <strong>하이트진로, 샴페인‘떼땅져’스페셜 에디션‘루미너스’전세계 단독 출시- 샴페인 병 전면에 LED를 배치해 파티와 축제, 기념일에 제격–하이트진로(대표 김인규)가 연말을 맞이해 명품 샴페인 떼땅져의 스페셜 에디션 ‘떼땅져 녹턴 씨티라이트 루미너스(Taittinger Noctu...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">10.23</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_24.jpg" alt="하이트진로 노사, 임단협 합의">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="하이트진로 노사, 임단협 합의">
+                                                <h3>하이트진로 노사, 임단협 합의</h3>
+                                                <strong>하이트진로 노사, 임단협 합의- 21일부터 소주 맥주 전체공장 가동 -하이트진로(대표 김인규)가 20일 ‘2017년 임금 및 단체협약(이하 임단협)’에 합의했다. 하이트진로 노사는 19일 저녁부터 20일까지 집중협상을 통해 임금 4% 인상을 포함한 임단협안에 합의했다...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">10.19</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_25.jpg" alt="노조원 복귀로 마산공장 재가동">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="노조원 복귀로 마산공장 재가동">
+                                                <h3>하이트진로, 노조원 복귀로 마산공장 재가동</h3>
+                                                <strong>하이트진로, 노조원 복귀로 마산공장 재가동- 18일 34명 복귀, 비노조원 포함 39명이 2개 맥주라인 재가동 -- 비상 생산중인 이천공장, 강원공장 포함 가동 공장 3개로 늘어 -- 노조의 ‘임원퇴진’ 요구 알려지자 복귀시작, 노조원 복귀율 25% 넘어 -하이트진로가 노...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">10.09</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_26.png" alt="베트남에 ‘하이트진로포차’ 1호점 오픈">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="베트남에 ‘하이트진로포차’ 1호점 오픈">
+                                                <h3>하이트진로, 베트남에 ‘하이트진로포차’ 1호점 오픈</h3>
+                                                <strong>하이트진로, 베트남에 ‘하이트진로포차’ 1호점 오픈- 베트남 수도 하노이에 소주브랜드 전문점 열어 -- 현지 한국식당 운영노하우 있는 한국인 사업가와 제휴 -- 2018년 2호점 등 2020년까지 프랜차이즈로 확대해 20개이상 목표 -하이트진로(대표 김인규)가 베트남에서 ...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.29</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_24.jpg" alt="생산효율화 위해 맥주공장 한 곳 매각 추진">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="생산효율화 위해 맥주공장 한 곳 매각 추진">
+                                                <h3>하이트진로, 생산효율화 위해 맥주공장 한 곳 매각 추진</h3>
+                                                <strong>하이트진로, 생산효율화 위해 맥주공장 한 곳 매각 추진- 강원, 전주, 마산공장 중 한 곳 내년 상반기까지 매각 계획 -- 맥주부문 4년 누적적자 1천 억원, 공장가동률 50% 미만으로 효율화 불가피 -- “공장매각 후 인위적인 인력감축 없이 인력재배치 등으로 흡수” -하...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.26</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_28.png" alt="전 세계 가장 많이 팔린 증류주 16년 연속 1위">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="전 세계 가장 많이 팔린 증류주 16년 연속 1위">
+                                                <h3>참이슬, 전 세계 가장 많이 팔린 증류주 16년 연속 1위</h3>
+                                                <strong>참이슬, 전 세계 가장 많이 팔린 증류주 16년 연속 1위- 한중미일 4개 언어 포함된 기념 포스터 제작하이트진로의 참이슬이 전 세계에서 가장 많이 팔린 증류주 1위에 올랐다.하이트진로(대표 김인규)가 국민 소주 브랜드 참이슬이 16년 연속 전 세계 가장 많이 팔린 증류주...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.21</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_29.jpg" alt="대중음악 페스티벌 '멜로디포레스캠프' 공식맥주">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="대중음악 페스티벌 '멜로디포레스캠프' 공식맥주">
+                                                <h3>하이트진로 맥스, 대중음악 페스티벌 '멜로디포레스캠프' 공식맥주</h3>
+                                                <strong>하이트진로 맥스, 대중음악 페스티벌 '멜로디포레스트캠프' 공식맥주- 오는 23, 24일 맥스 브랜드 홍보 부스 운영- 맥스, 망고링고 등 체험 기회 제공 및 소비자 이벤트 진행크림생맥주 맥스와 대중음악 페스티벌 ‘멜로디 포레스트캠프’가 함께한다.하이트진로(대...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.19</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_30.jpg" alt="필라이트 신규 광고 공개">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="필라이트 신규 광고 공개">
+                                                <h3>하이트진로, 필라이트 신규 광고 공개</h3>
+                                                <strong>하이트진로, 필라이트 신규 광고 공개- ‘넉살’ 등 쇼미더머니 6 출연진 중 가장 핫한 모델 조합 눈길- 'n분의 1'음원 활용, 9/21 온에어잘 나가는 필라이트와 핫한 쇼미더머니 래퍼들이 만났다.하이트진로(대표 김인규)가 쇼미더머니6 대표 래퍼들과 함께 ...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.14</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_31.jpg" alt="2017년 추석 와인선물세트 65종 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="2017년 추석 와인선물세트 65종 출시">
+                                                <h3>하이트진로, 2017년 추석 와인선물세트 65종 출시</h3>
+                                                <strong>하이트진로, 2017년 추석 와인선물세트 65종 출시- 전세계 다양한 와이너리의 고품격 실속 와인 세트 구성 - - 희귀와인 및 명절음식과 페어링 된 선물세트 선보여 -하이트진로(대표 김인규)가 2017년 추석을 맞아 와인 선물세트 65종을 출시했다. 이번 선물세트는 고품...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.12</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_32.png" alt="참이슬 클래식-참이슬 '오리지널'로 리뉴얼">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="참이슬 클래식-참이슬 '오리지널'로 리뉴얼">
+                                                <h3>하이트진로, 참이슬 클래식-참이슬 '오리지널'로 리뉴얼</h3>
+                                                <strong>하이트진로, 참이슬 클래식-참이슬 '오리지널'로 리뉴얼- 소주 원조, 정통성 강조한 '오리지널'로 브랜드명 변경- 사내 직원 모델로 공감도 높인 새 포스터도 공개일명 빨간 뚜껑 참이슬이 소주 원조에 걸맞은 새 옷을 입는다.하이트진로(대표 김인규...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.07</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_33.jpg" alt="이탈리아 전설의 와인 달 포르노 로마노 출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="이탈리아 전설의 와인 달 포르노 로마노 출시">
+                                                <h3>하이트진로, 이탈리아 전설의 와인 달 포르노 로마노 출시</h3>
+                                                <strong>하이트진로, 이탈리아 전설의 와인 달 포르노 로마노 출시- 이탈리아의 로마네꽁티, ‘죽기 전 마셔야 할 100선’에 선정된 와인 - 포도나무 한 그루에서 한 송이만 재배해 만든 와인 한 잔 -하이트진로(대표 김인규)가 이탈리아 전설의 와인 ‘달 포르노 로마노’를 출시한다....</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.06</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_34.jpg" alt="LA다저스 공식맥주 출시 등 미국시장 확대">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="LA다저스 공식맥주 출시 등 미국시장 확대">
+                                                <h3>하이트진로, LA다저스 공식맥주 출시 등 미국시장 확대 나서</h3>
+                                                <strong>하이트진로, LA다저스 공식맥주 출시 등 미국시장 확대 나서- 미국 현지화 위해 LA다저스 제휴 마케팅 및 소비자 프로모션 활발 -- 대리점 및 유통채널 확대로 미국법인 매출 가파른 상승세 -지난해부터 소주 세계화를 추진하고 있는 하이트진로(대표 김인규)가 LA다저스 공식...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="media_search_list_td1"><span class="list_td1_year">2017</span><span class="list_td1_date">09.05</span></td>
+                                        <td class="media_search_list_td2">
+                                            <img src="../images/media_img_35.jpg" alt="그랜드 기린(Grand KIRIN)' 이종출시">
+                                        </td>
+                                        <td class="media_search_list_td3">
+                                            <a href="#none" title="그랜드 기린(Grand KIRIN)' 이종출시">
+                                                <h3>하이트진로, 크래프트 맥주 ‘그랜드 기린(Grand KIRIN)' 이종출시</h3>
+                                                <strong>하이트진로, 크래프트 맥주 ‘그랜드 기린(Grand KIRIN)’ 2종 출시- ‘그랜드 기린 IPA’ ‘그랜드 기린 JPL’ 선보여–일본에서 인기를 끌고 있는 크래프트 맥주 ‘그랜드 기린(Grand KIRIN)’이 한국에 최초로 상륙한다.하이트진로(대표 김인규)는 일본 기...</strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="media_pagination">
+                                <li><a class="page_select" href="#header" title="1">1</a></li><li><a href="#header" title="2">2</a></li><li><a href="#header" title="3">3</a></li><li><a href="#header" title="4">4</a></li><li><a class="page_last" href="#header" title="5">5</a></li>
+                            </ul>
+                        </div>
+                        <script>
+
+                            $(document).ready(function(){
+                                // 게시글의 숫자 나타내기
+                                var b_num = document.getElementById("list_number");
+                                var t_list = $(".media_list tr").length;
+                                b_num.innerHTML = t_list;
+
+                                //페이지에 따라 해당 게시물 보여주기
+                                for(i=0; i < t_list; i++){
+                                    var range = 7;
+                                    if(i < range){
+                                        $(".media_list tr:eq("+i+")").show();
+                                    }else if(i < range*2){
+                                        $(".media_list tr:eq("+i+")").hide();
+                                    }else if(i < range*3){
+                                        $(".media_list tr:eq("+i+")").hide();
+                                    }else if(i < range*4 ){
+                                        $(".media_list tr:eq("+i+")").hide();
+                                    }else if(i <= t_list){
+                                        $(".media_list tr:eq("+i+")").hide();
+                                    }
+                                }
+
+                                $(".media_pagination li a").on("click focusin", function(){
+                                    
+                                    $(".media_pagination li a").css({"color":"#222","backgroundColor":"#fff"});
+                                    $(this).css({"color":"#fff","backgroundColor":"#222"});
+                                    
+                                    var p_num = $(this).attr("title");
+                                    //alert(p_num);
+                                    var range = 7;
+                                    if(p_num==1){
+
+                                        for(i=0; i < t_list; i++){
+                                            if(i < range){
+                                                $(".media_list tr:eq("+i+")").show();
+                                            }else if(i < range*2){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*3){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*4 ){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i <= t_list){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }
+                                        }
+                                    }else if(p_num ==2){
+
+                                        for(i=0; i < t_list; i++){
+                                            if(i < range){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*2){
+                                                $(".media_list tr:eq("+i+")").show();
+                                            }else if(i < range*3){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*4){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i <= t_list){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }
+                                        }
+                                    }else if(p_num ==3){
+
+                                        for(i=0; i < t_list; i++){
+                                            if(i < range){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*2){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*3){
+                                                $(".media_list tr:eq("+i+")").show();
+                                            }else if(i < range*4){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i <= t_list){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }
+                                        }
+                                    }else if(p_num ==4){
+
+                                        for(i=0; i < t_list; i++){
+                                            if(i < range){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*2){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*3){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*4){
+                                                $(".media_list tr:eq("+i+")").show();
+                                            }else if(i <= t_list){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }
+                                        }
+                                    }else if(p_num ==5){
+
+                                        for(i=0; i < t_list; i++){
+                                            if(i < range){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*2){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*3){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i < range*4){
+                                                $(".media_list tr:eq("+i+")").hide();
+                                            }else if(i <= t_list){
+                                                $(".media_list tr:eq("+i+")").show();
+                                            }
+                                        }
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

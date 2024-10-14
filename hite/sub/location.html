@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 공장 및 연구소 위치"/>
+        <meta name="keywords" content="하이트 맥주 Locations, 하이트 맥주 위치, 지점위치, 하이트진로주식회사 위치"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>Locations</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/locations.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 위치 -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_locations">
+                    <h2>Locations</h2>
+                    <h3>하이트진로㈜를 방문하시는 방법을 안내합니다.</h3>
+                    <div class="locations">
+                        <ul class="locations_tab_head">
+                            <li><a class="menu0 selected" href="#none" title="본사">본사</a></li>
+                            <li><a class="menu1" href="#none" title="지점">지점</a></li>
+                            <li><a class="menu2" href="#none" title="공사">공사</a></li>
+                            <li><a class="menu3" href="#none" title="계열사">계열사</a></li>
+                            <li><a class="menu4" href="#none" title="해외법인">해외법인</a></li>
+                        </ul>
+                        <script>
+                            $(document).ready(function(){
+                                $(".locations_tab_head a:eq(0)").css({"borderBottom":"5px solid #232323"});
+                                $(".locations_tab_head a").bind("click focusin",function(){
+                                    // 해당 부분의 숫자 변수
+                                    var num = $(this).attr("class").substr("4","1");
+
+                                    // 해당하는 tab의 클릭할 때 아래의 border값이 나오게 함
+                                    $(".locations_tab_head a").css({"borderBottom":"0"});
+                                    $(this).css({"borderBottom":"5px solid #232323"});
+
+                                    // 클릭 했을 시 해당하는 지역의 지점 나옴
+                                    $(".locations_branch_info").hide();
+                                    $(".locations_branch"+num+"").show();
+
+                                    var match0 = $(".locations_branch0").attr("class").substr("16","1");
+                                    var match1 = $(".locations_branch1").attr("class").substr("16","1");
+                                    var match2 = $(".locations_branch2").attr("class").substr("16","1");
+                                    var match3 = $(".locations_branch3").attr("class").substr("16","1");
+                                    var match4 = $(".locations_branch4").attr("class").substr("16","1");
+
+                                    $(".locations_branch"+num+" input").prop("checked",false);
+                                    $(".locations_branch"+num+" input:eq(0)").prop("checked",true);
+
+                                    if( num === match0 ){
+
+                                        // 청담사옥
+                                            var uluru = {lat: 37.521609, lng: 127.056752};
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                              zoom: 15,
+                                              center: uluru
+                                            });
+                                            var marker = new google.maps.Marker({
+                                              position: uluru,
+                                              map: map
+                                            });
+
+                                            var uluru = {lat: 37.521609, lng: 127.056752};
+                                            company.innerHTML = "본사(청담사옥)";
+                                            addr1.innerHTML = "서울 강남구 영동대로 714 (청담동, 하이트진로빌딩) 하이트진로빌딩";
+                                            zips.innerHTML = "(우) 06075";
+                                            tels.innerHTML = "대표전화: 02-3219-0114";
+                                            faxs.innerHTML = "FAX: 02-515-0006";
+
+                                    }else if( num === match1){
+                                        // 전체 및 서울,인천,경기
+                                            var uluru = {lat: 37.575837, lng: 127.026289};
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                              zoom: 15,
+                                              center: uluru
+                                            });
+                                            var marker = new google.maps.Marker({
+                                              position: uluru,
+                                              map: map
+                                            });
+
+                                            var uluru = {lat: 37.575837, lng: 127.026289};
+                                            company.innerHTML = "가정북부지점";
+                                            addr1.innerHTML = "서울특별시 동대문구 하정로 9 (신설동) 5층";
+                                            zips.innerHTML = "(우) 02586";
+                                            tels.innerHTML = "대표전화: 02-2230-0161";
+                                            faxs.innerHTML = "FAX: 02-2238-5116";
+
+                                    }else if( num === match2){
+                                        // 연구소 및 공장 (홍천)
+                                            var uluru = {lat: 37.691535, lng: 127.841243};
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                              zoom: 15,
+                                              center: uluru
+                                            });
+                                            var marker = new google.maps.Marker({
+                                              position: uluru,
+                                              map: map
+                                            });
+
+                                            var uluru = {lat: 37.691535, lng: 127.841243};
+                                            company.innerHTML = "연구소 및 공장(홍천)";
+                                            addr1.innerHTML = "강원 홍천군 북방면 도둔길 49 (하화계리)";
+                                            zips.innerHTML = "(우) 25115";
+                                            tels.innerHTML = "대표전화: 033-430-8586";
+                                            faxs.innerHTML = "FAX: 033-430-8389";
+
+
+                                    }else if( num === match3){
+                                        // 하이트진로홀딩스
+                                        var uluru = {lat: 37.4839571, lng: 127.01810999999998};
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                              zoom: 15,
+                                              center: uluru
+                                            });
+                                            var marker = new google.maps.Marker({
+                                              position: uluru,
+                                              map: map
+                                            });
+
+                                            var uluru = {lat: 37.4839571, lng: 127.01810999999998};
+                                            company.innerHTML = "하이트진로홀딩스㈜";
+                                            addr1.innerHTML = "서울특별시 서초구 서초중앙로 14 하이트진로빌딩 10층";
+                                            zips.innerHTML = "(우) 06720";
+                                            tels.innerHTML = "대표전화: 02-520-3103";
+                                            faxs.innerHTML = "FAX: 02-520-3119";
+
+                                    }else if( num === match4){
+                                        // 북경진로해특주업유한공사
+                                            var uluru = {lat: 39.955545, lng: 116.459892};
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                              zoom: 15,
+                                              center: uluru
+                                            });
+                                            var marker = new google.maps.Marker({
+                                              position: uluru,
+                                              map: map
+                                            });
+
+                                            var uluru = {lat: 39.955545, lng: 116.459892};
+                                            company.innerHTML = "북경진로해특주업유한공사 (THE HITE-JINRO GROUP CHINA)";
+                                            addr1.innerHTML = "UNIT A1510 (A-ZUO, 1510HAO) TYG CENTER, 2C EAST 3RD RING NORTH ROAD, CHAOYANG DISTRICT, BEIJING, CHINA";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 8610-8441-7567";
+                                            faxs.innerHTML = "FAX: 8610-8441-7569";
+
+                                    }
+                                });
+                            });
+                        </script>
+                        <div class="locations_tab_info">
+                            <ul class="locations_branch">
+                                <li class="locations_branch0 locations_branch_info">
+                                    <input id="HQ1" type="radio" name="HQ1" checked ><label for="HQ1">본사(청담사옥)</label>
+                                    <input id="HQ2" type="radio" name="HQ2"><label for="HQ2">본사(서초사옥)</label>
+                                </li>
+                                <li class="locations_branch1 locations_branch_info">
+                                    <input id="HQ3" type="radio" name="HQ3" checked ><label for="HQ3">전체 및 서울,인천,경기</label>
+                                    <input id="HQ4" type="radio" name="HQ4"><label for="HQ4">강원,제주도</label>
+                                    <input id="HQ5" type="radio" name="HQ5"><label for="HQ5">충청도</label>
+                                    <input id="HQ6" type="radio" name="HQ6"><label for="HQ6">전라도</label>
+                                    <input id="HQ7" type="radio" name="HQ7"><label for="HQ7">경북</label>
+                                    <input id="HQ8" type="radio" name="HQ8"><label for="HQ8">경남</label>
+                                </li>
+                                <li class="locations_branch2 locations_branch_info">
+                                    <span>연구소&amp;공장</span>
+                                    <input id="HQ9" type="radio" name="HQ9" checked ><label for="HQ9">홍천</label>
+                                    <input id="HQ10" type="radio" name="HQ10"><label for="HQ10">청주</label><br>
+                                    <span>공장</span>
+                                    <input id="HQ11" type="radio" name="HQ11"><label for="HQ11">전주공장</label>
+                                    <input id="HQ12" type="radio" name="HQ12"><label for="HQ12">마산공장</label>
+                                    <input id="HQ13" type="radio" name="HQ13"><label for="HQ13">이천공장</label>
+                                    <input id="HQ14" type="radio" name="HQ14"><label for="HQ14">익산공장</label>
+                                </li>
+                                <li class="locations_branch3 locations_branch_info">
+                                    <input id="HQ15" type="radio" name="HQ15" checked ><label for="HQ15">하이트진로홀딩스㈜</label>
+                                    <input id="HQ16" type="radio" name="HQ16"><label for="HQ16">진로소주㈜</label>
+                                    <input id="HQ17" type="radio" name="HQ17"><label for="HQ17">하이트진로산업㈜</label>
+                                    <input id="HQ18" type="radio" name="HQ18"><label for="HQ18">하이트진로음료㈜</label>
+                                    <input id="HQ19" type="radio" name="HQ19"><label for="HQ19">진로양조㈜</label>
+                                    <input id="HQ20" type="radio" name="HQ20"><label for="HQ20">강원물류㈜</label>
+                                    <input id="HQ21" type="radio" name="HQ21"><label for="HQ21">수양물류㈜</label>
+                                    <input id="HQ22" type="radio" name="HQ22"><label for="HQ22">천주물류㈜</label>
+                                    <input id="HQ23" type="radio" name="HQ23"><label for="HQ23">블루헤런㈜</label>
+                                </li>
+                                <li class="locations_branch4 locations_branch_info">
+                                    <input id="HQ24" type="radio" name="HQ24" checked ><label for="HQ24">북경진로해특주업유한공사 (THE HITE-JINRO GROUP CHINA)</label>
+                                    <input id="HQ25" type="radio" name="HQ25"><label for="HQ25">HiteJinro Rus Co</label>
+                                    <input id="HQ26" type="radio" name="HQ26"><label for="HQ26">HiteJinro RUS Food Co.,Ltd</label>
+                                    <input id="HQ27" type="radio" name="HQ27"><label for="HQ27">HITEJINRO VIETNAM Co., Ltd</label>
+                                    <input id="HQ28" type="radio" name="HQ28"><label for="HQ28">Jinro America Inc</label><br>
+                                    <input id="HQ29" type="radio" name="HQ29"><label for="HQ29">JINRO INC</label>
+                                </li>
+                            </ul>
+                            <div class="location_map">
+                                <div class="map_API">
+                                    <div id="map"></div>
+                                </div>
+                                <div class="map_detail">
+                                    <h3>Address</h3>
+                                    <p id="company">본사(청담사옥)</p>
+                                    <p id="addr1">서울 강남구 영동대로 714 (청담동, 하이트진로빌딩) 하이트진로빌딩</p>
+                                    <p id="zips">(우) 06075</p>
+                                    <h3>Contact</h3>
+                                    <p id="tels">대표전화: 02-3219-0114</p>
+                                    <p id="faxs">FAX: 02-515-0006</p>
+                                </div>
+                            </div>
+                            <script>
+
+                                // 구글 API - 본사 청담사옥 (디폴트)
+                                  function initMap() {
+                                    var uluru = {lat: 37.521609, lng: 127.056752};
+                                    var bg = document.getElementById('map').style.backgroundImage = "url('../images/map0.png')";
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                      zoom: 15,
+                                      center: uluru
+                                    });
+                                    var marker = new google.maps.Marker({
+                                      position: uluru,
+                                      map: map
+                                    });
+                                }
+                                 
+                                    $(".locations_branch input").click(function(){
+                                        // 각 지사를 클릭할 때 radio 가 표시되는 부분
+                                        $(this).siblings().removeAttr('checked');
+                                        $(this).attr("checked");
+
+                                        var HQ1 = document.getElementById("HQ1").name,
+                                            HQ2 = document.getElementById("HQ2").name,
+                                            HQ3 = document.getElementById("HQ3").name,
+                                            HQ4 = document.getElementById("HQ4").name,
+                                            HQ5 = document.getElementById("HQ5").name,
+                                            HQ6 = document.getElementById("HQ6").name,
+                                            HQ7 = document.getElementById("HQ7").name,
+                                            HQ8 = document.getElementById("HQ8").name,
+                                            HQ9 = document.getElementById("HQ9").name,
+                                            HQ10 = document.getElementById("HQ10").name,
+                                            HQ11 = document.getElementById("HQ11").name,
+                                            HQ12 = document.getElementById("HQ12").name,
+                                            HQ13 = document.getElementById("HQ13").name,
+                                            HQ14 = document.getElementById("HQ14").name,
+                                            HQ15 = document.getElementById("HQ15").name,
+                                            HQ16 = document.getElementById("HQ16").name,
+                                            HQ17 = document.getElementById("HQ17").name,
+                                            HQ18 = document.getElementById("HQ18").name,
+                                            HQ19 = document.getElementById("HQ19").name,
+                                            HQ20 = document.getElementById("HQ20").name,
+                                            HQ21 = document.getElementById("HQ21").name,
+                                            HQ22 = document.getElementById("HQ22").name,
+                                            HQ23 = document.getElementById("HQ23").name,
+                                            HQ24 = document.getElementById("HQ24").name,
+                                            HQ25 = document.getElementById("HQ25").name,
+                                            HQ26 = document.getElementById("HQ26").name,
+                                            HQ27 = document.getElementById("HQ27").name,
+                                            HQ28 = document.getElementById("HQ28").name,
+                                            HQ29 = document.getElementById("HQ29").name;
+
+
+
+                                        var company = document.getElementById("company"),
+                                            addr1 = document.getElementById("addr1"),
+                                            zips = document.getElementById("zips"),
+                                            tels = document.getElementById("tels"),
+                                            faxs = document.getElementById("faxs");
+
+                                        // map의 위치가 변화하는 부분
+                                        if( this.name === HQ1){
+                                            var uluru = {lat: 37.521609, lng: 127.056752};
+                                            company.innerHTML = "본사(청담사옥)";
+                                            addr1.innerHTML = "서울 강남구 영동대로 714 (청담동, 하이트진로빌딩) 하이트진로빌딩";
+                                            zips.innerHTML = "(우) 06075";
+                                            tels.innerHTML = "대표전화: 02-3219-0114";
+                                            faxs.innerHTML = "FAX: 02-515-0006";
+                                        }else if( this.name === HQ2 ){
+                                            var uluru = {lat: 37.4839571, lng: 127.01810999999998};
+                                            company.innerHTML = "본사(서초사옥)";
+                                            addr1.innerHTML = "서울특별시 서초구 서초중앙로 14";
+                                            zips.innerHTML = "(우) 06720";
+                                            tels.innerHTML = "대표전화: 02-520-3114";
+                                            faxs.innerHTML = "FAX: 02-520-3450";
+                                        }else if( this.name === HQ3 ){
+                                            var uluru = {lat: 37.575837, lng: 127.026289};
+                                            company.innerHTML = "가정북부지점";
+                                            addr1.innerHTML = "서울특별시 동대문구 하정로 9 (신설동) 5층";
+                                            zips.innerHTML = "(우) 02586";
+                                            tels.innerHTML = "대표전화: 02-2230-0161";
+                                            faxs.innerHTML = "FAX: 02-2238-5116";
+                                        }else if( this.name === HQ4 ){
+                                            var uluru = {lat: 37.726351, lng: 128.880578};
+                                            company.innerHTML = "강릉물류센터";
+                                            addr1.innerHTML = "강원도 강릉시 범일로 414-15";
+                                            zips.innerHTML = "(우) 25622";
+                                            tels.innerHTML = "대표전화: 033-652-5109";
+                                            faxs.innerHTML = "FAX: 033-644-8185";
+                                        }else if( this.name === HQ5 ){
+                                            var uluru = {lat: 36.366885, lng: 127.404128};
+                                            company.innerHTML = "대전물류센터";
+                                            addr1.innerHTML = "대전광역시 대덕구 대화로150번길 42-35 (대화동)";
+                                            zips.innerHTML = "(우) 34366";
+                                            tels.innerHTML = "대표전화: 042-637-9214";
+                                            faxs.innerHTML = "FAX: 042-672-6967";
+                                        }else if( this.name === HQ6 ){
+                                            var uluru = {lat: 35.204428, lng: 126.807768};
+                                            company.innerHTML = "광주물류센터";
+                                            addr1.innerHTML = "광주광역시 광산구 하남산단6번로 5 (오선동)";
+                                            zips.innerHTML = "(우) 62216";
+                                            tels.innerHTML = "대표전화: 062-956-8511";
+                                            faxs.innerHTML = "FAX: 062-955-2475";
+                                        }else if( this.name === HQ7 ){
+                                            var uluru = {lat: 36.193837, lng: 128.345062};
+                                            company.innerHTML = "구미물류센터";
+                                            addr1.innerHTML = "경상북도 구미시 선산대로 739";
+                                            zips.innerHTML = "(우) 39143";
+                                            tels.innerHTML = "대표전화:  054-457-3115";
+                                            faxs.innerHTML = "FAX: 054-456-6327";
+                                        }else if( this.name === HQ8 ){
+                                            var uluru = {lat: 35.13928, lng: 128.974874};
+                                            company.innerHTML = "남부산물류센터";
+                                            addr1.innerHTML = "부산광역시 사상구 학장로63번길 23 (학장동)";
+                                            zips.innerHTML = "(우) 47026";
+                                            tels.innerHTML = "대표전화: 051-325-2311";
+                                            faxs.innerHTML = "FAX: 051-325-2312";
+                                        }else if( this.name === HQ9 ){
+                                            var uluru = {lat: 37.691535, lng: 127.841243};
+                                            company.innerHTML = "연구소 및 공장(홍천)";
+                                            addr1.innerHTML = "강원 홍천군 북방면 도둔길 49 (하화계리)";
+                                            zips.innerHTML = "(우) 25115";
+                                            tels.innerHTML = "대표전화: 033-430-8586";
+                                            faxs.innerHTML = "FAX: 033-430-8389";
+                                        }else if( this.name === HQ10 ){
+                                            var uluru = {lat: 36.509074, lng: 127.416689};
+                                            company.innerHTML = "연구소 및 공장(청주)";
+                                            addr1.innerHTML = "충북 청주시 서원구 현도면 현도공단로 177 (중삼리, ㈜진로) (중삼리 51)";
+                                            zips.innerHTML = "(우) 28211";
+                                            tels.innerHTML = "대표전화: 043-270-1805";
+                                            faxs.innerHTML = "FAX: 043-269-1092";
+                                        }else if( this.name === HQ11 ){
+                                            var uluru = {lat: 35.919599, lng: 127.176718};
+                                            company.innerHTML = "전주공장";
+                                            addr1.innerHTML = "전북 완주군 용진읍 신지송광로 25-33 (신지리, 하이트맥주)";
+                                            zips.innerHTML = "(우) 55350";
+                                            tels.innerHTML = "대표전화: 063-240-6111";
+                                            faxs.innerHTML = "FAX:  063-243-6216";
+                                        }else if( this.name === HQ12 ){
+                                            var uluru = {lat: 35.25081, lng: 128.589388};
+                                            company.innerHTML = "마산공장";
+                                            addr1.innerHTML = "경남 창원시 마산회원구 3.15성역로 8 (구암동, 하이트맥주)";
+                                            zips.innerHTML = "(우) 51207";
+                                            tels.innerHTML = "대표전화: 055-250-8100";
+                                            faxs.innerHTML = "FAX: 055-295-8341";
+                                        }else if( this.name === HQ13 ){
+                                            var uluru = {lat: 37.292501, lng: 127.493691};
+                                            company.innerHTML = "이천공장";
+                                            addr1.innerHTML = "경기도 이천시 부발읍 중부대로 1707번길 13";
+                                            zips.innerHTML = "(우) 17323";
+                                            tels.innerHTML = "대표전화: 031-644-0998";
+                                            faxs.innerHTML = "FAX: 031-644-0781";
+                                        }else if( this.name === HQ14 ){
+                                            var uluru = {lat: 35.936878, lng: 126.962982};
+                                            company.innerHTML = "익산공장";
+                                            addr1.innerHTML = "전라북도 익산시 중앙로 151 (마동,㈜하이트주조)";
+                                            zips.innerHTML = "(우) 54597";
+                                            tels.innerHTML = "대표전화: 063-840-5111";
+                                            faxs.innerHTML = "FAX: 063-853-6565";
+                                        }else if( this.name === HQ15 ){
+                                            var uluru = {lat: 37.4839571, lng: 127.01810999999998};
+                                            company.innerHTML = "하이트진로홀딩스㈜";
+                                            addr1.innerHTML = "서울특별시 서초구 서초중앙로 14 하이트진로빌딩 10층";
+                                            zips.innerHTML = "(우) 06720";
+                                            tels.innerHTML = "대표전화: 02-520-3103";
+                                            faxs.innerHTML = "FAX: 02-520-3119";
+                                        }else if( this.name === HQ16 ){
+                                            var uluru = {lat: 35.150379, lng: 128.392317};
+                                            company.innerHTML = "진로소주㈜";
+                                            addr1.innerHTML = "경상남도 창원시 마산합포구 진전면 평암로 200 ㈜진로소주";
+                                            zips.innerHTML = "(우) 51795";
+                                            tels.innerHTML = "대표전화: 055-249-3100";
+                                            faxs.innerHTML = "FAX: 055-249-3112";
+                                        }else if( this.name === HQ17 ){
+                                            var uluru = {lat: 37.319005, lng: 126.739194};
+                                            company.innerHTML = "하이트진로산업㈜";
+                                            addr1.innerHTML = "경기도 안산시 단원구 별망로79번길 55 (성곡동,하이트산업)";
+                                            zips.innerHTML = "(우) 15413";
+                                            tels.innerHTML = "대표전화: 031-499-6051";
+                                            faxs.innerHTML = "FAX: 031-499-6054";
+                                        }else if( this.name === HQ18 ){
+                                            var uluru = {lat: 37.266623, lng: 127.151615};
+                                            company.innerHTML = "하이트진로음료㈜";
+                                            addr1.innerHTML = "경기도 용인시 기흥구 동백죽전대로 291";
+                                            zips.innerHTML = "(우) 16995";
+                                            tels.innerHTML = "대표전화: 031-8006-7100";
+                                            faxs.innerHTML = "FAX:  031-275-7726";
+                                        }else if( this.name === HQ19 ){
+                                            var uluru = {lat: 37.618317, lng: 127.895853};
+                                            company.innerHTML = "진로양조㈜";
+                                            addr1.innerHTML = "강원도 홍천군 솔골길 7";
+                                            zips.innerHTML = "(우) 25119";
+                                            tels.innerHTML = "대표전화: 033-435-9966";
+                                            faxs.innerHTML = "FAX: 033-435-9998";
+                                        }else if( this.name === HQ20 ){
+                                            var uluru = {lat: 37.691535, lng: 127.841243};
+                                            company.innerHTML = "강원물류㈜";
+                                            addr1.innerHTML = "강원도 홍천군 북방면 도둔길 49 (하화계리) 강원물류(주)";
+                                            zips.innerHTML = "(우) 25115";
+                                            tels.innerHTML = "대표전화: 033-435-4900";
+                                            faxs.innerHTML = "FAX: 033-435-0422";
+                                        }else if( this.name === HQ21 ){
+                                            var uluru = {lat: 35.919599, lng: 127.176718};
+                                            company.innerHTML = "수양물류㈜";
+                                            addr1.innerHTML = "전라북도 완주군 용진읍 신지송광로 25 (신지리) 수양물류㈜";
+                                            zips.innerHTML = "(우) 55350";
+                                            tels.innerHTML = "대표전화: 063-244-6903";
+                                            faxs.innerHTML = "FAX: 063-244-6905";
+                                        }else if( this.name === HQ22 ){
+                                            var uluru = {lat: 35.248371, lng: 128.59199};
+                                            company.innerHTML = "천주물류㈜";
+                                            addr1.innerHTML = "경상남도 창원시 마산회원구 구암서2길 24 (구암동, 구암약국) 천주물류㈜";
+                                            zips.innerHTML = "(우) 51206";
+                                            tels.innerHTML = "대표전화: 055-292-4872";
+                                            faxs.innerHTML = "FAX: 055-297-8417";
+                                        }else if( this.name === HQ23 ){
+                                            var uluru = {lat: 37.384459, lng: 127.647883};
+                                            company.innerHTML = "블루헤런㈜";
+                                            addr1.innerHTML = "경기도 여주시 대신면 고달사로 67 (상구리) 블루헤런㈜";
+                                            zips.innerHTML = "(우) 12611";
+                                            tels.innerHTML = "대표전화: 031-880-0700";
+                                            faxs.innerHTML = "FAX: 031-883-8039";
+                                        }else if( this.name === HQ24 ){
+                                            var uluru = {lat: 39.955545, lng: 116.459892};
+                                            company.innerHTML = "북경진로해특주업유한공사 (THE HITE-JINRO GROUP CHINA)";
+                                            addr1.innerHTML = "UNIT A1510 (A-ZUO, 1510HAO) TYG CENTER, 2C EAST 3RD RING NORTH ROAD, CHAOYANG DISTRICT, BEIJING, CHINA";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 8610-8441-7567";
+                                            faxs.innerHTML = "FAX: 8610-8441-7569";
+                                        }else if( this.name === HQ25 ){
+                                            var uluru = {lat: 55.713047, lng: 37.664039};
+                                            company.innerHTML = "HiteJinro Rus Co";
+                                            addr1.innerHTML = "ST.17 LENINSKAYA SLOBODA, MOSCOW, 115280, RUSSIA";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 7495-675-4392";
+                                            faxs.innerHTML = "FAX: 7495-675-1603";
+                                        }else if( this.name === HQ26 ){
+                                            var uluru = {lat: 55.713047, lng: 37.664039};
+                                            company.innerHTML = "HiteJinro RUS Food Co.,Ltd";
+                                            addr1.innerHTML = "ST.17 LENINSKAYA SLOBODA, MOSCOW, 115280, RUSSIA";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 7495-675-4392";
+                                            faxs.innerHTML = "FAX: 7495-675-1603";
+                                        }else if( this.name === HQ27 ){
+                                            var uluru = {lat: 21.018212, lng: 105.784177};
+                                            company.innerHTML = "HITEJINRO VIETNAM Co., Ltd";
+                                            addr1.innerHTML = "1907-1, 19th Floor, Keangnam Ha Noi Landmark, E6, Casu Giay Urban, Me Tri Ward, Nam Tu Liem Dist, Ha Noi, Vietnam";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 8446-282-2958";
+                                            faxs.innerHTML = "";
+                                        }else if( this.name === HQ28 ){
+                                            var uluru = {lat: 34.060739, lng: -118.30027};
+                                            company.innerHTML = "Jinro America Inc.";
+                                            addr1.innerHTML = "3470 Wilshire Blvd. #1024, Los Angeles, CA 90010, USA";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 1213-637-1500";
+                                            faxs.innerHTML = "FAX: 1213-637-1501";
+                                        }else if( this.name === HQ29 ){
+                                            var uluru = {lat: 35.654542, lng: 139.751952};
+                                            company.innerHTML = "JINRO INC.";
+                                            addr1.innerHTML = "SUMITOMO FUDOUSAN SHIBAKOEN TOWER 12F, 2-11-1, SHIBAKOEN MINATO-KU, TOKYO, JAPAN";
+                                            zips.innerHTML = "";
+                                            tels.innerHTML = "대표전화: 813-5403-9567";
+                                            faxs.innerHTML = "FAX: 813-5403-9568";
+                                        }
+                                          var map = new google.maps.Map(document.getElementById('map'), {
+                                            zoom: 16,
+                                            center: uluru
+                                          });
+                                          var marker = new google.maps.Marker({
+                                            position: uluru,
+                                            map: map
+                                          });
+                                    });
+                            </script>
+                            <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIkcBSpou4pCqxB1375B2rUPRYha4wuY&callback=initMap">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

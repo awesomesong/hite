@@ -1,0 +1,39 @@
+.hitejinro_content_wrap{overflow:hidden; width:100%; min-width:1600px; height:auto; padding-top:155px;}
+.hitejinro_content_Gnb_wrap {position:fixed; top:55px; left:0; right:0; width:100%; height:100px; background-color:#ff617f;}
+.hitejinro_content_Gnb {width:1280px; height:100%; margin:0 auto;}
+.hitejinro_content_Gnb li {float:left; width:12.5%; height:100%; text-align:center;}
+.hitejinro_content_Gnb a {display:inline-block; width:100px; height:100%; transform:scale(0.9); transition:transform 0.4s;}
+
+/* 기타주류 gnb의 이미지 */
+.d_gnb1 {background: url(../images/filite_gnb.png) no-repeat center center; }
+.d_gnb1:hover, .d_gnb1:focus{background-position:center center; transform:scale(1);}
+.d_gnb2 {background: url(../images/chanpodo_gnb.png) no-repeat center right; }
+.d_gnb2:hover, .d_gnb2:focus{background-position:center center; transform:scale(1);}
+.d_gnb3 {background: url(../images/jamong_gnb.png) no-repeat center right;}
+.d_gnb3:hover, .d_gnb3:focus{background-position:center center; transform:scale(1);}
+.d_gnb4 {background: url(../images/isultoktok_gnb.png) no-repeat center right;}
+.d_gnb4:hover, .d_gnb4:focus{background-position:center center; transform:scale(1);}
+.d_gnb5 {background: url(../images/mawhasu_gnb.png) no-repeat center right; }
+.d_gnb5:hover, .d_gnb5:focus{background-position:center center; transform:scale(1);}
+.d_gnb6 {background: url(../images/mangolingo_gnb.png) no-repeat center right; }
+.d_gnb6:hover, .d_gnb6:focus{background-position:center center; transform:scale(1);}
+.d_gnb7 {background: url(../images/bokbunja_gnb.png) no-repeat center right;}
+.d_gnb7:hover, .d_gnb7:focus{background-position:center center; transform:scale(1);}
+.d_gnb8 {background: url(../images/jinrowine_gnb.png) no-repeat center right;}
+.d_gnb8:hover, .d_gnb8:focus{background-position:center center; transform:scale(1);}
+
+.hitejinro_view_more{overflow:hidden; min-width:1600px; height:auto; margin:0 auto;}
+.drinks_view_more{width:100%; min-width:1600px; height:580px;}
+.drinks_view_more:nth-of-type(8){padding-bottom:70px; background-color:#565656}
+.drinks_view_more p{width:100%;height:100%;}
+.drinks_view_more a{display:inline-block; width:100%; height:100%;}
+
+/* 기타주류 정보에 대한 이미지 */
+.view_more_img1 a{background: url(../images/filite_2300.png) no-repeat center center;}
+.view_more_img2 a{background: url(../images/changpodo_2300.jpg) no-repeat center center;}
+.view_more_img3 a{background: url(../images/jamong_2300.jpg) no-repeat center center;}
+.view_more_img4 a{background: url(../images/isultoktok_2300.jpg) no-repeat center center;}
+.view_more_img5 a{background: url(../images/mawhasu_2300.jpg) no-repeat center center;}
+.view_more_img6 a{background: url(../images/mangolingo_2300.jpg) no-repeat center center;}
+.view_more_img7 a{background: url(../images/bokbunja_2300.jpg) no-repeat center center;}
+.view_more_img8 a{background: url(../images/jinrowine_2300.jpg) no-repeat center center;}

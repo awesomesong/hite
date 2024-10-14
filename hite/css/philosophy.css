@@ -1,0 +1,32 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px; padding-bottom:50px;}
+
+.hitejinro_philosophy{ position:relative; width:1080px; height:1385px; margin:0 auto; background: url(../images/hite_vision.jpg) no-repeat center bottom;}
+.hitejinro_philosophy h2 {width:100%; height:auto; margin-top:50px; text-align:center; font-size:55px; font-weight:200;}
+.hitejinro_philosophy h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.hitejinro_philosophy_info { position:absolute; left:129px; top:330px; width:270px;}
+.hitejinro_philosophy_info strong { display:inline-block; width:100%; color:#0096d6; font-size:35px; font-weight:200; text-align:right;}
+.hitejinro_philosophy_info b {display:inline-block; width:100%; font-size:22px; font-weight:200; line-height:25px;}
+
+.hitejinro_philosophy_value { width:100%;}
+.hitejinro_value_head { position:absolute; left:537px; top:745px; width:180px; color:#0096d6; font-size:35px; font-weight:200; }
+
+.hitejinro_value_info1 { position:absolute; left:625px; top:805px; width:380px; font-weight:200; }
+.hitejinro_value_info1 strong { display:inline-block; width:100%; font-size:20px; font-weight:300; }
+.hitejinro_value_info1 b {display:inline-block; width:100%; font-size:16px; font-weight:200; line-height:22px;}
+
+.hitejinro_value_info2 {position:absolute; left:48px; top:920px; width:302px; font-weight:200; }
+.hitejinro_value_info2 strong { display:inline-block; width:93%; padding-right:7%; font-size:20px; font-weight:300; text-align:right;}
+.hitejinro_value_info2 b {display:inline-block; width:100%; font-size:16px; font-weight:200; line-height:22px;}
+
+.hitejinro_value_info3 { position:absolute; right:0px; top:920px; width:340px; font-weight:200; }
+.hitejinro_value_info3 strong { display:inline-block; width:93%; padding-right:7%; font-size:20px; font-weight:300; }
+.hitejinro_value_info3 b {display:inline-block; width:100%; font-size:16px; font-weight:200; line-height:22px;}
+
+.hitejinro_value_info4 {position:absolute; left:70px; top:1095px; width:315px; font-weight:200; }
+.hitejinro_value_info4 strong { display:inline-block; width:93%; padding-right:7%; font-size:20px; font-weight:300; text-align:right;}
+.hitejinro_value_info4 b {display:inline-block; width:100%; font-size:16px; font-weight:200; line-height:22px;}
+
+.hitejinro_value_info5 {position:absolute; right:60px; top:1095px; width:305px; font-weight:200; }
+.hitejinro_value_info5 strong { display:inline-block; width:93%; padding-right:7%; font-size:20px; font-weight:300; }
+.hitejinro_value_info5 b {display:inline-block; width:100%; font-size:16px; font-weight:200; line-height:22px;}

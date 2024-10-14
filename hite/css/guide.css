@@ -1,0 +1,14 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_guide{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_guide h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_guide h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.guide{position:relative; width:100%; height:800px; margin-top:100px; background:url("../images/cust_guid_bg.jpg") no-repeat top center;}
+.guide_box {position:absolute; width:350px; height:auto; text-align:right;}
+.guide_box_01{left:25px; top:90px;}
+.guide_box_02{right:50px; bottom:240px; text-align:left;}
+.guide_title{display:inline-block; width:100%; height:auto; margin-bottom:4px; font-size:22px; font-weight:400;}
+.guide_txt {display:inline-block; width:100%; height:auto; margin-bottom:20px; color:#666;}
+.guide_btn {display:inline-block; width:auto; height:auto; padding:4px 22px; border:2px solid #333; text-transform: capitalize;}
+.guide_btn:hover, .guide_btn:focus{color:#fff; background-color:#333;}

@@ -1,0 +1,24 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_locations{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_locations h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_locations h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.locations { overflow:hidden; width:100%; height:auto; padding-top:100px; padding-bottom:80px;}
+.locations_tab_head {width:100%; padding:20px 0 40px; background-color:#99cc41;}
+.locations_tab_head li {float:left; width:20%; font-size:17px; text-align:center; }
+.locations_tab_head a {padding: 16px 40px 13px;}
+
+.locations_tab_info {width:100%; height:auto;}
+.locations_branch {width:100; height:55px; padding-top:20px;}
+.locations_branch1, .locations_branch2, .locations_branch3,.locations_branch4{display:none;}
+.locations_branch_info input{display:inline-block; margin-left:10px; margin-right:5px}
+.locations_branch_info span {display:inline-block; width:100px;margin-left:10px;}
+
+.location_map{width:100%; height:auto;}
+.map_API {float:left; width:50%; height:400px;}
+#map {width:100%; height:100%;}
+
+.map_detail {float:left; width:46%; height:400px; padding-left:4%;}
+.map_detail h3{width:100%; font-size:28px; text-align:left;}
+.map_detail h3:nth-of-type(2){padding-top:40px;}

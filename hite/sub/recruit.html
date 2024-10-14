@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 Recruit, 하이트진로에 대한 정보제공"/>
+        <meta name="keywords" content="하이트진로란, 인재상, 직무소개, 채용절차, 복리후생, 채용공고, 지원자도우미"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>하이트진로 - Recruit</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/recruit.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recruit -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_recruit">
+                    <h2>Recruit</h2>
+                    <div class="recruit">
+                        <ul class="recruit_tab_menu">
+                            <li><a class="r_tab_menu0" href="#none" title="all about HITEJINRO">all about HITEJINRO</a></li>
+                            <li><a class="r_tab_menu1" href="#none" title="인재상">인재상</a></li>
+                            <li><a class="r_tab_menu2" href="#none" title="직무소개">직무소개</a></li>
+                            <li><a class="r_tab_menu3" href="#none" title="채용절차">채용절차</a></li>
+                            <li><a class="r_tab_menu4" href="#none" title="복리후생">복리후생</a></li>
+                            <li><a class="r_tab_menu5" href="#none" title="채용공고">채용공고</a></li>
+                            <li><a class="r_tab_menu6" href="#none" title="지원자도우미">지원자도우미</a></li>
+                        </ul>
+                        <script>
+                            $(document).ready(function(){
+                                $(".recruit_tab_menu a").bind('click focusin', function(){
+                                    var r_num = $(this).attr("class").substr("10","1");
+
+                                    $(".recruit_info_detail").hide();
+                                    $(".recruit_info_part"+r_num+"").show();
+
+                                    $(".recruit_tab_menu a").css({"backgroundColor":"#fff","color":"#232323"});
+                                    $(this).css({"backgroundColor":"#232323","color":"#fff"});
+                                });
+                            });
+                        </script>
+                        <div class="recruit_tab_info">
+                            <div class="recruit_info_part0 recruit_info_detail">
+                                <h2>All about HITEJINRO</h2>
+                                <h3>최고가 되고자 하는 의지, 뜨거운 열정이 당신을 기다립니다.</h3>
+                                <div class="recruit_all_about">
+                                    <p class="recruit_all_about_txt">
+                                        <strong class="recruit_all_about_txt_1">대한민국 주류의 역사, 하이트진로에서<br>세계 기업을 향해 힘차게 도약할 우수한 인재를 모집합니다.</strong>
+                                        <strong class="recruit_all_about_txt_2">최고가 되고자 하는 의지,<br>뜨거운 열정이 당신을 기다립니다!</strong>
+                                        <span class="recruit_all_about_txt_3">
+                                            기쁠 때나 슬플 때나 국민과 함께하며 우리나라를 대표하는 주류회사, 하이트진로
+                                            하이트진로는 모든 것에 최우선으로 고객만족을 생각하는 가장 인간적이고 친근한 기업이며,
+                                            1924년부터 지금까지 대한민국과 세계 곳곳에서 사랑받고 있는 대한민국 주류의 역사라
+                                            할 수 있습니다.
+                                        </span>
+                                        <span class="recruit_all_about_txt_4">이제 술은 우리의 생활 속 하나의 문화입니다.</span>
+                                        <span class="recruit_all_about_txt_5">
+                                            100년 기업의 내공을 바탕으로 소비자의 공감을 이루어내고, 끊임없는 개발과 품질에 
+                                            대한 노력으로 바른 주류 문화를 선도하고자 합니다. 국민기업에서 세계기업으로 도약하는 
+                                            우리의 끊임없는 도전에 함께 할 가능성이 무궁무진한 인재들을 기다리고 있습니다!
+                                        </span>
+                                        <span class="recruit_all_about_txt_6">- HR팀</span>
+                                    </p>
+                                    <p class="recruit_all_about_img"><img src="../images/about_img.jpg" alt="뜨겁게 살자"></p>
+                                </div>
+                            </div>
+                            <div class="recruit_info_part1 recruit_info_detail">
+                                <h4>HITEJINRO 人</h4>
+                                <h2>인재상</h2>
+                                <h3>하이트진로가 바라는 인재상은 5가지 핵심가치의 역량에서 출발합니다.<br>열정과 헌신, 창의를 추구하고 실천하는 참된 인재를 기다립니다.</h3>
+                                <p class="recruit_management_1">
+                                    <span class="recruit_human_1">
+                                        <strong>열정</strong><br>
+                                        회사의 정통성에 대한 이해를 토대로<br>패러다임을 바꿀 수 있는 열정적인 인재
+                                    </span>
+                                    <span class="recruit_human_2">
+                                        <strong>헌신</strong><br>
+                                        나보다는 우리를, 우리보다는<br> 고객을 먼저 생각하는 헌신적인 인재
+                                    </span>
+                                    <span class="recruit_human_3">
+                                        <strong>창의</strong><br>
+                                        실패를 두려워하지 않고, 새로운 <br> 도전을 시도하는 창의적인 인재
+                                    </span>
+                                </p>
+                                <h4>MANAGEMENT PHILOSOPHY</h4>
+                                <h2>경영이념</h2>
+                                <h3>하이트진로㈜는 1924년부터 지금까지 대한민국과 세계 곳곳에서 사랑 받고 있는 대한민국의 주류의 역사라 할 수 있습니다.<br>"세계 모든 이들과 늘 함께하며, 삶의 즐거움과 희망을 나눈다."</h3>
+                                <p class="recruit_management_2">
+                                    <span class="recruit_ideology_1">고객 · 사회 헌신</span>
+                                    <span class="recruit_ideology_2">창조적 혁신</span>
+                                    <span class="recruit_ideology_3">정통 · 대표성 계승</span>
+                                    <span class="recruit_ideology_4">신뢰와 겸손</span>
+                                    <span class="recruit_ideology_5">소통과 화합</span>
+                                    <span class="recruit_ideology_6"><strong>핵심가치 5</strong></span>
+                                    <span class="recruit_ideology_7">고객 · 사회 헌신, 창조적 혁신, 정통 · 대표성 계승, 신뢰와 겸손,<br>소통과 화합은 하이트진로의 중요한 핵심가치입니다.</span>
+                                </p>
+                            </div>
+                            <div class="recruit_info_part2 recruit_info_detail">
+                                <h2>직무소개</h2>
+                                <h3>하이트진로㈜의 직무를 소개합니다. 관리지원 / 영업 / 연구 / 생산 / 현장직 5개의 직군에서 총 75개의 직무로 분류되는 직무 세부내용을 안내드립니다.</h3>
+                                <div class="recruit_duty_wrap">
+                                    <dl class="recruit_duty_1 recruit_duty">
+                                        <dt class="recruit_duty_title">
+                                            <p class="recruit_duty_title_img"><img src="../images/duty_icon_1.gif" alt="관리지원 아이콘"></p>
+                                            <p class="recruit_duty_title_txt">
+                                                <strong>관리지원</strong>
+                                                <span>하이트진로의 관리지원을 책임지고있습니다.</span>
+                                            </p>
+                                        </dt>
+                                        <dd class="recruit_duty_info_half_size recruit_duty_info">
+                                            <span>· 전략기획</span>
+                                            <span>· 경영관리</span>
+                                            <span>· 재무기획</span>
+                                            <span>· 경영혁신</span>
+                                            <span>· 신사업개발</span>
+                                            <span>· 경영지원</span>
+                                            <span>· 총무</span>
+                                            <span>· 관재</span>
+                                            <span>· 윤리감사</span>
+                                            <span>· 홍보</span>
+                                            <span>· 문화</span>
+                                            <span>· 법무</span>
+                                            <span>· 정책</span>
+                                            <span>· 물류</span>
+                                            <span>· 비서</span>
+                                            <span>· 사회공헌</span>
+                                            <span>· SCM</span>
+                                            <span>· 회계</span>
+                                            <span>· 재무</span>
+                                            <span>· IR</span>
+                                            <span>· 인사</span>
+                                            <span>· 교육</span>
+                                            <span>· 노사협력</span>
+                                            <span>· IT기획</span>
+                                            <span>· IT시스템</span>
+                                            <span>· 정보시스템운영개발</span>
+                                            <span>· 시장전략</span>
+                                            <span>· 브랜드관리</span>
+                                            <span>· 광고</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="recruit_duty_2 recruit_duty">
+                                        <dt class="recruit_duty_title">
+                                            <p class="recruit_duty_title_img"><img src="../images/duty_icon_2.gif" alt="영업 아이콘"></p>
+                                            <p class="recruit_duty_title_txt">
+                                                <strong>영업</strong>
+                                                <span>하이트진로 물류의 영업, 유통, 고객지원을 책임지고 있습니다.</span>
+                                            </p>
+                                        </dt>
+                                        <dd class="recruit_duty_info_half_size recruit_duty_info">
+                                            <span>· 영업기획</span>
+                                            <span>· 유통전략</span>
+                                            <span>· 영업지원</span>
+                                            <span>· 채권관리</span>
+                                            <span>· 지점관리</span>
+                                            <span>· 해외사업지원</span>
+                                            <span>· 해외영업</span>
+                                            <span>· 고객지원</span>
+                                            <span>· 고객서비스</span>
+                                            <span>· 일반영업</span>
+                                            <span>· 특판영업</span>
+                                            <span>· 수퍼영업</span>
+                                            <span>· 특수거래선 영업</span>
+                                            <span>· 프랜차이즈(FC) 영업</span>
+                                            <span>· 유통영업</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="recruit_duty_3 recruit_duty">
+                                        <dt class="recruit_duty_title">
+                                            <p class="recruit_duty_title_img"><img src="../images/duty_icon_3.gif" alt="생산 아이콘"></p>
+                                            <p class="recruit_duty_title_txt recruit_duty_title_margin">
+                                                <strong>생산</strong>
+                                                <span>제품, 품질, 안전,혁신을 책임지고있습니다.</span>
+                                            </p>
+                                        </dt>
+                                        <dd class="recruit_duty_info recruit_duty_info_half_size_2">
+                                            <span>· 생산기획</span>
+                                            <span>· 품질혁신</span>
+                                            <span>· 구매</span>
+                                            <span>· 제조</span>
+                                            <span>· 제품</span>
+                                            <span>· 업무지원</span>
+                                            <span>· 소주 생산지원</span>
+                                            <span>· 맥주 생산지원</span>
+                                            <span>· 설비</span>
+                                            <span>· Utility</span>
+                                            <span>· 안전환경보건</span>
+                                            <span>· 품질</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="recruit_duty_4 recruit_duty">
+                                        <dt class="recruit_duty_title">
+                                            <p class="recruit_duty_title_img"><img src="../images/duty_icon_4.gif" alt="연구 아이콘"></p>
+                                            <p class="recruit_duty_title_txt recruit_duty_title_margin">
+                                                <strong>연구</strong>
+                                                <span>질좋은 술을 위한 연구는 계속 됩니다.</span>
+                                            </p>
+                                        </dt>
+                                        <dd class="recruit_duty_info recruit_duty_info_half_size_2">
+                                            <span>· 연구지원</span>
+                                            <span>· 연구기획</span>
+                                            <span>· 분석화학</span>
+                                            <span>· 기초연구</span>
+                                            <span>· 생물공학</span>
+                                            <span>· 증류수개발</span>
+                                            <span>· 맥주개발</span>
+                                            <span>· 기재주개발</span>
+                                            <span>· 생산기술 연구</span>
+                                            <span>· 신제품개발</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="recruit_duty_5 recruit_duty">
+                                        <dt class="recruit_duty_title">
+                                            <p class="recruit_duty_title_img"><img src="../images/duty_icon_5.gif" alt="현장직 아이콘"></p>
+                                            <p class="recruit_duty_title_txt recruit_duty_title_margin">
+                                                <strong>현장직</strong>
+                                                <span>주류 생산의 1선을 책임지고있습니다.</span>
+                                            </p>
+                                        </dt>
+                                        <dd class="recruit_duty_info recruit_duty_info_half_size_2">
+                                            <span>· 제조</span>
+                                            <span>· 제품</span>
+                                            <span>· 업무지원</span>
+                                            <span>· 소주 생산지원</span>
+                                            <span>· 맥주 생산지원</span>
+                                            <span>· 설비</span>
+                                            <span>· Utility</span>
+                                            <span>· 환경</span>
+                                            <span>· 품질</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="recruit_info_part3 recruit_info_detail">
+                                <h2>채용절차</h2>
+                                <h3>하이트진로㈜의 미래를 함께 할 인재채용은 공개채용 및 수시채용을 통해 이루어집니다.</h3>
+                                <p class="recruit_job"><img src="../images/img_step.gif" alt="채용과정이미지"></p>
+                                <p class="recruit_job_info">
+                                    <b class="recruit_job_blue">01</b>
+                                    <strong class="recruit_job_bold">서류전형</strong>
+                                    <span class="recruit_job_info_txt">
+                                        · 서류접수는 하이트진로 온라인 채용 홈페이지에서 접수 가능합니다. <br>
+                                        · 하이트진로 서류 전형은 당사 핵심가치 및 역량을 기반으로 심사가 이루어지며, 자기소개서를 중점적으로 검토합니다.
+                                    </span>
+                                </p>
+                                <p class="recruit_job_info">
+                                    <b class="recruit_job_blue">02</b>
+                                    <strong class="recruit_job_bold">인적성 검사</strong>
+                                    <span class="recruit_job_info_txt">
+                                        · 인적성 검사를 통해 기본적인 인성과 직무능력을 확인합니다.
+                                     </span>
+                                </p>
+                                <p class="recruit_job_info">
+                                    <b class="recruit_job_blue">03</b>
+                                    <strong class="recruit_job_bold">심층면접</strong>
+                                    <span class="recruit_job_info_txt">
+                                        · 심층면접은 실무진(팀/지점장급)으로 면접관이 구성되며, 직무역량을 종합적으로 평가합니다. <br>
+                                        · 심층면접에서는 실무진면접, 토론면접, 선배와의 대화 총 3가지로 이루어집니다.
+                                        <span class="recruit_job_more">
+                                            - 실무진면접 : 실무진면접에서는 직무에 대한 전문성을 검증합니다.<br>
+                                            - 토론면접 : 토론면접에서는 기초적인 시사상식 외에 태도, 자세 등을 심층적으로 검증합니다.<br>
+                                            - 선배와의 대화 : 선배와의 대화는 최근 입사한 선배와 지원자를 매칭하여 캐주얼한 식사자리로서 편안한 분위기에서 음주매너 및 태도 등을 검증합니다.
+                                        </span>
+                                    </span>
+                                </p>
+                                <p class="recruit_job_info">
+                                    <b class="recruit_job_blue">04</b>
+                                    <strong class="recruit_job_bold">인성면접</strong>
+                                    <span class="recruit_job_info_txt">
+                                        · 인성면접은 임원으로 면접관이 구성되며, 인성 및 기본역량을 다각도로 평가합니다.
+                                     </span>
+                                </p>
+                                <p class="recruit_job_info">
+                                    <b class="recruit_job_blue">05</b>
+                                    <strong class="recruit_job_bold">최종합격</strong>
+                                </p>
+                                <p class="recruit_job_notice">
+                                    <a href="#none" title="채용공고 바로보기">채용공고 바로보기</a>
+                                </p>
+                            </div>
+                            <div class="recruit_info_part4 recruit_info_detail">
+                                <h2>복리후생</h2>
+                                <h3>하이트진로㈜는 임직원의 삶의 질을 높이고, 개인의 발전을 이룰 수 있도록 다양한 방법으로 지원해드리고 있습니다.</h3>
+                                <ul class="recruit_welfare">
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_1.gif" alt="장기근속 포상"></p>
+                                        <strong class="recruit_title">장기근속 포상</strong>
+                                        <span class="recruit_welfare_info">근속기간에 따른 금지원, 포상휴가 <br>및 부부동반 해외여행</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_2.gif" alt="선택적 복지제도"></p>
+                                        <strong class="recruit_title">선택적 복지제도</strong>
+                                        <span class="recruit_welfare_info">복지카드 제공</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_3.gif" alt="경조비/경조휴가"></p>
+                                        <strong class="recruit_title">경조비/경조휴가</strong>
+                                        <span class="recruit_welfare_info">본인 및 가족의 결혼, 회갑, 고희, 사망 등<br>경조 발생 시 경조휴가, 경조비, 경조물품 제공</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_4.gif" alt="건강검진/의료비"></p>
+                                        <strong class="recruit_title">건강검진/의료비</strong>
+                                        <span class="recruit_welfare_info">임직원 및 배우자 단체상해보험 가입,<br>건강검진, 임직원 및 가족 의료비 보조</span>
+                                    </li>
+                                    <li class="recruit_welfare_line">
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_5.gif" alt="상조 서비스 제공"></p>
+                                        <strong class="recruit_title">상조 서비스 제공</strong>
+                                        <span class="recruit_welfare_info">임직원 직계 가족 조사 발생 시<Br>상조 서비스 제공</span>
+                                    </li>
+                                    <li class="recruit_welfare_line">
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_6.gif" alt="자녀 학자금"></p>
+                                        <strong class="recruit_title">자녀 학자금</strong>
+                                        <span class="recruit_welfare_info">취학 전, 초, 중, 고, 대학교<br>교육 보조비 및 학자금 지원</span>
+                                    </li>
+                                    <li class="recruit_welfare_line">
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_7.gif" alt="영업 활동비 지원"></p>
+                                        <strong class="recruit_title">영업 활동비 지원</strong>
+                                        <span class="recruit_welfare_info">영업차량, 영업 활동비, 통신비, 유류비,<br>주차 통행료 등 영업 활동사항 전반 지원</span>
+                                    </li>
+                                    <li class="recruit_welfare_line">
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_8.gif" alt="자기계발 지원"></p>
+                                        <strong class="recruit_title">자기계발 지원</strong>
+                                        <span class="recruit_welfare_info">사내어학당, 스마트러닝, 동아리,<br>사이버 아카데미 등 지원</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_9.gif" alt="직원고충처리(EAP)"></p>
+                                        <strong class="recruit_title">직원고충처리(EAP)</strong>
+                                        <span class="recruit_welfare_info">임직원 고충관련 전문 상담 서비스 제공</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_10.gif" alt="여가생활 지원"></p>
+                                        <strong class="recruit_title">여가생활 지원</strong>
+                                        <span class="recruit_welfare_info">하계 휴양소 및 콘도지원, 부서내<br>송년/체육행사 등 지원</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_11.gif" alt="휴가/휴일제도"></p>
+                                        <strong class="recruit_title">휴가/휴일제도</strong>
+                                        <span class="recruit_welfare_info">법정휴가(연차), 창립기념일/노조창립일<br>휴가, 보건휴가 등 휴가 사용</span>
+                                    </li>
+                                    <li>
+                                        <p class="recruit_welfare_img"><img src="../images/img_welfare_12.gif" alt="사내금고운용"></p>
+                                        <strong class="recruit_title">사내금고운용</strong>
+                                        <span class="recruit_welfare_info">저축 및 저금리 대출</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recruit_info_part5 recruit_info_detail">
+                                <h2>채용공고</h2>
+                                <h3>대한민국 주류의 역사, 하이트진로에서 세계 기업을 향해 힘차게 도약할 우수한 인재를 모집합니다.</h3>
+                                <div class="recruit_wrap_search">
+                                    <p class="recruit_wrap_left">
+                                        Total<span class="point_1">2</span>
+                                    </p>
+                                    <div class="recruit_wrap_right">
+                                        <form action="#none">
+                                            <fieldset>
+                                                <legend>채용공고</legend>
+                                                <p class="recruit_search_select">
+                                                    <select class="recruit_search_select_list" name="recruit_search_list">
+                                                        <option value="제목">제목</option>
+                                                        <option value="내용">내용</option>
+                                                    </select>
+                                                </p>
+                                                <p class="recruit_search_box">
+                                                    <input id="rsb" type="text" name="recruit_search_list" title="검색어입력" placeholder="Search" maxlength="20" onchange="recruit_search_function()">
+                                                </p>
+                                            </fieldset>
+                                            <script>
+                                                function recruit_search_function(){
+                                                    var rsb = document.getElementById("rsb").value;
+                                                    alert(rsb);
+                                                }
+                                            </script>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="recruit_search_list">
+                                    <table>
+                                        <caption>채용공고</caption>
+                                        <tbody>
+                                            <tr>
+                                                <td class="recruit_search_list_td1">신입</td>
+                                                <td class="recruit_search_list_td2">
+                                                    <a href="#none" title="하이트진로 신입사원 채용(생산부문)">
+                                                        <h3>하이트진로 신입사원 채용(생산부문)</h3>
+                                                        <p>모집기간 : 2017-05-22~2017-05-29</p>
+                                                    </a>
+                                                </td>
+                                                <td class="recruit_search_list_td3">마감</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="recruit_search_list_td1">신입</td>
+                                                <td class="recruit_search_list_td2">
+                                                    <a href="#none" title="하이트진로 신입사원 채용(생산부문)">
+                                                        <h3>하이트진로 대졸 신입사원 공채</h3>
+                                                        <p>모집기간 : 2015-12-04 ~ 2015-12-17</p>
+                                                    </a>
+                                                </td>
+                                                <td class="recruit_search_list_td3">마감</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="recruit_info_part6 recruit_info_detail">
+                                <h2>지원자도우미</h2>
+                                <h3>하이트진로㈜ 채용에서 지원자들이 주로 궁금해하는 사항을 선정하여 알려드립니다.</h3>
+                                <dl class="recruit_helper">
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="대졸 신입사원 모집시 지원자격(나이, 성별, 학력, 병역 등)에서 제한이 있나요?">Q. 대졸 신입사원 모집시 지원자격(나이, 성별, 학력, 병역 등)에서 제한이 있나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b> 대졸 신입사원은 4년제 정규대학 졸업자 혹은 졸업예정자를 대상으로 하는 공개채용으로서, 나이, 성별, 병역 등에 제한은 없습니다. <br>
+                                        군필 또는 면제자로서 해외여행에 결격사유가 없다면 누구나 지원 가능합니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="과거 하이트진로에 입사지원하여 불합격했던 경우 재지원시 불이익이 있나요?">Q. 과거 하이트진로에 입사지원하여 불합격했던 경우 재지원시 불이익이 있나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b> 과거 전형 이력이 불합격이었다는 점으로 인한 불이익은 없습니다. <br>
+                                        얼마든지 본인의 역량을 개발하여 재지원한다면, 합격할 수 있습니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="서류전형시 어학점수(토익 등)나 학점에 대한 커트라인이 있나요?">Q. 서류전형시 어학점수(토익 등)나 학점에 대한 커트라인이 있나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>어학점수 및 학점에 대한 커트라인은 없습니다. <br>
+                                        소위 스펙이라 말하는 어학점수, 학점 등은 서류전형에서 당락을 결정하는 절대적 기준이 아닙니다.<br>
+                                        하이트진로는 어학점수나, 학점 같은 수치적 스펙보다는 자기소개서 내의 정보를 통해 가치관/역량/직무 이해도 등을 종합적으로 평가하여 <br>
+                                        합격 여부를 판단하고 있습니다.<br>
+                                        단, 직무에 따라 반드시 필요한 사항은 사전에 채용공고문에 안내드립니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="대졸 신입사원의 연봉수준과 복리후생이 궁금합니다.">Q. 대졸 신입사원의 연봉수준과 복리후생이 궁금합니다.</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>대졸 신입사원 초임 연봉은 매년 경영 성과에 따라 차이가 있지만, 국내 식음료업계에서는 높은 수준이라고 자부하고 있습니다. <br>
+                                        기본연봉 외에 경영성과급, 목표성과급, 개인성과급 등을 제공하고 있으며 복리후생은 당사 복리후생 페이지에 자세히 기재되어 있으니 참고 부탁드립니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="복수전공, 부전공도 인정이 되나요?">Q. 복수전공, 부전공도 인정이 되나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>복수전공, 부전공도 전공으로 인정하고 있습니다. <br>
+                                        단, 증빙서류 제출 후 확인 절차를 거쳐 입력사항과 다를 경우 불이익을 받을 수 있습니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="진행 중인 채용공고에서 여러 개의 직무로 중복지원이 가능한가요?">Q. 진행 중인 채용공고에서 여러 개의 직무로 중복지원이 가능한가요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>한 회의 채용공고에서 여러 개의 직무로 중복지원은 불가합니다. 단. 1순위, 2순위로 원하시는 직무 선택은 가능합니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="온라인 접수시 제출서류는 별도로 제출하지 않나요? ">Q. 온라인 접수시 제출서류는 별도로 제출하지 않나요? </a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>입사지원서 작성 시에는 당사 온라인 채용사이트(http://dream.hitejinro.com)에서 입사지원서 및 자기소개서만 등록하시면 됩니다.<br>
+                                        추가적인 제출서류는 면접 진행시 대상자에게 개별 통보로 안내드립니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="석사학력이 인정되나요?">Q. 석사학력이 인정되나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>석사로 입사 시에는 그에 따른 승진 포인트가 주어짐에 따라 인정되고 있습니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="지원하는 직무와 전공이 상이합니다. 그래도 지원가능한가요? ">Q. 지원하는 직무와 전공이 상이합니다. 그래도 지원가능한가요? </a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>지원 가능합니다. <br>
+                                        하지만, 직무와 관련된 전공지식이 필요할 수 있으니 지원 직무에 대한 전문성과 역량을 입사지원서 또는 면접을 통하여 보여주시면 됩니다. <br>
+                                        단, 전공이 제한되는 전문 직무(연구, 품질 등) 채용 시에는 사전에 채용공고문에 필수 전공을 표기해 드립니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="보훈대상자에게 가산점이 있나요?">Q. 보훈대상자에게 가산점이 있나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>보훈대상자는 관계법령에 의거 우대하고 있습니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="과거 경력이 있습니다. 이런 경우에도 신입으로 지원 가능한가요? ">Q. 과거 경력이 있습니다. 이런 경우에도 신입으로 지원 가능한가요? </a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>네. 과거 경력이 있어도 신입사원으로 지원 가능하며, 입사 후에는 신입으로 처우가 결정됩니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="전형 단계별 발표는 어떻게 이루어지나요?">Q. 전형 단계별 발표는 어떻게 이루어지나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>SMS, 메일, 홈페이지 게시 등을 통해 발표를 하고 있으며, 필요시 유선연락도 드립니다.
+                                    </dd>
+                                    <dt class="recruit_helper_question">
+                                        <a href="#none" title="불합격자에게도 연락을 주시나요?">Q. 불합격자에게도 연락을 주시나요?</a>
+                                    </dt>
+                                    <dd class="recruit_helper_answer">
+                                        <b>A.</b>네. 합격자, 불합격자 모두 한 명 한 명 우리의 소중한 고객입니다. <br>
+                                        한정된 인원의 채용으로 인하여 안타깝게 불합격 되신 분들에게도 개별 안내를 모두 드리고 있습니다.
+                                    </dd>
+                                </dl>
+                                <script>
+                                    $(document).ready(function(){ 
+                                        var acodian = {
+                                              click: function(target) {
+                                                var $target = $(target);
+                                                $target.on('click', function() {
+                                                  if ($(this).hasClass('on')) {
+                                                    slideUp($target);
+                                                  } else {
+                                                    slideUp($target);
+                                                    $(this).addClass('on').next().slideDown();
+                                                  }
+
+                                                  function slideUp($target) {
+                                                    $target.removeClass('on').next().slideUp();
+                                                  }
+
+                                                });
+                                              }
+                                            };
+                                            acodian.click('.recruit_helper > dt');
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

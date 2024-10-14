@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 social board, 인스타그램, 페이스북, 트위터, 유튜브"/>
+        <meta name="keywords" content="하이트진로 social board, 하이트진로 인스타그램, 하이트진로 페이스북, 하이트진로 트위터, 하이트진로 유튜브"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>Social Board</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/social_board.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Social_board -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_social_board">
+                    <h2>Social board</h2>
+                    <h3>당신의 인생을 더 큰 즐거움과 에너지로 채우는 하이트진로㈜의 다양한 소셜채널입니다.</h3>
+                    <div class="social_board">
+                        <div class="social_board_item_0 social_board_item">
+                            <p class="social_board_item_img_0 social_board_item_img"><a href="https://www.instagram.com/p/BatM9NRAoBD/" title="하이트 일몰 풍경 사진"></a></p>
+                            <p class="social_board_item_txt">#하이트 익스트라 콜드 #일몰 #오늘 하루 어땠니?</p>
+                        </div>
+                        <div class="social_board_item_1 social_board_item">
+                            <p class="social_board_item_img_1 social_board_item_img"><a href="https://www.instagram.com/p/BZndKuhgsmA/" title="참이슬 가습기"></a></p>
+                            <p class="social_board_item_txt">#참이슬 #참이슬 가습기 #수분공급</p>
+                        </div>
+                        <div class="social_board_item_2 social_board_item">
+                            <p class="social_board_item_img_2 social_board_item_img"><a href="https://www.instagram.com/p/BcEs1jOH2gA/" title="이슬톡톡 복숭아"></a></p>
+                            <p class="social_board_item_txt">#이슬톡톡 복숭아 #핑크 #귀여움</p>
+                        </div>
+                        <div class="social_board_item_3 social_board_item">
+                            <p class="social_board_item_img_3 social_board_item_img"><a href="https://www.instagram.com/p/BcdzUzzhURO/" title="맥스와 치킨"></a></p>
+                            <p class="social_board_item_txt">#치킨은 맥스와 함께 #Max #치맥</p>
+                        </div>
+                        <div class="social_board_item_4 social_board_item">
+                            <p class="social_board_item_img_4 social_board_item_img"><a href="https://www.instagram.com/p/BXZ0HNwhdtV/" title="맥스와 피자"></a></p>
+                            <p class="social_board_item_txt">#부드러운 맥스와 먹는 피자 #피맥 #치맥보다는 피맥</p>
+                        </div>
+                        <div class="social_board_item_5 social_board_item">
+                            <p class="social_board_item_img_5 social_board_item_img"><a href="https://www.instagram.com/p/BcZS3yNnMr0/" title="참나무통 맑은이슬 16도"></a></p>
+                            <p class="social_board_item_txt">#참나무통 맑은이슬 16도 #김희선 #김희선과 참이슬 #김희선 예쁨</p>
+                        </div>
+                        <div class="social_board_item_6 social_board_item">
+                            <p class="social_board_item_img_6 social_board_item_img"><a href="https://www.instagram.com/p/Baqm4z8HFMI/" title="이슬톡톡 복숭아와 파인애플과 토스트"></a></p>
+                            <p class="social_board_item_txt">#이슬톡톡 복숭아 토스트 #이슬톡톡 파인애플 토스트 #이슬톡톡</p>
+                        </div>
+                        <div class="social_board_item_7 social_board_item">
+                            <p class="social_board_item_img_7 social_board_item_img"><a href="https://www.instagram.com/p/BXW0eq7BmYs/" title="해변 속의 맥스 그림"></a></p>
+                            <p class="social_board_item_txt">#바다 #맥스 #낭만여행 속 맥주</p>
+                        </div>
+                        <div class="social_board_item_8 social_board_item">
+                            <p class="social_board_item_img_8 social_board_item_img"><a href="https://www.instagram.com/p/BZ5Q5LQA_ju/" title="산토리니에서 참이슬"></a></p>
+                            <p class="social_board_item_txt">#산토리니와 참이슬 #한국인은 역시 소주</p>
+                        </div>
+                        <div class="social_board_item_9 social_board_item">
+                            <p class="social_board_item_img_9 social_board_item_img"><a href="https://www.instagram.com/p/BZSuQz9Hdo_/" title="카트에 담긴 참이슬"></a></p>
+                            <p class="social_board_item_txt">#MT는 참이슬 #카트에 담긴 참이슬</p>
+                        </div>
+                        <div class="social_board_item_10 social_board_item">
+                            <p class="social_board_item_img_10 social_board_item_img"><a href="https://www.instagram.com/p/BbyuuyvHi1a/" title="이슬톡톡과 무지개치즈"></a></p>
+                            <p class="social_board_item_txt">#이슬톡톡과 무지개치즈 #가볍게 한잔</p>
+                        </div>
+                        <div class="social_board_item_11 social_board_item">
+                            <p class="social_board_item_img_11 social_board_item_img"><a href="https://www.instagram.com/p/BToJ54elM6_/" title="영화보면서 맥스 한잔"></a></p>
+                            <p class="social_board_item_txt">#영화보면서 맥스 한잔 #맥스</p>
+                        </div>
+                        <div class="social_board_item_12 social_board_item">
+                            <p class="social_board_item_img_12 social_board_item_img"><a href="https://www.instagram.com/p/BZC564AnHme/" title="참이슬타고 하늘로"></a></p>
+                            <p class="social_board_item_txt">#참이슬타고 가을하늘 만끽하다 #가을 #날씨좋은 날에는 참이슬</p>
+                        </div>
+                        <div class="social_board_item_13 social_board_item">
+                            <p class="social_board_item_img_13 social_board_item_img"><a href="https://www.instagram.com/p/BYStgNgnnzt/" title="이슬톡톡과 하와이안 음식"></a></p>
+                            <p class="social_board_item_txt">#하와이안 음식과 함께하는 이슬톡톡 #하와이 느낌 #먹스타그램</p>
+                        </div>
+                        <div class="social_board_item_14 social_board_item">
+                            <p class="social_board_item_img_14 social_board_item_img"><a href="https://www.instagram.com/p/BZpu9-mHUUS/" title="참이슬잔 캔들"></a></p>
+                            <p class="social_board_item_txt">#참이슬잔 캔들 #참이슬 #제주도에서의 낭만</p>
+                        </div>
+                        <div class="social_board_item_15 social_board_item">
+                            <p class="social_board_item_img_15 social_board_item_img"><a href="https://www.instagram.com/p/BabScdAh0ic/" title="야경을 보면서 맥스한잔"></a></p>
+                            <p class="social_board_item_txt">#부산야경을 보면서 맥스한잔 #맥주생각</p>
+                        </div>
+                        <div class="social_board_item_16 social_board_item">
+                            <p class="social_board_item_img_16 social_board_item_img"><a href="https://www.instagram.com/p/BatCDmgHOoa/" title="소주링거"></a></p>
+                            <p class="social_board_item_txt">#소주링거 #과음금물</p>
+                        </div>
+                        <div class="social_board_item_17 social_board_item">
+                            <p class="social_board_item_img_17 social_board_item_img"><a href="https://www.instagram.com/p/Bbbq2dZgUl3/" title="하이트 익스트라 골드"></a></p>
+                            <p class="social_board_item_txt">#오늘도 수고했어 #퇴근과 함께 맥주한잔</p>
+                        </div>
+                        <div class="social_board_item_18 social_board_item">
+                            <p class="social_board_item_img_18 social_board_item_img"><a href="https://www.instagram.com/p/Bco6ISAHy94/" title="백허그 소주한잔"></a></p>
+                            <p class="social_board_item_txt">#백허그 소주한잔 #참이슬은 사랑을 부르고</p>
+                        </div>
+                        <div class="social_board_item_19 social_board_item">
+                            <p class="social_board_item_img_19 social_board_item_img"><a href="https://www.instagram.com/p/BUdvt8PAGqD/" title="하이트 익스트라 골드"></a></p>
+                            <p class="social_board_item_txt">#얼음 하이트 익스트라 골드 #차가움이 느껴지는 맥주</p>
+                        </div>
+                        <div class="social_board_item_20 social_board_item">
+                            <p class="social_board_item_img_20 social_board_item_img"><a href="https://www.instagram.com/p/BbdfA1zAl_z/" title="열기구와 하이트 맥주"></a></p>
+                            <p class="social_board_item_txt">#열기구와 맥주 #맥주와 함께한 달콤한 휴가</p>
+                        </div>
+                        <div class="social_board_item_21 social_board_item">
+                            <p class="social_board_item_img_21 social_board_item_img"><a href="https://www.instagram.com/p/Bbgv0bhnPoa/" title="이슬톡톡 복숭아 속의 젤리"></a></p>
+                            <p class="social_board_item_txt">#이슬톡톡 복숭아를 2배로 즐기는 방법 #젤리가 퐁당!</p>
+                        </div>
+                        <div class="social_board_item_22 social_board_item">
+                            <p class="social_board_item_img_22 social_board_item_img"><a href="https://www.instagram.com/p/BbL-GnMnYE3/" title="이슬톡톡과 하트케이크"></a></p>
+                            <p class="social_board_item_txt">#이슬톡톡과 하트케이크</p>
+                        </div>
+                        <div class="social_board_item_23 social_board_item">
+                            <p class="social_board_item_img_23 social_board_item_img"><a href="https://www.instagram.com/p/BVW0uOKBmQt/" title="캠핑과 맥주"></a></p>
+                            <p class="social_board_item_txt">#캠핑하면 맥주 #꼬치구이와 맥주 #친구들과 함께하는 추억여행</p>
+                        </div>
+                        <div class="social_board_item_24 social_board_item">
+                            <p class="social_board_item_img_24 social_board_item_img"><a href="https://www.instagram.com/p/BYLOCZaheEa/" title="맥주와 나쵸"></a></p>
+                            <p class="social_board_item_txt">#맥주와 나쵸의 환상궁합 #맥스의 부드러움</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

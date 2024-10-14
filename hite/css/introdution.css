@@ -1,0 +1,101 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_introdution{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_introdution h2 {width:100%; height:auto; padding-top:50px; font-size:46px; font-weight:200; text-align:center;}
+
+.hitejinro_intro_tab {width:100%; height:auto; padding-top:50px;}
+.intro_tab_head {width:100%; height:60px; background-color:#232323;}
+.intro_tab_head li {float:left; width:25%; height:100%; text-align:center;}
+.intro_tab_head a {display:inline-block; width:100%; height:100%; color:#efefef; font-size:20px; line-height:63px; box-sizing:border-box;}
+.intro_tab_head a:hover, .intro_tab_head a:focus{border:3px solid #fff;}
+
+.intro_tab_info {width:100%; height:auto;}
+/* 탭의 안의 정보의 공통으로 들어가는 css */
+.intro_tab_info li{padding-top:50px;}
+.intro_tab_info h3 {font-size:25px; margin-bottom:15px;}
+
+    /* tab 2.3.4 부분 사라지게 하기 */
+    .tab_info1,.tab_info2,.tab_info3 {display:none;}
+
+    /* CI  tab에 대한 부분 */
+    .tab_info0 {width:100%; height:auto; }
+    .info_ci0, .info_ci1, .info_ci2, .info_ci3, .info_ci4 {overflow:hidden; width:100%; height:auto; padding-bottom:90px; }
+
+    /* CI - logo type, CI -  Concept */
+    .info_ci1_box, .info_ci2_box {float:left; width:49%; height:auto;}
+    .info_ci1_box:nth-of-type(1), .info_ci2_box:nth-of-type(1){margin-right:2%;}
+    .ci1_logo_download, .ci2_logo_download{width:100%; height:35px; font-size: 17px; border-bottom:1px solid #232323; line-height:37px;}
+    .ci1_logo_download span, .ci2_logo_download span{display:inline-block; float:left; width:100px; height:100%;}
+    .ci1_logo_download a, .ci2_logo_download a {display:inline-block; float:right; width:120px; height:100%; font-size:16px; color:#efefef; background-color:#232323; text-align:center;}
+    .ci1_logo_download a:hover, .ci1_logo_download a:focus,
+    .ci2_logo_download a:hover, .ci2_logo_download a:focus {text-decoration: underline;}
+    .ci1_logo_img {width:100%; padding:35px 0;}
+
+    /* CI -  Concept 사진과 글 부분 */
+    .ci2_logo_img {width:100%; height:auto; padding-top:25px;}
+    .ci2_logo_img span {display:inline-block; float:left;}
+    .ci2_logo {width:40%;}
+    .ci2_logo_info {width:60%;}
+    .info_blue {font-size:15px; color:#143e8d;}
+    .info_weight {font-size:15px; font-weight:600; }
+
+    /* CI - color */
+    .info_ci3 p{float:left; width:50%; height:auto;}
+    .info_ci3 p img {width:100%;}
+
+    /* CI - slogan */
+    .info_ci4 {position:relative;}
+    .info_ci4 h3{border-bottom:1px solid #232323;}
+    .info_ci4 a {display:inline-block; position:absolute; right:0; top:3px;width:120px; height:35px; font-size:16px; color:#efefef; background-color:#232323; line-height:37px; text-align:center;}
+    .info_ci4 a:hover, .info_ci4 a:focus {text-decoration: underline;}
+    .ci4_info {float:left; width:49%; height:auto;}
+    .ci4_info:nth-of-type(1){margin-right:2%;}
+    .ci4_info span {display:inline-block; padding-top:12px;}
+    .ci4_logo_img {width:100%; text-align:center;}
+
+/* 폰트 탭 부분 */
+.tab_info1 {width:100%; height:auto;}
+.tab_info1 div {padding-bottom:90px; width:100%; height:auto;}
+.font_sample {padding-top:30px; text-align:center;}
+.info_font3 {position:relative;}
+.info_font3 h3{border-bottom:1px solid #232323;}
+.info_font3 a {display:inline-block; position:absolute; right:0; top:3px;width:120px; height:35px; font-size:16px; color:#efefef; background-color:#232323; line-height:37px; text-align:center;}
+.info_font3 a:hover, .info_font3 a:focus {text-decoration: underline;}
+.font_language {float:left; width:47.5%; height:auto; padding-top:15px;}
+.font_language:nth-of-type(1){margin-right:5%;}
+.font_language_txt {display:inline-block; width:100%; height:190px;}
+.font_language_txt strong {display:inline-block; width:100%; padding-bottom:10px; font-size:18px;}
+.font_language_img {display:inline-block; width:100%; height:530px; text-align:center;}
+.font_notice {clear:both; width:100%;text-align:center; }
+
+    /* 국제화 탭 부분 */
+    .tab_info2 {width:100%; height:auto; padding-bottom:50px;}
+    .tab_info2 h3{text-align:center;}
+    .tab_info2 h3 span{font-weight:400;}
+    .global_map {width:100%; height:auto; padding-top:55px; text-align:center; }
+    .global_txt {width:100%; margin-bottom:50px; color: #676767; text-align:center; }
+    .global_details {overflow:hidden; width:100%; height: auto; padding-top:50px; border-top:2px solid #232323;}
+    .global_box {display:inline-block; float:left; width:31%; height:190px; font-size:13px; }
+    .global_box:nth-of-type(2){margin:0 3.5%;}
+    .global_details strong {display:inline-block; width:100%; height:auto; padding-bottom:20px; font-size:17px; text-align:center;}
+
+/* 계열사 안내 탭 부분 */
+.tab_info3 {width:100%; height:auto; padding-bottom:120px;}
+.tab_info3 h3{text-align:center; margin-bottom:90px;}
+.tab_info3 h4 {width:100%; height:auto; padding-bottom:20px; font-size:22px; font-weight:400;}
+/* 계열사 - 국내법인 */
+.domestic_branch {overflow:hidden; width:100%; height: auto; margin-bottom:90px;}
+.domestic_branch li {float:left; width:48%; height:230px; padding-top:25px; border-bottom:1px solid #232323;}
+.domestic_branch li:nth-of-type(1), .domestic_branch li:nth-of-type(2){border-top:1px solid #232323;}
+.domestic_branch li:nth-of-type(1),.domestic_branch li:nth-of-type(3),.domestic_branch li:nth-of-type(5){margin-right:4%;}
+.domestic_branch h5 {width:100%; height:auto; padding-bottom:10px; font-size:18px;}
+.domestic_branch p {padding-bottom:4px;}
+.domestic_branch_info span {display:inline-block; width:80px; height:auto; color:#787878;}
+/* 계열사 - 해외법인 */
+.aboard_branch {overflow:hidden; width:100%; height: auto;}
+.aboard_branch li{float:left; width:48%; height:180px; padding-top:25px; border-bottom:1px solid #232323;}
+.aboard_branch li:nth-of-type(1), .aboard_branch li:nth-of-type(2){border-top:1px solid #232323;}
+.aboard_branch li:nth-of-type(1),.aboard_branch li:nth-of-type(3),.aboard_branch li:nth-of-type(5){margin-right:4%;}
+.aboard_branch h5 {width:100%; height:auto; padding-bottom:10px; font-size:18px;}
+.aboard_branch p {padding-bottom:4px;}
+.aboard_tel, .aboard_fax {color:#898989;}

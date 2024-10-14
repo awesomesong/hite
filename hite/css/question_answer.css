@@ -1,0 +1,18 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_question_answer{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_question_answer h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_question_answer h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.question_answer {overflow:hidden; width:100%; height:auto; padding-top:70px; padding-bottom:80px;}
+.question_answer_title {width:100%; height:auto; text-align:center; padding-top:30px; padding-bottom:25px; border-top:1px solid #333; border-bottom:1px solid #ccc;}
+.question_answer_title_bold {display:block; width:100%; height:auto; font-size:18px; font-weight:400;}
+.question_answer_title_add {display:block; width:100%; height:auto; padding-top:10px; color:#555; font-weight:300; }
+.question_answer_info {overflow:hidden; width:100%; height:auto; padding:90px 0 60px;; border-bottom:1px solid #333;}
+.question_answer_info span {display:block; height:80px;}
+.question_answer_info_subject {float:left; width:15%; font-size:16px;}
+.question_answer_info_more {float:left; width:85%; color:#555;}
+.question_answer_btn {width:100%; height:auto; padding:35px 0; text-align:center;}
+.question_answer_btn a{display:inline-block; width:100px; height:35px; color:#fff; line-height:2.5;}
+.question_answer_btn a:first-child{margin-right:5px; background-color:#000; }
+.hitejinro_qan_btn {background-color:#449bff;}

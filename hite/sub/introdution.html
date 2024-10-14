@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="hitejinro introdution"/>
+        <meta name="keywords" content="hitejinro introdution, 하이트진로 소개, 하이트진로 CI, CI, 하이트진로 폰트, 국제화, 계열사 안내"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>하이트진로 introduction</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/introdution.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Introdution -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_introdution">
+                    <h2>Introdution</h2>
+                    <div class="hitejinro_intro_tab">
+                        <ul class="intro_tab_head">
+                            <li><a class="tab_head0" href="#none" title="CI">CI</a></li>
+                            <li><a class="tab_head1" href="#none" title="하이트진로 폰트">하이트진로 폰트</a></li>
+                            <li><a class="tab_head2" href="#none" title="국제화">국제화</a></li>
+                            <li><a class="tab_head3" href="#none" title="계열사 안내">계열사 안내</a></li>
+                        </ul>
+                        <script>
+                            $(document).ready(function(){
+                                $(".intro_tab_head a").bind("click focusin",function(){
+                                    $(".intro_tab_head a").css({"border":"0px"});
+                                    $(this).css({"border":"3px solid #fff"});
+                                    var num = $(this).attr("class").substr("8","1");
+                                    $(".tab_info0, .tab_info1, .tab_info2, .tab_info3").hide();
+                                    $(".tab_info"+num+"").show();
+                                });
+                            });
+                        </script>
+                        <ul class="intro_tab_info">
+                            <li class="tab_info0">
+                                <div class="info_ci0">
+                                    <h3>코퍼리트 마크</h3>
+                                    <p>
+                                        하이트의 H와 진로의 J가 입체적으로 결합되면서 하나의 잔을 형상화합니다. 이는 하이트진로를 통해 세상이 더 큰 즐거움과 에너지로 가득 채워짐을 의미합니다. 잔을 채운 폰트의 양감과
+                                        영롱하게 빛나는 질감은 잔을 부딪치면서 일어나는 역동적인 액체의 움직임을 나타냅니다. 즐거운 자리에서, 축하의 자리에서, 또는 삶의 여러 모습 속에서 잔을 부딪치며 용기와 열정을 뜨겁게 되새기는
+                                        하이트진로 제품 본연의 목적을 보여줍니다.
+                                    </p>
+                                </div>
+                                <div class="info_ci1">
+                                    <h3>Logo Type</h3>
+                                    <div class="info_ci1_box">
+                                        <p class="ci1_logo_download">
+                                            <span>Korean</span>
+                                            <a id="myAnchor" href="../images/down_logo_1.jpg" title="하이트진로 한글 로고" download>↓ Download</a>
+                                        </p>
+                                        <p class="ci1_logo_img">
+                                            <img src="../images/down_logo_1.jpg" alt="하이트진로 한글 로고">
+                                        </p>
+                                    </div>
+                                    <div class="info_ci1_box">
+                                        <p class="ci1_logo_download">
+                                            <span>English</span>
+                                            <a href="../images/down_logo_2.jpg" title="하이트진로 영어 로고" download>↓ Download</a>
+                                        </p>
+                                        <p class="ci1_logo_img">
+                                            <img src="../images/down_logo_2.jpg" alt="하이트진로 영어 로고">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info_ci2">
+                                    <h3>CI Concept</h3>
+                                    <div class="info_ci2_box">
+                                        <p class="ci2_logo_download">
+                                            <strong>The Mix – Bouncing Drop1</strong>
+                                            <a href="../images/bouncing_img1.jpg" title="하이트진로 물방울 CI">↓ Download</a>
+                                        </p>
+                                        <p class="ci2_logo_img">
+                                            <span class="ci2_logo"><img src="../images/bouncing_img1.jpg" alt="하이트진로 물방울 CI"></span>
+                                            <span class="ci2_logo_info">
+                                                두 물줄기의 만남은 하이트와 진로의 만남을
+                                                의미합니다. 그리고 서로 하나 된 물줄기가
+                                                다시 힘차게 솟아오르는 것은 세상에 더 큰 즐거움을
+                                                가득 채우고 싶은 하이트진로의 마음을 담고
+                                                있습니다.
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="info_ci2_box">
+                                        <p class="ci2_logo_download">
+                                            <strong>The Mix – Bouncing Drop2</strong>
+                                            <a href="../images/bouncing_img2.jpg" title="하이트진로 물방울 CI">↓ Download</a>
+                                        </p>
+                                        <p class="ci2_logo_img">
+                                            <span class="ci2_logo"><img src="../images/bouncing_img2.jpg" alt="하이트진로 물방울 CI"></span>
+                                            <span class="ci2_logo_info">
+                                                <strong class="info_blue">물방울, 술잔, 차오름</strong>을 상징합니다.<br><br>
+                                                <strong class="info_weight">물방울</strong> : 메마른 세상을 채우는 즐거운 에너지를<br>
+                                                상징합니다.<br>
+                                                <strong class="info_weight">술잔</strong> : 술과 함께하는 인생의 순간들을 상징합니다.<br>
+                                                <strong class="info_weight">차오름</strong> : 즐거움, 에너지, 활력이 가득 차오름을<br>
+                                                상징합니다.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info_ci3">
+                                    <h3>Color</h3>
+                                    <p><img src="../images/pantone_2747.png" alt="팬톤2747"></p>
+                                    <p><img src="../images/pantone_2925.png" alt="팬톤2925"></p>
+                                </div>
+                                <div class="info_ci4">
+                                    <h3>Slogan</h3>
+                                    <a href="../images/slogan.jpg" title="뜨겁게 살자 슬로건 다운로드">↓ Download</a>
+                                    <p class="ci4_info">
+                                        <span class="ci4_logo_img"><img src="../images/slogan.jpg" alt="뜨겁게 살자 슬로건"></span>
+                                        <span class="ci4_logo_info">
+                                            차가운 두 술잔이 만나 가슴을 뜨겁게 달구듯 하이트와 진로가 만나 앞으로의 세상을
+                                            더욱 큰 즐거움과 에너지로 가득 채우고자 하는 뜨거운 의지의 표현입니다.<br>
+                                            그리고 하이트진로를 사랑하는 모든 분들이 뜨거운 가슴과 감성으로 세상을 만날 수
+                                            있도록 언제나 함께하고자 하는 하이트진로의 다짐입니다.
+                                        </span>
+                                    </p>
+                                    <p class="ci4_info">
+                                        <span class="ci4_img_title"><img src="../images/ci4_img1.gif" alt="뜨거운 감성으로"></span>
+                                        <span class="ci4_title_info">
+                                            이성보다 감성으로 사람을 대할 때 우리는 가까워지고 진심을 나누며 더욱 즐거워질 수 있습니다.
+                                            이렇듯 사람에게 새로운 아이디어와 휴식, 에너지를 주는 감성의 가치를 전하겠습니다.
+                                        </span>
+                                        <span class="ci4_img_title"><img src="../images/ci4_img2.gif" alt="뜨거운 열정으로"></span>
+                                        <span class="ci4_title_info">
+                                            누구나 가지고 있었던, 하지만 타협과 포기로 사라졌던 열정을 뜨겁게 다시 불러일으키겠습니다.
+                                        </span>
+                                        <span class="ci4_img_title"><img src="../images/ci4_img3.gif" alt="뜨거운 진심으로"></span>
+                                        <span class="ci4_title_info">
+                                            머리보다 가슴으로 고객을 대하고 사람들이 진심으로 원하는 경험을 전해 드리기 위해 최선을 다하겠습니다.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tab_info1">
+                                <div class="info_font1">
+                                    <h3>Harmony</h3>
+                                    <p class="font_txt">
+                                        하이트와 진로의 만남을 통해, 더 큰 즐거움과 에너지로 세상을 가득 채우고자 하는 뜨거운 마음을 담아 하이트진로의 폰트가 완성되었습니다.<br>
+                                        아이덴티티를 확립하고, HITEJINRO 영문 로고와의 조화를 이루며, 브랜드의 품격을 높일 수 있는 서체 개발을 목표로 하여 만들어진 HITEJINRO 폰트 ‘Harmony(하모니)’를 소개합니다.
+                                    </p>
+                                </div>
+                                <div class="info_font2">
+                                    <h3>전용서체 Harmony 개발 컨셉</h3>
+                                    <p class="font_txt">
+                                        하이트진로 전용서체 ‘Harmony’는 새롭게 제작된 하이트진로 CI의 영문 로고를 참고하여, 하이트진로의 역동적이고 뜨거운 열정이 담긴 감성적 특징을 형상화하여 조화롭게 적용시켰습니다.<br>
+                                        시각의흐름을 상단에 두어 깔끔하면서도 눈의 흐름을 편안하게 하였고, 가로 민글자의 경우 하단의 공간으로 인해 리듬감이 부여되어 경쾌한 느낌을 갖도록 하였습니다.
+                                    </p>
+                                    <p class="font_sample">
+                                        <img src="../images/font_sample.gif" alt="폰트 샘플">
+                                    </p>
+                                </div>
+                                <div class="info_font3">
+                                    <h3>전용서체 Harmony 특징</h3>
+                                    <a href="../download/HITEJINRO Font_Harmony.zip" title="하모니 글씨체 다운로드">↓ download</a>
+                                    <p class="font_language">
+                                        <span class="font_language_txt">
+                                            <strong>한글의 특징</strong>
+                                            영문 로고의 특징인 기둥 돌기 부분과 가로 줄기의 직선과 곡선이 이룬 역동적인 표현을
+                                            한글에 맞게 적용하여 디자인한 한글체는 기둥의 맺음을 직선 처리하여 안정감과 가독성을
+                                            높였습니다. 특히, ‘ㅇ’의 경우 Medium에서는 역동성을 강조한 반면, Light에서는
+                                            사용성을 고려하여 자소를 단순화시켜 디자인하였습니다.
+                                        </span>
+                                        <span class="font_language_img">
+                                            <img src="../images/font_korean.gif" alt="하모니 한글 서체">
+                                        </span>
+                                    </p>
+                                    <p class="font_language">
+                                        <span class="font_language_txt">
+                                            <strong>영문의 특징</strong>
+                                            영문과 숫자는 Light, Medium, Black 모두 같은 형태의 산세리프를 기본 구조로
+                                            가지며, 영문 로고의 특징인 역동적인 표현을 영문 글자에 맞게 적용, 디자인하여
+                                            한글과 조화를 이룰 수 있도록 한 Harmony체의 영문 글자체는 특히 대문자 ‘J’,
+                                            소문자 ‘j, r’의 모양에서 하이트진로의 아이덴티티를 잘 나타내고 있습니다.
+                                            또한 Light에서는 일부 획의 자소를 단순화시켜 사용성을 극대화할 수 있도록
+                                            디자인하였습니다.
+                                        </span>
+                                        <span class="font_language_img">
+                                            <img src="../images/font_english.gif" alt="하모니 영문 서체">
+                                        </span>
+                                    </p>
+                                    <p class="font_notice">※ 하이트진로 폰트는 누구나 다운로드하여 사용하실 수 있습니다.(단, 상업적인 용도로는 사용이 불가합니다.)</p>
+                                </div>
+                            </li>
+                            <li class="tab_info2">
+                                <div class="info_global">
+                                    <h3>하이트진로는 더 넓은 세계로 뻗어 나갑니다.</h3>
+                                    <p class="global_map">
+                                        <img src="../images/global_img.jpg" alt="하이트진로 글로벌 지도">
+                                    </p>
+                                    <h3><span>세계가 우리의 무대</span>, 정상이 우리의 자리</h3>
+                                    <p class="global_txt">대한민국을 대표하는 세계적인 주류기업, 하이트진로! 전세계 82여 개국에 맥주, 소주, 위스키, 막걸리, 매실주 등 다양한 제품을 수출하고 있습니다.</p>
+                                    <p class="global_details">
+                                        <span class="global_box">
+                                            <strong>1962년 맥주, 국내최초 해외수출 시작</strong>
+                                            국내 최초로 1962년에 맥주 수출을 시작한 하이트진로는 
+                                            일본, 몽골, 중국, 이라크, 북미 등에서 깨끗하고 신선한 맛으로
+                                            큰 인기를 얻고 있습니다.
+                                        </span>
+                                        <span class="global_box">
+                                            <strong>1968년 소주, 베트남 첫 수출</strong>
+                                            지난 1968년 베트남을 시작으로 첫 수출된 소주는 현재 유럽,
+                                            동남아시아 등 세계 82여 개국에 수출되고 있습니다.
+                                            하이트진로는 일본에 이어 미국, 중국 등에서도 현지인의 입맛에
+                                            맞는 새로운 소주를 개발 해 시장 확대에 매진하고 있습니다.
+                                            2001년 부터는 위스키, 보드카, 럼, 진 등의 판매량을 훨씬 앞질러 
+                                            세계 증류수 (Distilled Spirits) 시장 판매량 1위에 올랐습니다.
+                                        </span>
+                                        <span class="global_box">
+                                            <strong>1977년 소주 일본 진출, 진로재팬 성공신화</strong>
+                                            지난 1977년 일본에 소주를 수출하기 시작한 하이트진로는 1996년 일본
+                                            시장 내 86개 희석식 소주업체 중 단일브랜드로 1위에 오르는 쾌거를
+                                            이루었으며, 이후 2004년까지 7년 연속 1위를 차지했습니다. <br>
+                                            진로는 2010년 3월부터 일본에 ‘진로 막걸리’와 ‘진로 타루다시 10년 숙성
+                                            소주’를 출시해 브랜드 포트폴리오를 더욱 강화했습니다.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tab_info3">
+                                <div class="info_branch">
+                                    <h3>하이트진로㈜와 함께하는 계열사를 소개합니다.</h3>
+                                    <h4>국내법인</h4>
+                                    <ol class="domestic_branch">
+                                        <li>
+                                            <h5>하이트진로홀딩스㈜</h5>
+                                            <p class="domestic_branch_info">
+                                                <span>대표자</span>
+                                                김인규
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>설립일</span>
+                                                1933.08.09
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>홈페이지</span>
+                                                www.hitejinroholdings.com
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주소</span>
+                                                서울특별시 서초구 서초중앙로 14 하이트진로빌딩 10층
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>전화번호</span>
+                                                02-520-3103
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>팩스번호</span>
+                                                02-520-3119
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>㈜진로소주</h5>
+                                            <p class="domestic_branch_info">
+                                                <span>대표자</span>
+                                                박상배
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>설립일</span>
+                                                2002.06.20
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주요산업</span>
+                                                소주 제조업
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주소</span>
+                                                경상남도 창원시 마산합포구 진전면 평암로 200
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>전화번호</span>
+                                                055-249-3123
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>팩스번호</span>
+                                                055-249-3112
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>하이트진로산업㈜</h5>
+                                            <p class="domestic_branch_info">
+                                                <span>대표자</span>
+                                                임규헌
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>설립일</span>
+                                                1975.12.09
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주요산업</span>
+                                                포장용 유리용기 제조업
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주소</span>
+                                                경기도 안산시 단원구 별망로 79번길 55(성곡동)
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>전화번호</span>
+                                                031-499-6051
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>팩스번호</span>
+                                                031-499-6054
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>하이트진로음료㈜</h5>
+                                            <p class="domestic_branch_info">
+                                                <span>대표자</span>
+                                                조운호
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>설립일</span>
+                                                2006.04.10
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>홈페이지</span>
+                                                www.hitejinrobeverage.com
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주요산업</span>
+                                                생수 생산업
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주소</span>
+                                                경기도 용인시 기흥구 동백죽전대로 291
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>전화번호</span>
+                                                031-8006-7100
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>팩스번호</span>
+                                                031-276-7726
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>진로양조㈜</h5>
+                                            <p class="domestic_branch_info">
+                                                <span>대표자</span>
+                                                이종영
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>설립일</span>
+                                                2010.07.28
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주요산업</span>
+                                                탁주 및 약주 제조업
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주소</span>
+                                                강원도 홍천군 홍천읍 솔골길 7
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>전화번호</span>
+                                                033-435-9966
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>팩스번호</span>
+                                                033-435-9998
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>블루헤런㈜</h5>
+                                            <p class="domestic_branch_info">
+                                                <span>대표자</span>
+                                                권오삼
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>설립일</span>
+                                                2002.08.02
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>홈페이지</span>
+                                                www.blueheron.co.kr
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주요산업</span>
+                                                골프장 운영업
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>주소</span>
+                                                경기도 여주시 대신면 고달사로 67
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>전화번호</span>
+                                                031-880-0700
+                                            </p>
+                                            <p class="domestic_branch_info">
+                                                <span>팩스번호</span>
+                                                031-883-8039
+                                            </p>
+                                        </li>
+                                    </ol>
+                                    <h4>해외법인</h4>
+                                    <ol class="aboard_branch">
+                                        <li>
+                                            <h5>JAPAN . TOKYO</h5>
+                                            <p class="aboard_branch_info">
+                                                Jinro Inc.
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                SUMITOMO FUDOUSAN SHIBAKOEN TOWER 12F,<br>
+                                                2-11-1, SHIBAKOEN MINATO-KU, TOKYO, JAPAN
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                <span class="aboard_tel">Tel. 81-3-5403-9567</span>
+                                                <span class="aboard_fax">Fax. 81-3-5403-9568</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>USA . LA</h5>
+                                            <p class="aboard_branch_info">
+                                                Jinro America Inc.(JAI)
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                3470, WILSHIRE BLVD. #1024, LOS ANGELES, CA 90010, USA<br>
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                <span class="aboard_tel">Tel. 1-213-637-1500</span>
+                                                <span class="aboard_fax">Fax. 1-210-047-1501</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>RUSSIA . MOSCOW</h5>
+                                            <p class="aboard_branch_info">
+                                                HiteJinro RUS Food Co.,Ltd
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                ST.17 LENINSKAYA SLOBODA, MOSCOW, 115280, RUSSIA<br>
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                <span class="aboard_tel">Tel. 7-495-675-4392</span>
+                                                <span class="aboard_fax">Fax. 7-495-675-1603</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>CHINA . BEIJING</h5>
+                                            <p class="aboard_branch_info">
+                                                북경진로해특주업유한공사 (THE HITE-JINRO GROUP CHINA)
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                UNIT A1510 (A-ZUO, 1510HAO) TYG CENTER, 2C EAST 3RD RING NORTH ROAD,<br>
+                                                CHAOYANG DISTRICT, BEIJING, CHINA
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                <span class="aboard_tel">Tel. 86-10-8441-7567</span>
+                                                <span class="aboard_fax">Fax. 86-10-8441-7569</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>RUSSIA . MOSCOW</h5>
+                                            <p class="aboard_branch_info">
+                                                HiteJinro Rus Co
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                ST.17 LENINSKAYA SLOBODA, MOSCOW, 115280, RUSSIA <br>                                           CHAOYANG DISTRICT, BEIJING, CHINA
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h5>VIETNAM . HA NOI</h5>
+                                            <p class="aboard_branch_info">
+                                                HITEJINRO VIETNAM Co., Ltd.
+                                            </p>
+                                            <p class="aboard_branch_info">
+                                                1907-1, 19th Floor, Keangnam Ha Noi Landmark, E6, Cau Giay Urban,<br>
+                                                Me Tri Ward, Nam Tu Liem Dist, Ha Noi, Vietnam
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

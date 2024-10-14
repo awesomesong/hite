@@ -1,0 +1,37 @@
+.hitejinro_content {overflow:hidden; max-width: 1980px; width:100%; height:auto; padding-top:55px;}
+.content_main{ clear:both; width:100%; height:580px; background: url(../images/chamisul_ori_2300.png) no-repeat center center;}
+
+/* 하이트 익스트라 캔 */
+.content_info1{position:relative; width:100%;height:500px;}
+/* 첫번째 글자 애니메이션 */
+.text_animation1{ width:0%; height:100%; opacity:0; transition:all 0.4s; }
+.text_animation1 span{display:inline-block; }
+.animation1_text1 { width:24em; padding:130px 0 0 10%; color:#99cc41; font-size:50px; font-weight:500; line-height:50px;}
+.animation1_text2 { width:90%; padding:25px 0 0 10%; font-size:27px; line-height:30px;}
+.animation1_text3 { width:90%; padding:20px 0 0 10%; font-size:17px; color:#565656; line-height:1.5;}
+.content_info1_img{ position:absolute; left:25px; top:0; width:50%; height:400px; margin: 50px 5% 0 0; text-align:center; transition:all 0.9s;}
+.content_info1_img img{ height:100%;}
+
+/* 캔과 병 */
+.content_info2 { overflow:hidden; position:relative; width:100%; height:750px; }
+.text_animation2 { position:absolute; left:220px; top:0px; width:520px; height:100%; }
+.text_animation2 span{display:block; }
+.animation2_text1 { padding-top:240px; font-size:50px; }
+.animation2_text2 { padding-top:15px; opacity:0; font-size:27px; line-height:35px;
+                    transition: opacity 1.9s;}
+.animation2_text3 { padding-top:30px; font-size:19px; color:#555; opacity:0; transition: opacity 2.5s;}
+.content_info2_img{ overflow:hidden; width:100%; height:100%;}
+.content_info2_img img{ height:100%; margin-left:-30%;}
+
+@media all and (min-width:1280px) and (max-width:1599px) {
+    /* 2번째 배경화면의 위치조정 */
+    .content_info2_img img {margin-left: -385px;}
+}
+@media all and (min-width:940px) and ( max-width:1279px) {
+    /* 메인 화면 배경화면 크기 조절 */
+    .content_main{ width:100%; height:580px; background: url(../images/chamisul_ori_2300.png) no-repeat center center;}
+
+    /* 2번째 배경화면의 위치조정 */
+    .text_animation2 { right:5px;}
+    .content_info2_img img {margin-left: -580px;}
+}

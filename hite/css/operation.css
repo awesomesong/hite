@@ -1,0 +1,62 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_operation{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_operation h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_operation h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.operation_wrap {width:100%; height:auto;}
+.operation_head {width:100%; height:280px; background: url("../images/operation_img_top_1.png") no-repeat right bottom;}
+.operation_head strong { display:inline-block; width:100%; padding-top:55px; font-size:30px; font-weight:300;}
+.operation_head b { display:inline-block; width:100%; padding-bottom:15px; font-size:26px; color:#0096d6; font-weight:400;}
+.operation_head span { display:inline-block; width:100%; font-size:16px; color:#565656; }
+
+.operation_tab {width:100%; height:auto;}
+.operation_tab_head {width:100%; height:50px; font-size:22px; border-top:1px solid #565656; border-bottom:1px solid #565656;
+                    line-height:52px;}
+.operation_tab_head li {float:left; width:33.33%; height:100%;}
+.operation_tab_head li a{display:inline-block; height:100%; padding:0 20px; box-sizing:border-box}
+.tab_head0 {border-bottom:3px solid #555;}
+
+.operation_tab_info {width:100%; height:auto;}
+
+#tab0 {width:100%; height:auto;}
+    .tab0_info0{width:100%; height:320px; background: url("../images/operation_p_qup_ci.jpg") no-repeat center right;}
+    .tab0_info0 strong{display:inline-block; width:100%; padding-top:43px; padding-bottom:15px; font-size:21px; font-weight:400;}
+    .tab0_info0 span{display:inline-block; width:100%; font-size:15px;}
+    .tab0_info0 b{color:#143e8d;}
+
+    .tab0_info1{width:100%; height:420px; padding:30px 0; background: url("../images/operation_img_2.jpg") no-repeat center right;}
+    .tab0_info1 strong{display:inline-block; width:100%; padding-top:22px; font-size:21px; font-weight:400;}
+    .tab0_info1 em {display:inline-block; width:100%; padding-top:15px; padding-bottom:3px; font-size:17px; font-weight:600;}
+
+    .tab0_info2 {width:100%; height:500px; padding-top:10px;}
+    .tab0_info2 strong{display:inline-block; width:100%; font-size:21px; font-weight:400;}
+    .tab0_info2 span{display:inline-block; width:100%; padding:15px 0; font-size:18px; text-indent:15px;}
+    .tab0_info2 b{color:#0096d6;}
+
+#tab1{display:none; width:100%; height:auto;}
+    .tab1_info{ width:100%; height:400px; }
+    .tab1_info strong{display:inline-block; width:100%; padding-top:43px; padding-bottom:20px; font-size:21px; font-weight:400;}
+    .tab1_info b{color:#0096d6; font-weight:500;}
+    .tab1_info em{display:inline-block; width:100%; font-size:18px; color:#898989;}
+    .tab1_info span {display:inline-block; width:100%; padding-top:20px; font-size:15px;}
+
+
+    /* 배경화면 다르게 들어가는 부분 */
+    .tab1_info1 {background: url("../images/operation_img_beer_1.jpg") no-repeat center right;}
+    .tab1_info2 {background: url("../images/operation_p_beer_date.jpg") no-repeat bottom right;}
+
+#tab2{display:none; overflow:hidden; width:100%; height:820px; padding-bottom:90px;}
+    .tab2_info {float:left; width:50%; height:100%;}
+    .tab2_info_box{display:block; width:100%; height:260px;}
+    .tab2_info_head {width:100%; padding-top:43px; padding-bottom:15px; font-size:21px; font-weight:400;}
+    .tab2_info_middle {width:100%; padding-bottom:15px; font-size:18px;}
+    .tab2_info_bottom {width:100%; font-size:15px;}
+
+    /* 생맥주 관리자 소개 - Q-UP Service Box 여백 */
+    .tab2_info_bottom strong:nth-of-type(2){display:inline-block; padding-top:12px;}
+
+    .tab2_info_img1 {position:relative; width:100%; height:380px; margin-top:90px; background: url("../images/operation_draftTeam_1.jpg") no-repeat center right}
+    .tab2_info_txt1 {position:absolute; right:60px; bottom:0; font-size:17px; }
+    .tab2_info_img2 {position:relative; width:96%; height:380px; margin-left:4%; background: url("../images/operation_draftTeam_2.jpg") no-repeat center left}
+    .tab2_info_txt2 {position:absolute; left:84px; bottom:0; font-size:17px; }

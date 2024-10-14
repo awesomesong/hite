@@ -1,0 +1,25 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_history{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_history h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_history h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.hitejinro_history_tab {width:100%; height:615px; padding-top:50px;}
+.history_tab_head {width:100%; height:49px; padding-bottom:15px; border-bottom:1px solid #787878;}
+.history_tab_head li{float:left; width:25%; height:100%; font-size:17px; text-align:center}
+.history_tab_head a {display:inline-block; padding-bottom:10px;}
+.history_tab_head li span{font-size:15px;}
+.history_tab_head .selected{ border-bottom:5px solid #0096d6;}
+
+
+.history_tab_info {width:100%; height:500px;}
+.history_tab_info li{width:100%; height:100%;}
+
+#tab0 {background:url("../images/img_history_1.jpg") no-repeat center right;}
+#tab1 {display:none; background:url("../images/img_history_2.jpg") no-repeat center right;}
+#tab2 {display:none; background:url("../images/img_history_3.jpg") no-repeat center right;}
+#tab3 {display:none; background:url("../images/img_history_4.jpg") no-repeat center right;}
+
+.tab_subject {width:100%; height:auto; padding-top:50px; font-size:30px; }
+.tab_middle {width:100%; height:auto; padding:15px 0; font-size:19px; line-height:24px;}
+.tab_info {width:100%; height:auto; padding:15px 0; }

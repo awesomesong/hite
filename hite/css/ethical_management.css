@@ -1,0 +1,42 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_ethical_management{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_ethical_management h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_ethical_management h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.ethical_management{ overflow:hidden; width:100%; height:auto; padding-top:100px; padding-bottom:80px;}
+.ethical_management_0_box {overflow:hidden; width:100%; height:300px; background: url(../images/bg_ethical_mng.jpg) no-repeat right bottom;
+                            border-bottom:2px solid #222;}
+.ethical_management_0_box strong{display:block; width:100%; height:auto;}
+.ethical_management_0_box span {display:block; width:100%; height:auto; }
+.ethical_management_0_box_txt_0 {margin-top:15px;font-size:23px; font-weight:400;}
+.ethical_management_0_box_txt_1 {color:#888; font-size:27px; font-weight:300;}
+.ethical_management_0_box_txt_1 b {color:#449bff; font-weight :300;}
+.ethical_management_0_box_txt_2 {margin-top:30px; color:#666; font-size:16px;}
+.ethical_management_0_box_txt_3 {margin-top:40px;}
+.ethical_management_0_box_txt_3 a{width:auto; height:auto; padding:10px 15px; background-color:#000; color:#fff;}
+.ethical_management_0_box_txt_3 a:hover, .ethical_management_0_box_txt_3 a:focus {background-color:#fff; color:#000; border:1px solid #000; box-sizing:border-box;}
+
+.ethical_management .ethical_management_title{font-size:23px; text-align:left;}
+
+.ethical_management_1 {overflow:hidden; width:100%; height:auto; margin:90px 0;}
+.ethical_management_1_img {display:block; width:100%; height:auto; margin:40px 0; text-align:center;}
+.ethical_management_1_box {overflow:hidden; width:100%; height:auto;}
+.ethical_management_1_box_single{display:block; float:left; width:19.8%; height:auto; margin-left:0.2%;text-align:center;}
+.ethical_management_1_box_single_title{display:block; width:100%; height:auto; padding:10px 0 8px; font-size:15px; font-weight:500; border:1px solid #8c1aff; box-sizing:border-box;}
+.ethical_management_1_box_single_info {display:block; width:100%; height:85px; margin-top:2px; padding:20px 0; font-weight:400; border:1px solid #400080; box-sizing:border-box;}
+
+.ethical_management_2 {overflow:hidden; width:100%; height:auto;}
+.ethical_management_2_box {float:left; overflow:hidden; width:49.2%; height:135px; margin-right:0.4%; margin-top:20px; border-top:1px solid #47476b; border-bottom:1px solid #990099; box-sizing:border-box;}
+.ethical_management_2_box_3, .ethical_management_2_box_4{height:155px;}
+.ethical_management_2_box_5 {height:175px;}
+.ethical_management_2_box_img {float:left; width:18%; height:100%;}
+.ethical_management_2_box_img img {margin-top:40px;}
+.ethical_management_2_box_txt {float:left; width:82%; height:100%;}
+.ethical_management_2_box_txt strong {display:block; width:100%; height:auto; margin-top:30px; font-size:18px; font-weight:500;}
+.ethical_management_2_box_txt b {display:block; width:96%; height: auto; margin-top:5px; margin-right:4%; font-weight:400;}
+
+.ethical_management_3 {width:100%; height:auto; margin-top:80px; margin-bottom:80px;}
+.ethical_management_3_box {width:100%; height:230px; background: url("../images/bg_ethical_mng_2.jpg") no-repeat right bottom;}
+.ethical_management_3_box_txt {display:block; width:100%; height:auto; margin-top:15px; font-size:17px;}
+.ethical_management_3_box_title {display:block; width:100%; height:auto; margin-top:35px; font-size:20px; }

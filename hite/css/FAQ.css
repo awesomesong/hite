@@ -1,0 +1,30 @@
+.hitejinro_content{ width:100%; min-width:1080px; height:auto; padding-top:55px;}
+
+.hitejinro_FAQ{ width:1080px; height:auto; margin:0 auto;}
+.hitejinro_FAQ h2 {width:100%; height:auto; padding-top:50px; font-size:55px; font-weight:200; text-align:center;}
+.hitejinro_FAQ h3 {width:100%; height:auto; font-weight:200; text-align:center;}
+
+.FAQ { overflow:hidden; width:100%; height:auto; padding-top:100px; padding-bottom:80px;}
+.FAQ_tab {width:100%; height:40px;}
+.FAQ_tab li{float:left; width:12.3%; height:100%; margin-right:0.2%; font-size:15px; line-height:2.4; text-align:center;}
+a.FAQ_tab_menu{display:inline-block; width:100%; height:100%; background-color:#454545; color:#fff; border-top:5px solid #222; box-sizing:border-box;}
+a.FAQ_tab_menu_0 {background-color:#fff; color:#232323; border-top:5px solid #87CE00;}
+a.FAQ_tab_menu:hover, a.FAQ_tab_menu:focus {color:#232323; background-color:#fff; text-decoration:underline;}
+
+.FAQ_list {width:100%; height:auto;}
+.FAQ_list dl:not(:first-child){display:none;}
+.FAQ_list_0 {margin-bottom:40px;}
+.FAQ_list_2 {margin-bottom:300px;}
+.FAQ_list_4 {margin-bottom:230px;}
+.FAQ_list_7 {margin-bottom:200px;}
+.FAQ_list_question {overflow:hidden; width:100%; height:65px; line-height:67px; border-bottom:1px solid #888}
+.FAQ_list_question a{display:inline-block; width:100%; height:100%; font-size:18px;}
+.FAQ_list_question p{float:left; height:100%;}
+.FAQ_list_question_txt:after{content:""; display:block; clear:both; width:60px; height:1px; margin-top:-34px; background-color:#222;}
+.FAQ_list_question_txt{width:80%; text-indent:75px;}
+.FAQ_list_question_category {width:15%;}
+.FAQ_list_answer {display:none; padding:35px 0 35px 76px;border-bottom:1px solid #007acd;}
+.FAQ_list_answer b{display:inline-block; margin-right:8px; color:#007acd; font-size:17px;}
+.FAQ_list_answer a {display:inline-block; width:100%;}
+.FAQ_list_answer a,.FAQ_list_answer strong{ font-size:17px; font-weight:500}
+.FAQ_list_answer_img {display:inline-block; width:100%; height:auto; margin:15px 0;}

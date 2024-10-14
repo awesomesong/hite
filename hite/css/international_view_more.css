@@ -1,0 +1,27 @@
+.hitejinro_content_wrap{overflow:hidden; width:100%; min-width:1600px; height:auto; padding-top:155px;}
+.hitejinro_content_Gnb_wrap {position:fixed; top:55px; left:0; right:0; width:100%; height:100px; background-color:#727272;}
+.hitejinro_content_Gnb {width:1280px; height:100%; margin:0 auto; text-align:center;}
+.hitejinro_content_Gnb li {display:inline-block; width:17%; height:100%; text-align:center;}
+.hitejinro_content_Gnb a {display:inline-block; width:100px; height:100%; transform:scale(0.9); transition:transform 0.4s;}
+
+/* 인터네셔널 gnb의 이미지 */
+.i_gnb1 {background: url(../images/kirin_gnb.png) no-repeat center center; }
+.i_gnb1:hover, .i_gnb1:focus{background-position:center center; transform:scale(1);}
+.i_gnb2 {background: url(../images/blank_gnb.png) no-repeat center right;}
+.i_gnb2:hover, .i_gnb2:focus{background-position:center center; transform:scale(1);}
+.i_gnb3 {background: url(../images/extradry_gnb.png) no-repeat center right;}
+.i_gnb3:hover, .i_gnb3:focus{background-position:center center; transform:scale(1);}
+.i_gnb4 {background: url(../images/singha_gnb.png) no-repeat center right; }
+.i_gnb4:hover, .i_gnb4:focus{background-position:center center; transform:scale(1);}
+
+.hitejinro_view_more{overflow:hidden; min-width:1600px; height:auto; margin:0 auto;}
+.international_view_more{width:100%; min-width:1600px; height:580px;}
+.international_view_more:nth-of-type(4){padding-bottom:70px; background-color:#565656}
+.international_view_more p{width:100%;height:100%;}
+.international_view_more a{display:inline-block; width:100%; height:100%;}
+
+/* 인터네셔널 정보에 대한 이미지 */
+.view_more_img1 a{background: url(../images/kirin_2300.png) no-repeat center center;}
+.view_more_img2 a{background: url(../images/black_2300.jpg) no-repeat center center;}
+.view_more_img3 a{background: url(../images/extradry_2300.jpg) no-repeat center center;}
+.view_more_img4 a{background: url(../images/singha_2300.jpg) no-repeat center center;}

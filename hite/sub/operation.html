@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 품질경영"/>
+        <meta name="keywords" content="하이트 맥주 품질경영, 품질, 경영, 하이트진로품질경영"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>품질경영</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/operation.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+                <div class="hitejinro_header_wrap">
+                    <div class="hitejinro_header">
+                        <!-- 하이트진로 로고 -->
+                        <h1 class="hitejinro_logo">
+                            <a href="../index.html" title="하이트진로">
+                                <img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+                            </a>
+                        </h1>
+                        <h2 class="screen_out">하이트진로 주요서비스</h2>
+                        <!-- 하이트진로 웹 네비게이션  -->
+                        <div class="hitejinro_gnb_wrap">
+                            <p class="hitejinro_gnb_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <ul class="hitejinro_gnb">
+                                <li>
+                                    <a href="#none" title="company">COMPANY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_company">
+                                            <li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+                                            <li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+                                            <li><a href="../sub/history.html" title="연혁">연혁</a></li>
+                                            <li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+                                            <li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+                                            <li><a href="../sub/location.html" title="location">Location</a></li>
+                                            <li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+                                            <li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_social_media">
+                                            <li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+                                            <li><a href="../sub/media.html" title="media">Media</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="csr & joy">CSR &amp; JOY</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_csr_joy">
+                                            <li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+                                            <li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+                                            <li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none" title="customer center">customer center</a>
+                                    <div class="hitejinro_gnb_inner">
+                                        <ol class="gnb_customer_center">
+                                            <li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+                                            <li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+                                            <li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 하이트진로 웹 네비게이션 끝 -->
+                        <!-- 하이트진로 로그인 -->
+                        <div class="hitejinro_login">
+                            <h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+                            <div class="hitejinro_login_modal">
+                                <p class="hitejinro_login_close_btn"></p>
+                                <form action="#none" method="post" onsubmit="hitejinro_login();">
+                                    <p class="hitejinro_login_title">Login</p>
+                                    <p class="hitejinro_login_txt">
+                                        하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+                                    </p>
+                                    <p class="hitejinro_login_area">
+                                        <input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+                                        <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+                                        <button type="submit">로그인</button>
+                                    </p>
+                                    <div class="hitejinro_login_service_area">
+                                        <p class="hitejinro_login_service">
+                                            <span class="login_service_top">통합 회원이 아니신가요?</span>
+                                            <span class="login_service_middle">
+                                                회원가입을 하시면 하나의 계정으로
+                                                다양한 서비스를 이용하실 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="회원가입">회원가입 →</a>
+                                        </p>
+                                        <p class="hitejinro_login_find">
+                                            <span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+                                            <span class="login_service_middle">
+                                                회원님의 개인정보 또는 IPIN으로
+                                                아이디/비밀번호를 찾을 수 있습니다.
+                                            </span>
+                                            <a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 하이트진로 검색기능 -->
+                        <div class="hitejinro_searchbox">
+                            <h2 class="screen_out">하이트진로 검색</h2>
+                            <form action="#none" method="get" onsubmit="hitejinro_searchs();">
+                                <label for="hitejinro_search">검색</label>
+                                <p class="hitejinro_search_area">
+                                    <input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+                                    <span class="hitejinro_search_close"></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 품질경영 -->
+            <div class="hitejinro_content">
+                <div class="hitejinro_operation">
+                    <h2>품질경영</h2>
+                    <h3>품질 최우선 경영에 하이트진로㈜가 앞장서겠습니다.</h3>
+                    <div class="operation_wrap">
+                        <div class="operation_head">
+                            <strong>최고의 품질을 경영하다.</strong>
+                            <b>Q-UP Management</b>
+                            <span>
+                                Q-UP은 HITEJINRO Quality UP SYSTEM을 의미하며,<br>
+                                원료의 선택에서 부터, 공정 하나하나는 물론, 매장에 전달되는 그 순간까지<br>
+                                최고의 맛을 만들고 지키겠다는 하이트진로만의 약속입니다.
+                            </span>
+                        </div>
+                        <div class="operation_tab">
+                            <ul class="operation_tab_head">
+                                <li><a class="tab_head0" href="#none" title="Q-UP System">Q-UP System</a></li>
+                                <li><a class="tab_head1" href="#none" title="Q-UP Chain">Q-UP Chain</a></li>
+                                <li><a class="tab_head2" href="#none" title="Q-UP Management">Q-UP Management</a></li>
+                            </ul>
+                            <ul class="operation_tab_info">
+                                <li id="tab0">
+                                    <p class="tab0_info0">
+                                        <strong>Q-UP이란?</strong>
+                                        <span>
+                                            <b>Q-UP</b>은 <b>HITEJINRO Quality UP SYSTEM</b>을 의미하며, 최고의 주류를 공급하기 위한<br>
+                                            하이트진로의 남다른 자부심의 상징입니다.<br>
+                                            원료의 선택에서부터 공정 하나하나는 물론, 매장에 전달되는 그 순간까지 최고의 맛을 만들고,<br>
+                                            지키는 Q-UP 시스템만의 철저한 약속을 만나보세요.
+                                        </span>
+                                    </p>
+                                    <p class="tab0_info1">
+                                        <strong>원재료의 Quality UP</strong>
+                                        <em>소주 (참이슬)</em>
+                                        <span>
+                                            쌀, 보리, 고구마, 타피오카, 사탕수수 등에서 발효 증류한 알코올에 핀란드산 결정과당, 토마틴 등<br>
+                                            깨끗한 첨가물만으로 사용하여 차원이 다른 깨끗한 소주가 탄생하였습니다.<br><br>
+                                            참이슬은 유럽에서 '건강설탕'이라 불리며, '설탕' 대신 사용되고 있는 감미료인 핀란드산<br>
+                                            결정과당과 서아프리카 카템페 열매 검은씨 부분에서 추출한 단백질 감미료인 토마틴 등 깨끗한<br>
+                                            첨가물만을 사용하여 생산합니다.<br>
+                                        </span>
+                                        <em>맥주</em>
+                                        <span>
+                                            하이트진로의 맥주는 대부분의 재료를 맥주 관련 선진국 및 자연청정국가로부터 수급합니다.
+                                        </span>
+                                        <em>주요 원재료 수입국가</em>
+                                        <span>
+                                            맥아 : 호주, 캐나다, 스페인 등 <br> 홉 : 미국, 독일, 뉴질랜드, 영국 등
+                                        </span>
+                                    </p>
+                                    <p class="tab0_info2">
+                                        <strong>생산의 Quality UP</strong>
+                                        <span><b>A.</b>소주 제품 생산과정</span>
+                                        <img src="../images/operation_p_soju_step.png" alt="소주 제품 생산과정"/>
+                                        <span><b>b.</b>맥주 제품 생산과정</span>
+                                        <img src="../images/operation_p_beer_step.png" alt="맥주 제품 생산과정"/>
+                                    </p>
+                                </li>
+                                <li id="tab1">
+                                    <p class="tab1_info tab1_info1">
+                                        <strong>Fresh 365 Campaign</strong>
+                                        <img src="../images/operation_tit_fresh365.jpg" alt="Fresh 365 Campaign"/><br>
+                                        <span>
+                                            fresh 365 CAMPAIGN은 2006년부터 업계 최초로 시행해온 하이트진로만의<br>
+                                            품질관리 프로그램입니다.<br><br>
+                                            신선한 맥주의 참 맛을 즐길 소비자의 권리를 위해 품질유지기한이 지난 제품은<br>
+                                            새 제품으로 교환해 드리는 <b>‘신선한 캠페인’</b>입니다.<br>
+                                        </span>
+                                    </p>
+                                    <p class="tab1_info tab1_info2">
+                                        <strong>최고의 맛을 즐기는 품질유지기한</strong>
+                                        <em>품질유지기한이란 <b>최고(上)의 맛(味)</b>을<br>
+                                        유지하는 기간을 의미합니다.</em>
+                                        <span>
+                                            주류에 별도의 유통기간이 없어 제조일자만 표기하던 이전 유통방식에서 벗어나 음용 시<br>
+                                            가장 맛있다는 기간을 표시하는 품질유지기한을 각 제품의 라벨에 명시하고 있습니다.<br><br>
+                                            품질유지기한은 용기주입년월일로부터 라벨에 명시된 기간까지 입니다.<br>
+                                            각 제품별로 품질유지기한이 상이하니 제품 라벨을 꼭 참고하시기 바랍니다.<br>
+                                        </span>
+                                    </p>
+                                </li>
+                                <li id="tab2">
+                                    <div class="tab2_info">
+                                        <div class="tab2_info_box">
+                                            <p class="tab2_info_head">Q-UP Draft Team 소개</p>
+                                            <p class="tab2_info_middle">
+                                                HITEJINRO에서 양조한 신선한 맥주를 최상의 상태로 소비자에게<br>
+                                                전달하기 위한 생맥주 품질 관리 전담팀입니다.
+                                            </p>
+                                            <p class="tab2_info_bottom">
+                                                기존의 생맥주 기자재 설치와 수리 중심의 활동뿐만 아니라 소비자들이 신선한 생맥주를
+                                                즐길 수 있도록 전국 생맥주 사업장의 품질 및 위생 관리, 생맥주 지식 전달 등의 역할을
+                                                수행합니다.
+                                            </p>
+                                        </div>
+                                        <div class="tab2_info_box">
+                                            <p class="tab2_info_head">생맥주 관리사 소개</p>
+                                            <p class="tab2_info_middle">
+                                                최고의 생맥주를 선사하는 하이트의 생맥주 관리사를 소개합니다.
+                                            </p>
+                                            <p class="tab2_info_bottom">
+                                                <strong>Q-UP 생맥주 관리사</strong><br>
+                                                고객에게 최고의 생맥주를 제공할 수 있도록 최고의 기술과 노하우를 제공합니다.<br>
+                                                <strong>Q-UP Service Box</strong><br>
+                                                정기적인 생맥주 품질 관리를 위해 생맥주 기기 점검 도구를 항상 소지하고 다닙니다.
+                                            </p>
+                                        </div>
+                                        <div class="tab2_info_box">
+                                            <p class="tab2_info_head">생맥주 관리사 역할</p>
+                                            <p class="tab2_info_bottom">
+                                                생맥주 관리사는 까다로운 발효와 숙성과정을 거치는 하이트진로의 맥주처럼
+                                                체계적인 교육과 관리를 통해 생맥주 관련 전문가로 거듭나며, 충분한 기술과 경험을 습득한
+                                                후에 고객 및 매장지원에 투입됩니다.<br>
+                                                생맥주 관리사는 생맥주 기기관리뿐만 아니라 맥주의 맛과 품질의 관리부터 매장 운영 및
+                                                마케팅까지 다양한 분야를 연구·학습하는 과정을 통해 소비자들에게는 항상 양질의 맥주를
+                                                제공하고, 점주들에게는 매장 운영의 든든한 도우미 역할을 하게 됩니다.<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab2_info">
+                                        <p class="tab2_info_img1">
+                                            <span class="tab2_info_txt1">생맥주 품질 관리 전달팀</span>
+                                        </p>
+                                        <p class="tab2_info_img2">
+                                            <span class="tab2_info_txt2">Q-UP 생맥주 관리사</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $(".operation_tab_info li:not(:first)").hide();
+
+                        $(".operation_tab_head li a").bind("click focusin", function(){
+
+                            $(".operation_tab_head a").css({"border-bottom":"0px"});
+                            $(this).css({"border-bottom":"3px solid #555"});
+
+                            $(".operation_tab_info li").hide();
+                            // 클릭한 해당 부분의 class에서 순차적으로 숫자 가지고 오기
+                            var tab_num = $(this).attr("class").substr("8","1");
+                            // 변수를 사용해서 해당하는 부분의 정보 나오게 하기
+                            $(".operation_tab_info li:eq("+tab_num+")").show();
+                        });
+
+                    });
+                </script>
+            </div>
+
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

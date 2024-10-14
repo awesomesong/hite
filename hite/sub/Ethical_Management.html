@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--[if lte IE 8]>
+	<script>
+		alert("인터넷 익스플로러 8이하 버전을 사용하고 계십니다. 크롬이나 익스플로어 9  버전으로 업데이트를 해주세요.");
+	</script>
+<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="하이트진로 윤리경영, 투명하고 공정한 기업,하이트진로 윤리경영 실천 시스템"/>
+        <meta name="keywords" content="하이트진로 윤리강령, 하이트진로 청음고, 윤리경영 사이트"/>
+        <meta name="author" content="강송희"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>Ethical Management (윤리경영)</title>
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"><!-- header 와 footer -->
+        <link href="../css/ethical_management.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/layout.js"></script>
+    </head>
+    <body>
+        <div class="hitejinro_wrap">
+            <!-- 하이트진로 header 부분 -->
+            <div id="header">
+    			<div class="hitejinro_header_wrap">
+    				<div class="hitejinro_header">
+    					<!-- 하이트진로 로고 -->
+    					<h1 class="hitejinro_logo">
+    						<a href="../index.html" title="하이트진로">
+    							<img src="../images/logo_hitejinro.png" alt="하이트진로 로고"/>
+    						</a>
+    					</h1>
+    					<h2 class="screen_out">하이트진로 주요서비스</h2>
+    					<!-- 하이트진로 웹 네비게이션  -->
+    					<div class="hitejinro_gnb_wrap">
+    						<p class="hitejinro_gnb_btn">
+    							<span></span>
+    							<span></span>
+    							<span></span>
+    						</p>
+    						<ul class="hitejinro_gnb">
+    							<li>
+    								<a href="#none" title="company">COMPANY</a>
+    								<div class="hitejinro_gnb_inner">
+    									<ol class="gnb_company">
+    										<li><a href="../sub/ceo.html" title="인사말">인사말</a></li>
+    										<li><a href="../sub/philosophy.html" title="경영철학">경영철학</a></li>
+    										<li><a href="../sub/history.html" title="연혁">연혁</a></li>
+    										<li><a href="../sub/operation.html" title="품질경영">품질경영</a></li>
+    										<li><a href="../sub/introdution.html" title="introduction">Introduction</a></li>
+    										<li><a href="../sub/location.html" title="location">Location</a></li>
+    										<li><a href="../sub/factory.html" title="공장소개">공장소개</a></li>
+    										<li><a href="../sub/recruit.html" title="recruit">Recruit</a></li>
+    									</ol>
+    								</div>
+    							</li>
+    							<li>
+    								<a href="#none" title="social & media">SOCIAL &amp; MEDIA</a>
+    								<div class="hitejinro_gnb_inner">
+    									<ol class="gnb_social_media">
+    										<li><a href="../sub/social_board.html" title="Social board">Social board</a></li>
+    										<li><a href="../sub/media.html" title="media">Media</a></li>
+    									</ol>
+    								</div>
+    							</li>
+    							<li>
+    								<a href="#none" title="csr & joy">CSR &amp; JOY</a>
+    								<div class="hitejinro_gnb_inner">
+    									<ol class="gnb_csr_joy">
+    										<li><a href="../sub/csr_joy.html" title="csr&joy">csr &amp; Joy</a></li>
+    										<li><a href="../sub/Ethical_Management.html" title="Ethical Management">Ethical Management</a></li>
+    										<li><a href="../sub/sports.html" title="Sports">Sports</a></li>
+    									</ol>
+    								</div>
+    							</li>
+    							<li>
+    								<a href="#none" title="customer center">customer center</a>
+    								<div class="hitejinro_gnb_inner">
+    									<ol class="gnb_customer_center">
+    										<li><a href="../sub/FAQ.html" title="FAQ">FAQ</a></li>
+    										<li><a href="../sub/question_answer.html" title="Q&A">Q&amp;A</a></li>
+    										<li><a href="../sub/guide.html" title="주류상식 가이드">주류상식 가이드</a></li>
+    									</ol>
+    								</div>
+    							</li>
+    						</ul>
+    					</div>
+    					<!-- 하이트진로 웹 네비게이션 끝 -->
+    					<!-- 하이트진로 로그인 -->
+    					<div class="hitejinro_login">
+    						<h2 class="hitejinro_login_btn"><span class="login_icon"></span>Login</h2>
+    						<div class="hitejinro_login_modal">
+    							<p class="hitejinro_login_close_btn"></p>
+    							<form action="#none" method="post" onsubmit="hitejinro_login();">
+    								<p class="hitejinro_login_title">Login</p>
+    								<p class="hitejinro_login_txt">
+    									하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
+    								</p>
+    								<p class="hitejinro_login_area">
+    									<input type="text" name="userid" id="userid" placeholder="아이디" maxlength="20" required>
+    									<input type="password" name="userpassword" id="userpassword" placeholder="비밀번호" maxlength="25" required>
+    									<button type="submit">로그인</button>
+    								</p>
+    								<div class="hitejinro_login_service_area">
+    									<p class="hitejinro_login_service">
+    										<span class="login_service_top">통합 회원이 아니신가요?</span>
+    										<span class="login_service_middle">
+    											회원가입을 하시면 하나의 계정으로
+    											다양한 서비스를 이용하실 수 있습니다.
+    										</span>
+    										<a href="#none" title="회원가입">회원가입 →</a>
+    									</p>
+    									<p class="hitejinro_login_find">
+    										<span class="login_service_top">아이디/비밀번호를 잊으셨나요?</span>
+    										<span class="login_service_middle">
+    											회원님의 개인정보 또는 IPIN으로
+    											아이디/비밀번호를 찾을 수 있습니다.
+    										</span>
+    										<a href="#none" title="아이디/비밀번호 찾기">아이디/비밀번호 찾기 →</a>
+    									</p>
+    								</div>
+    							</form>
+    						</div>
+    					</div>
+    					<!-- 하이트진로 검색기능 -->
+    					<div class="hitejinro_searchbox">
+    						<h2 class="screen_out">하이트진로 검색</h2>
+    						<form action="#none" method="get" onsubmit="hitejinro_searchs();">
+    							<label for="hitejinro_search">검색</label>
+    							<p class="hitejinro_search_area">
+    								<input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+    								<span class="hitejinro_search_close"></span>
+    							</p>
+    						</form>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+            <div class="hitejinro_content">
+                <div class="hitejinro_ethical_management">
+                    <h2>윤리경영</h2>
+                    <h3>투명하고 공정한 기업, 하이트진로㈜가 앞장서겠습니다.</h3>
+                    <div class="ethical_management">
+                        <div class="ethical_management_0">
+                            <p class="ethical_management_0_box">
+                                <strong class="ethical_management_0_box_txt_0">세계 모든 이들과 늘 함께하며, 삶의 즐거움과 희망을 나누고자 하는</strong>
+                                <span class="ethical_management_0_box_txt_1">초일류 기업으로서의 <b>윤리경영 실천</b></span>
+                                <span class="ethical_management_0_box_txt_2">
+                                    기업의 임직원들에게 경쟁법 준수를 위한 명확한 행동기준을 제시하여 줌으로써, <br>
+                                    법 위반을 예방함과 동시에 위반행위 여부를 조기에 발견하고 대응책을 마련하고자 하는 <br>
+                                    규범입니다.
+                                </span>
+                                <span class="ethical_management_0_box_txt_3"><a href="http://ethics.hite.com/main/main.asp" title="윤리경영 사이트 바로기기">윤리경영 사이트 바로기기</a></span>
+                            </p>
+                        </div>
+                        <div class="ethical_management_1">
+                            <h3 class="ethical_management_title">1. 하이트진로 윤리경영 실천 시스템</h3>
+                            <span class="ethical_management_1_img"><img src="../images/img_system.gif" alt="하이트진로 윤리경영 실천 시스템"></span>
+                            <p class="ethical_management_1_box">
+                                <span class="ethical_management_1_box_single"><strong class="ethical_management_1_box_single_title">① 윤리규범</strong><b class="ethical_management_1_box_single_info">윤리강령 / 윤리실천규범</b></span>
+                                <span class="ethical_management_1_box_single"><strong class="ethical_management_1_box_single_title">② 윤리경영 실천조직</strong><b class="ethical_management_1_box_single_info">윤리경영 전담부서 - <br>경영진단팀 / 윤리감사팀</b></span>
+                                <span class="ethical_management_1_box_single"><strong class="ethical_management_1_box_single_title">③ 윤리경영 교육</strong><b class="ethical_management_1_box_single_info">명절선물 안받기 캠페인</b></span>
+                                <span class="ethical_management_1_box_single"><strong class="ethical_management_1_box_single_title">④ 상시 모니터링</strong><b class="ethical_management_1_box_single_info">부정, 비리 관련 대내외 정보 수집 분석</b></span>
+                                <span class="ethical_management_1_box_single"><strong class="ethical_management_1_box_single_title">⑤ 윤리경영 온라인 제보센터</strong><b class="ethical_management_1_box_single_info">온라인 신고센터 - <br>청음고 / 자진신고센터</b></span>
+                            </p>
+                        </div>
+                        <div class="ethical_management_2">
+                            <h3 class="ethical_management_title">2. 하이트진로 윤리강령</h3>
+                            <p class="ethical_management_2_box">
+                                <span class="ethical_management_2_box_img"><img src="../images/icon_doctrine_1.gif" alt="고객에 대한 책임과 의무"></span>
+                                <span class="ethical_management_2_box_txt">
+                                    <strong>① 고객에 대한 책임과 의무</strong>
+                                    <b>
+                                        회사는 고객 의사를 존중하며 고객으로부터 신뢰를 받을 수 있도록 노력한다.
+                                        회사는 최상의 제품과 서비스를 고객에게 제공한다.
+                                    </b>
+                                </span>
+                            </p>
+                            <p class="ethical_management_2_box">
+                                <span class="ethical_management_2_box_img"><img src="../images/icon_doctrine_2.gif" alt="임직원에 대한 책임과 의무"></span>
+                                <span class="ethical_management_2_box_txt">
+                                    <strong>② 임직원에 대한 책임과 의무</strong>
+                                    <b>
+                                        회사는 개인의 창의를 존중하고 공정한 경쟁의 기회를 제공한다.
+                                        회사는 임직원이 자발적이고 의욕적으로 일할 수 있는 환경을 조성한다.
+                                    </b>
+                                </span>
+                            </p>
+                            <p class="ethical_management_2_box ethical_management_2_box_3">
+                                <span class="ethical_management_2_box_img"><img src="../images/icon_doctrine_3.gif" alt="주주에 대한 자세"></span>
+                                <span class="ethical_management_2_box_txt">
+                                    <strong>③ 주주에 대한 자세</strong>
+                                    <b>
+                                        회사는 주주의 권리를 존중하고 사실에 근거하여 공정하게 정보를 제공한다.
+                                        회사는 투명한 의사결정과 효율적인 경영활동으로 기업가치를 높여 그 성과를 주주와 공유한다.
+                                    </b>
+                                </span>
+                            </p>
+                            <p class="ethical_management_2_box ethical_management_2_box_4">
+                                <span class="ethical_management_2_box_img"><img src="../images/icon_doctrine_4.gif" alt="협력회사 및 경장사에 대한 자세"></span>
+                                <span class="ethical_management_2_box_txt">
+                                    <strong>④ 협력회사 및 경장사에 대한 자세</strong>
+                                    <b>
+                                        회사는 공정한 기준을 적용하여 협력회사를 선정하고 합리적인 거래조건을 보장한다.
+                                        회사는 경쟁사와 선의의 경쟁을 추구하고 공정한 거래질서를 유지한다.
+                                    </b>
+                                </span>
+                            </p>
+                            <p class="ethical_management_2_box ethical_management_2_box_5">
+                                <span class="ethical_management_2_box_img"><img src="../images/icon_doctrine_5.gif" alt="사회에 대한 책임과 의무"></span>
+                                <span class="ethical_management_2_box_txt">
+                                    <strong>⑤ 사회에 대한 책임과 의무</strong>
+                                    <b>
+                                        회사는 국가 정책과 제반 법규를 준수하며 사회적 책임을 다한다.
+                                        회사는 사회의 전통과 문화를 존중하고 공동의 발전을 위해 최선을 다한다.
+                                        회사는 인권, 환경, 문화 및 경제와 관련한 국제협약과 각국의 법규를 준수한다.
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="ethical_management_3">
+                            <h3 class="ethical_management_title">3. 하이트진로 청음고</h3>
+                            <p class="ethical_management_3_box">
+                                <span class="ethical_management_3_box_txt">윤리경영 실천을 저해하거나 불공정하고, 불합리한 점을 개선하기 위해 ‘청음고’ 상시 운영.</span>
+                                <strong class="ethical_management_3_box_title">청음고란?</strong>
+                                <span class="ethical_management_3_box_txt">
+                                    ‘청음’ 은 맑은소리(靑音)와 듣는다(聽音)를 모두 포용하는 단어이며, ‘고(鼓)’는 <br>
+                                    조선 태종 때 부터 대궐문루에 북을 달아 백성이 원통한 일을 하소연할 때 치게 하던 <br>
+                                    ‘신문고’에서 인용하여 두드려 깨우치는 의미를 내포합니다.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="hitejinro_footer_wrap">
+                <div class="hitejinro_footer">
+                    <div class="policy">
+                        <a href="#none" title="개인정보처리방침">개인정보처리방침</a>
+                        <span>|</span>
+                        <a href="#none" title="회원이용약관">회원이용약관</a>
+                        <span>|</span>
+                        <a href="#none" title="이메일무단수집거부">이메일무단수집거부</a>
+                        <span>|</span>
+                        <a href="#none" title="동반성장">동반성장</a>
+                        <span>|</span>
+                        <a href="#none" title="윤리경영">윤리경영</a>
+                        <span>|</span>
+                        <a href="#none" title="공시정보 관리규정">공시정보 관리규정</a>
+                        <span>|</span>
+                        <a href="#none" title="공정거래자율준수">공정거래자율준수</a>
+                        <span>|</span>
+                        <a href="#none" title="하이트진로 SNS">하이트진로 SNS</a>
+                        <span>|</span>
+                        <a href="#none" title="패밀리 사이트">패밀리 사이트</a>
+                    </div>
+                    <p class="footer_address_tel">
+                        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 <span>|</span>  대표전화 080-210-0150 <span>|</span> 사업자등록번호 214-81-00777
+                    </p>
+                    <p class="footer_copyright">
+                        Copyright© 2017 SONGHEE KANG. LL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <div class="hitejinro_background"></div>
+            <div class="hitejinro_background_login"></div>
+            <div class="hitejinro_btn">
+                <a href="#header" class="goto_top">∧</a>
+                <a href="#footer" class="goto_bottom">∨</a>
+            </div>
+        </div>
+    </body>
+</html>

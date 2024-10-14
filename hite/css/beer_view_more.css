@@ -1,0 +1,33 @@
+.hitejinro_content_wrap{overflow:hidden; width:100%; min-width:1600px; height:auto; padding-top:155px;}
+.hitejinro_content_Gnb_wrap {position:fixed; top:55px; left:0; right:0; width:100%; height:100px; background-color:#ffc100;}
+.hitejinro_content_Gnb {width:1280px; height:100%; margin:0 auto; }
+.hitejinro_content_Gnb li {float:left; width:16.5%; height:100%; text-align:center;}
+.hitejinro_content_Gnb li:first-child{margin-left:0.5%;}
+.hitejinro_content_Gnb a {display:inline-block; width:100px; height:100%; transform:scale(0.9); transition:transform 0.4s;}
+/* 맥주 gnb의 이미지 */
+.b_gnb1 {background: url(../images/hite_gnb.png) no-repeat center center; }
+.b_gnb1:hover, .b_gnb1:focus{background-position:center center; transform:scale(1);}
+.b_gnb2 {background: url(../images/max_gnb.png) no-repeat center right;}
+.b_gnb2:hover, .b_gnb2:focus{background-position:center center; transform:scale(1);}
+.b_gnb3 {background: url(../images/dry_gnb.png) no-repeat center right;}
+.b_gnb3:hover, .b_gnb3:focus{background-position:center center; transform:scale(1);}
+.b_gnb4 {background: url(../images/s_gnb.png) no-repeat center right;}
+.b_gnb4:hover, .b_gnb4:focus{background-position:center center; transform:scale(1);}
+.b_gnb5 {background: url(../images/stout_gnb.png) no-repeat center right;}
+.b_gnb5:hover, .b_gnb5:focus{background-position:center center; transform:scale(1);}
+.b_gnb6 {background: url(../images/ale_gnb.png) no-repeat center right;}
+.b_gnb6:hover, .b_gnb6:focus{background-position:center center; transform:scale(1);}
+
+.hitejinro_view_more{overflow:hidden; min-width:1600px; height:auto; margin:0 auto;}
+.beer_view_more{width:100%; min-width:1600px; height:580px;}
+.beer_view_more:nth-of-type(6){padding-bottom:80px; background-color:#565656;}
+.beer_view_more p{width:100%;height:100%;}
+.beer_view_more a{display:inline-block; width:100%; height:100%;}
+
+/* 맥주 정보에 대한 이미지 */
+.view_more_img1 a{background: url(../images/hite_sub_main.png) no-repeat center center;}
+.view_more_img2 a{background: url(../images/max_2300.jpg) no-repeat center center;}
+.view_more_img3 a{background: url(../images/dry_2300.jpg) no-repeat center center;}
+.view_more_img4 a{background: url(../images/s_2300.jpg) no-repeat center center;}
+.view_more_img5 a{background: url(../images/stout_2300.png) no-repeat center center;}
+.view_more_img6 a{background: url(../images/ale_2300.jpg) no-repeat center center;}
