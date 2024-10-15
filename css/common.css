@@ -23,3 +23,23 @@ a:active, a:hover {text-decoration:none}
 .hitejinro_btn a{display:block; width:auto; height:auto; padding:0px 8px 5px 9px; background-color:rgba(0,0,0,0.6); font-size:25px; color:#fff; text-align:center; cursor:pointer;}
 .hitejinro_btn a:not(:root:root){padding:2px 8px 0px 9px;}
 .goto_top {margin-bottom:1px; }
+
+/* common style */
+.hitejinro_backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background-color: rgba(255,255,255,0.5);
+}
+.hitejinro_backdrop.show {
+    display: block;
+}
+.text-red {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+.text-center {
+    text-align: center;
+}

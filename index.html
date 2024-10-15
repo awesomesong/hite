@@ -28,7 +28,7 @@
 <body>
 	<div class="hitejinro_wrap">
 		<!-- 하이트진로 header 부분 -->
-		<div id="header">
+		<header id="header">
 			<div class="hitejinro_header_wrap">
 				<div class="hitejinro_header">
 					<!-- 하이트진로 로고 -->
@@ -40,11 +40,11 @@
 					<h2 class="screen_out">하이트진로 주요서비스</h2>
 					<!-- 하이트진로 웹 네비게이션  -->
 					<div class="hitejinro_gnb_wrap">
-						<p class="hitejinro_gnb_btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</p>
+						<div class="hamburger-menu">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
 						<ul class="hitejinro_gnb">
 							<li>
 								<a class="hitejinro_gnb_mo hitejinro_gnb_mo1" href="#none" title="company">COMPANY</a>
@@ -54,7 +54,7 @@
 										<li><a href="./sub/philosophy.html" title="경영철학">경영철학</a></li>
 										<li><a href="./sub/history.html" title="연혁">연혁</a></li>
 										<li><a href="./sub/operation.html" title="품질경영">품질경영</a></li>
-										<li><a href="./sub/introdution.html" title="introduction">Introduction</a></li>
+										<li><a href="./sub/Introduction.html" title="introduction">Introduction</a></li>
 										<li><a href="./sub/location.html" title="location">Location</a></li>
 										<li><a href="./sub/factory.html" title="공장소개">공장소개</a></li>
 										<li><a href="./sub/recruit.html" title="recruit">Recruit</a></li>
@@ -100,17 +100,18 @@
 					<!-- 하이트진로 검색기능 -->
 					<div class="hitejinro_searchbox">
 						<h2 class="screen_out">하이트진로 검색</h2>
-						<form action="#none" method="get" onsubmit="hitejinro_searchs();">
+						<form onsubmit="hitejinro_searchs(event)">
 							<label for="hitejinro_search">검색</label>
 							<p class="hitejinro_search_area">
-								<input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요." autocomplete="off" autofocus><button type="submit">검색</button>
+								<input type="text" name="search" id="hitejinro_search" placeholder="검색어를 입력하세요. 예&#41; 카스" autocomplete="off" autofocus>
+								<button type="submit">검색</button>
 								<span class="hitejinro_search_close"></span>
 							</p>
 						</form>
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 		<!-- 하이트진로 컨텐츠  -->
 		<div class="hitejinro_container_wrap">
 			<div class="hitejinro_product">
@@ -461,8 +462,7 @@
 							}else{
 								$(".drink6, .drink7, .drink8").css({"right":"35px","display":"block"});
 							}
-						}else if( h_width < 941 && h_width > 748 ){
-
+						}else if( h_width < 941 && h_width > 768 ){
 							// 기타주류 - 첫번째 애니메이션
 							if(h_scroll > total_height_2){
 								$(".drink:eq(1)").css({"left":"240px"}); //망고링고
@@ -481,7 +481,6 @@
 								$(".drink6, .drink7, .drink8").css({"right":"45px","display":"block"});
 							}
 						}else if( h_width < 769 && h_width > 480 ){
-
 							// 기타주류 - 첫번째 애니메이션
 							if(h_scroll > total_height_2){
 								$(".drink:eq(1)").css({"left":"135px"}); //망고링고
@@ -745,8 +744,8 @@
 				</p>
 			</div>
 		</div>
-		<div class="hitejinro_background"></div>
-		<div class="hitejinro_background_login"></div>
+		<!-- <div class="hitejinro_background"></div> -->
+		<!-- <div class="hitejinro_background_login"></div> -->
 		<div class="hitejinro_btn">
 			<a href="#header" class="goto_top">∧</a>
 			<a href="#footer" class="goto_bottom">∨</a>
@@ -757,8 +756,11 @@
 		<div class="inner">
 			<div class="content">
 				<p class="hitejinro_login_close_btn"></p>
-				<form action="#none" method="post" onsubmit="hitejinro_login();">
+				<form action="#none" method="post" onclick="disabledEventPropagation(event);">
 					<p class="hitejinro_login_title">Login</p>
+					<p class="text-red text-center">
+						죄송합니다. 현재 로그인 서비스가 불가능합니다.
+					</p>
 					<p class="hitejinro_login_txt">
 						하이트진로 기업사이트 및 계열사 사이트를 통합 아이디로 로그인 하실 수 있습니다.
 					</p>
@@ -791,6 +793,8 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="hitejinro_backdrop"></div>
 </body>
 </html>
 

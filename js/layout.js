@@ -1,13 +1,12 @@
 
-
 $(document).ready(function(){
-   
     // 반응형 네비게이션
-    var web_nav = function(){
+    const web_nav = () => {
         $(".hitejinro_gnb li a").unbind('click');
-        $(".hitejinro_gnb_inner").css({"display":"none","height":"55px","width":"100%"});
-        $(".hitejinro_background").hide();
-        $(".hitejinro_header_wrap").css({"backgroundColor":"#fff"});
+        $('.hamburger-menu').removeClass('animate');
+        $('.hitejinro_gnb').removeClass('show');
+        $(".hitejinro_backdrop").removeClass('show');
+        $(".hitejinro_gnb_inner").removeClass('show');
         $(".hitejinro_gnb li a").bind('mouseover focusin',function(){
             $(".hitejinro_gnb_inner").removeClass("tests");
             $(this).next(".hitejinro_gnb_inner").stop().slideDown(200);
@@ -21,189 +20,88 @@ $(document).ready(function(){
         });
     };
    //모바일 네비게이션
-    var inner_stop = function(){
+    const inner_stop = () => {
         $(".hitejinro_gnb_inner").mouseover(function(){
             $(this).stop().show();
         }).mouseleave(function(){
               $(this).stop().show();
           });
        };
-    inner_stop();
-    
-    var mo_nav1 = function(){
-        var showing = 0;
-        $(".hitejinro_gnb_mo1").click(function(){
-            if(showing === 0){
-                $(this).next(".hitejinro_gnb_inner").addClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"block","height":"auto"});
-                return showing = 1;
-            }else if(showing === 1){
-                $(this).next(".hitejinro_gnb_inner").removeClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"none","height":"55px"});
-                return showing = 0;
-            }
-        });
-        inner_stop();
-    };
-    mo_nav1();
-    
-    var mo_nav2 = function(){
-        var showing = 0;
-        $(".hitejinro_gnb_mo2").click(function(){
-            if(showing === 0){
-                $(this).next(".hitejinro_gnb_inner").addClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"block","height":"auto"});
-                return showing = 1;
-            }else if(showing === 1){
-                $(this).next(".hitejinro_gnb_inner").removeClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"none","height":"55px"});
-                return showing = 0;
-            }
-        });
-        inner_stop();
-    };
-    mo_nav2();
-    
-    var mo_nav3 = function(){
-        var showing = 0;
-        $(".hitejinro_gnb_mo3").click(function(){
-            if(showing === 0){
-                $(this).next(".hitejinro_gnb_inner").addClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"block","height":"auto"});
-                return showing = 1;
-            }else if(showing === 1){
-                $(this).next(".hitejinro_gnb_inner").removeClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"none","height":"55px"});
-                return showing = 0;
-            }
-        });
-        inner_stop();
-    };
-    mo_nav3();
-    
-    var mo_nav4 = function(){
-        var showing = 0;
-        $(".hitejinro_gnb_mo4").click(function(){
-            if(showing === 0){
-                $(this).next(".hitejinro_gnb_inner").addClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"block","height":"auto"});
-                return showing = 1;
-            }else if(showing === 1){
-                $(this).next(".hitejinro_gnb_inner").removeClass("tests");
-                $(this).next(".hitejinro_gnb_inner").css({"display":"none","height":"55px"});
-                return showing = 0;
-            }
-        });
-        inner_stop();
-    };
-    mo_nav4();
+    // inner_stop();
     
     // 모바일 네비게이션 아이콘 부분
-    var mo_nav = function (){
-        var showing = 0;
-        $(".hitejinro_gnb_btn, .hitejinro_background").click(function(){
-            if( showing === 0){
-                    $(".hitejinro_gnb_inner").removeClass("tests");
-                    $(".hitejinro_gnb").css({"left":"0px"});
-                    $(".hitejinro_background").show();
-                    $(".hitejinro_header_wrap").css({"backgroundColor":"#ccc"});
-                    $(".hitejinro_gnb_inner").css({"display":"none"});
-
-                    // 모바일 네비게이션 아이콘 위치 변화
-                    $(".hitejinro_gnb_btn span:eq(0)").css({"transform":"rotate(45deg)","top":"10px"});
-                    $(".hitejinro_gnb_btn span:eq(1)").css({"opacity":"0"});
-                    $(".hitejinro_gnb_btn span:eq(2)").css({"transform":"rotate(-45deg)","top":"10px"});
-                    $("html").css({"overflow-y":"hidden"});
-                    mo_nav1();
-                    mo_nav2();    
-                    mo_nav3();
-                    mo_nav4();
-                    return showing = 1;
-            }else{
-                    $(".hitejinro_gnb").css({"left":"-240px"});
-                    $(".hitejinro_background").hide();
-                    $(".hitejinro_header_wrap").css({"backgroundColor":"#fff"});
-
-                    // 모바일 네비게이션 아이콘 위치 변화
-                    $(".hitejinro_gnb_btn span:eq(0)").css({"transform":"rotate(0deg)","top":"0px"});
-                    $(".hitejinro_gnb_btn span:eq(1)").css({"opacity":"1"});
-                    $(".hitejinro_gnb_btn span:eq(2)").css({"transform":"rotate(0deg)","top":"20px"});
-                    $("html").css({"overflow-y":"auto"});
-                    return showing = 0;
-            }
+    const onClickHamburderMenu = () => {
+        $(".hamburger-menu").off('click').on('click' , function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.hamburger-menu').toggleClass('animate');
+            $('.hitejinro_gnb').toggleClass('show');
+            $(".hitejinro_backdrop").toggleClass('show');
         });
-        mo_nav1();
-        mo_nav2();    
-        mo_nav3();
-        mo_nav4();
+    
+        $(".hitejinro_gnb_mo").off('click').on('click', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            const menuList = $(this).next(".hitejinro_gnb_inner");
+            $(menuList).toggleClass('show');
+        });
+
+        $(".hitejinro_backdrop").off('click').on('click' , function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.hamburger-menu').removeClass('animate');
+            $('.hitejinro_gnb').removeClass('show');
+            $(".hitejinro_backdrop").removeClass('show');
+            $(".hitejinro_gnb_inner").removeClass('show');
+        });
     };
     
-    var whole_nav = function(){
-        var h_width = $(window).width();
+    const whole_nav = function(){
+        const h_width = $(window).width();
         if(h_width > 940){
             web_nav();
         }else{
-            mo_nav();
+            onClickHamburderMenu();
         }
     };
     whole_nav();
 
-    
-    
-
     $(window).resize(function(){
-        var h_width = $(window).width();
+        const h_width = $(window).width();
         if(h_width > 941){
             //웹 네비게이션
             web_nav();
         }else{
             //모바일 네비게이션
             $(".hitejinro_gnb li a").unbind('mouseover mouseenter mouseout mouseleave focusin focusout');
-            mo_nav();
+            onClickHamburderMenu();
         }
     });
-
     // 반응형 네비게이션 끝
 
     //로그인 모달 화면
-    $(".hitejinro_login_btn").click(function(){
-            $(".hitejinro_login_modal").show();
-            $(".hitejinro_background_login").show();
-            $(".hitejinro_header_wrap").css({"backgroundColor":"rgba(0,0,0,0.1)","border":"none"});
-            //$(".hitejinro_gnb li").hide();
-            $(".hitejinro_gnb").css({"left":"-240px"});
+    $(".hitejinro_login_btn").off('click').on('click',function(){
+        $(".hitejinro_login_modal").show();
     });
-    $(".hitejinro_login_close_btn, .hitejinro_background_login").click(function(){
-            $(".hitejinro_login_modal, .hitejinro_background_login, .hitejinro_background").hide();
-            $(".hitejinro_header_wrap").css({"backgroundColor":"#fff"});
-            $(".hitejinro_gnb li").show();
+    $(".hitejinro_login_close_btn, .hitejinro_login_modal > .inner").off('click').on('click', function(e){
+        const userId = document.getElementById("userid");
+        const userPassword = document.getElementById("userpassword");
+        if( userId.value.length > 0 ) userId.value = '';
+        if( userPassword.value.length > 0 ) userPassword.value = '';
+        $(".hitejinro_login_modal").hide();
     });
     //로그인 모달 화면 끝
 
-    // 하이트 진로 로그인
-        function hitejinro_login(){
-            var userid = document.getElementById("userid");
-            userid.value.trim();
-            var userpass = document.getElementById("userpassword");
-            userpass.value.trim();
-            if( userid.value.length < 6 || userpass.value.length < 6){
-                alert("아이디나 비밀번호를 7자리 이상 입력해주세요.");
-            }else{
-                alert("로그인 서비스를 점검 중입니다. 이용에 불편을 드려서 죄송합니다. ");
-            };
-        }
-    //하이트 진로 로그인 끝
-
     //사이트 업 앤 다운
-        $(".goto_top").click(function(){
-            $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-            return false;
-        });
-        $(".goto_bottom").click(function(){
-            var w_height = $(".hitejinro_wrap").height();
-            $( 'html, body' ).animate( { scrollTop :  w_height}, 400 );
-            return false;
-        });
+    $(".goto_top").click(function(){
+        $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+        return false;
+    });
+    $(".goto_bottom").click(function(){
+        const w_height = $(".hitejinro_wrap").height();
+        $( 'html, body' ).animate( { scrollTop :  w_height}, 400 );
+        return false;
+    });
     ////사이트 업 앤 다운 끝
 
     //검색창
@@ -213,12 +111,135 @@ $(document).ready(function(){
     $(".hitejinro_search_close").click(function(){
         $(".hitejinro_search_area").hide();
     });
-
-
-    // 검색기능 최적화하기
-    function hitejinro_searchs(){
-        var word = document.getElementById("hitejinro_search");
-        word.value.trim();
-        alert( word.value+"를(을) 검색하셨습니다.");
-    }
 });
+
+// 이벤트 버블링 방지
+const disabledEventPropagation = (e) => {
+    e.stopPropagation();
+};
+
+// 하이트 진로 로그인
+const hitejinro_login = () => {
+    const userid = document.getElementById("userid");
+    const userpass = document.getElementById("userpassword");
+    userid.value.trim();
+    userpass.value.trim();
+    if( userid.value.length < 6 ){
+        alert("아이디를 6자리 이상 입력해주세요.");
+        return; 
+    }
+    if( userpass.value.length < 6){
+        alert("비밀번호를 6자리 이상 입력해주세요.");
+        return;
+    }
+}
+//하이트 진로 로그인 끝
+
+// 검색기능
+const  hitejinro_searchs = (e) => {
+    e.preventDefault();
+    const search = document.getElementById("hitejinro_search");
+    const isEmpty = search.value.trim().length === 0;
+    if(isEmpty) return;
+    const value = search.value.trim().split(' ').join('').toLowerCase();
+    if( value.includes('카스') || value.includes('cass') ) {
+        location.href = `${location.origin}/sub/hite.html`;
+    }else if ( value.includes('맥스') || value.includes('max') ) {
+        location.href = `${location.origin}/sub/max.html`;
+    }else if ( value.includes('드라이') || value.includes('dry') ) {
+        location.href = `${location.origin}/sub/dry.html`;
+    }else if ( value.includes('스타우트') || value.includes('stout') ) {
+        location.href = `${location.origin}/sub/stout.html`;
+    }else if ( value.includes('퀸즈에일') || value.includes('queensale') ) {
+        location.href = `${location.origin}/sub/queens_ale.html`;
+    }else if ( value.includes('참이슬') || value.includes('참이슬프레시') || 
+        value.includes('참이슬프레쉬') || value.includes('참이슬fresh') || 
+        value.includes('chamisul') || value.includes('chamisulfresh') ) {
+        location.href = `${location.origin}/sub/chamisul.html`;
+    }else if ( value.includes('참이슬16.5') || value.includes('참이슬16') ||
+        value.includes('chamisul16') || value.includes('chamisul16.5')) {
+        location.href = `${location.origin}/sub/chamisul_16.html`;
+    }else if ( value.includes('일품진로') || value.includes('ilpumjinro') ) {
+        location.href = `${location.origin}/sub/chamisul_ilpum.html`;
+    }else if ( value.includes('진로골드') || value.includes('jinrogold') ) {
+        location.href = `${location.origin}/sub/jinro_gold.html`;
+    }else if ( value.includes('참이슬담금주') || value.includes('담금주') || 
+        value.includes('damgeumju') || value.includes('chamisuldamgeumju') ) {
+        location.href = `${location.origin}/sub/damgeumju.html`;
+    }else if ( value.includes('더클래스') || value.includes('클래스') ||
+        value.includes('theclass') || value.includes('class') ) {
+        location.href = `${location.origin}/sub/theclass.html`;
+    }else if ( value.includes('킹덤') || value.includes('kingdom')) {
+        location.href = `${location.origin}/sub/kingdom.html`;
+    }else if ( value.includes('필라이트') || value.includes('filite')) {
+        location.href = `${location.origin}/sub/filite.html`;
+    }else if ( value.includes('망고링고') || value.includes('mangolingo')) {
+        location.href = `${location.origin}/sub/mangolingo.html`;
+    }else if ( value.includes('이슬톡톡') || value.includes('이슬톡톡피치') || 
+        value.includes('isultoktok') || value.includes('isultoktokpeach')) {
+        location.href = `${location.origin}/sub/isultoktok_peach.html`;
+    }else if ( value.includes('이슬톡톡파인애플') || value.includes('isultoktokpineapple')) {
+        location.href = `${location.origin}/sub/isultoktok_pineapple.html`;
+    }else if ( value.includes('자몽에이슬') || value.includes('chamisulgrapefruit') ||
+        value.includes('grapefruit')) {
+        location.href = `${location.origin}/sub/chamisul_grapefruit.html`;
+    }else if ( value.includes('청포도에이슬') || value.includes('chamisulgreengrape') ||
+        value.includes('greengrape')) {
+        location.href = `${location.origin}/sub/chamisul_greengrape.html`;
+    }else if ( value.includes('복분자') || value.includes('bokboonja')) {
+        location.href = `${location.origin}/sub/bokboonja.html`;
+    }else if ( value.includes('매화수') || value.includes('meawhasu')) {
+        location.href = `${location.origin}/sub/meawhasu.html`;
+    }else if ( value.includes('기린이치방시보리') || value.includes('이치방시보리') ||
+        value.includes('기린시보리') || value.includes('기린') || value.includes('이치방') ||
+        value.includes('시보리') || value.includes('kirinichiban') || value.includes('kirin') || 
+        value.includes('ichiban') ) {
+        location.href = `${location.origin}/sub/kirinichiban.html`;
+    }else if ( value.includes('kronenbourg1664blanc') || value.includes('blanc') ||
+        value.includes('1664') || value.includes('kronenbourgblanc') || value.includes('kronenbourgblanc') ||
+        value.includes('블랑') || value.includes('크로넨버그1664블랑') || value.includes('크로넨버그블랑') || 
+        value.includes('1664블랑') || value.includes('블랑1664') ) {
+        location.href = `${location.origin}/sub/blanc.html`;
+    }else if ( value.includes('싱하') || value.includes('singha')) {
+        location.href = `${location.origin}/sub/singha.html`;
+    }else if ( value.includes('인사말') || value.includes('ceo') || 
+        value.includes('ceogreetings') || value.includes('ceogreeting')) {
+        location.href = `${location.origin}/sub/ceo.html`;
+    }else if ( value.includes('경영철학') || value.includes('철학') || value.includes('경영')||
+        value.includes('managementphilosophy') || value.includes('management') || value.includes('philosophy')) {
+        return location.href = `${location.origin}/sub/philosophy.html`;
+    }else if ( value.includes('연혁') || value.includes('history')) {
+        return location.href = `${location.origin}/sub/history.html`;
+    }else if ( value.includes('품질경영') || value.includes('operation') || value.includes('qup')) {
+        return location.href = `${location.origin}/sub/operation.html`;
+    }else if ( value.includes('소개') || value.includes('Introduction') || value.includes('Introduction')) {
+        return location.href = `${location.origin}/sub/Introduction.html`;
+    }else if ( value.includes('위치') || value.includes('location')) {
+        return location.href = `${location.origin}/sub/location.html`;
+    }else if ( value.includes('공장소개') || value.includes('소개') || value.includes('factory')) {
+        return location.href = `${location.origin}/sub/factory.html`;
+    }else if ( value.includes('채용') || value.includes('모집') || value.includes('구인') || 
+        value.includes('구직') || value .includes('구인구직') || value.includes('recruit')) {
+        return location.href = `${location.origin}/sub/recruit.html`;
+    }else if ( value.includes('socialboard') || value.includes('social') || value.includes('sns') ) {
+        return location.href = `${location.origin}/sub/social_board.html`;
+    }else if ( value.includes('보도자료') || value.includes('media')) {
+        return location.href = `${location.origin}/sub/media.html`;
+    }else if ( value.includes('사회공헌') || value.includes('csr') || value.includes('csrjoy') || 
+        value.includes('joy') ) {
+        return location.href = `${location.origin}/sub/csr_joy.html`;
+    }else if ( value.includes('윤리') || value.includes('ethicalmanagement') || 
+        value.includes('ethical')) {
+        return location.href = `${location.origin}/sub/Ethical_Management.html`;
+    }else if ( value.includes('스포츠') || value.includes('sports')) {
+        return location.href = `${location.origin}/sub/sports.html`;
+    }else if ( value.includes('faq') || value.includes('자주묻는질물')) {
+        return location.href = `${location.origin}/sub/faq.html`;
+    }else if ( value.includes('q&a') || value.includes('질의응답')) {
+        return location.href = `${location.origin}/sub/question_answer.html`;
+    }else if ( value.includes('guide') || value.includes('가이드')) {
+        return location.href = `${location.origin}/sub/guide.html`;
+    }else {
+        return alert(`${search.value}와(과) 일치하는 검색결과가 없습니다.`);
+    }
+};
