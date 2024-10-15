@@ -43,7 +43,16 @@ header {
 }
 
 /* 하이트진로 gnb 안의 내용물 */
-.hitejinro_gnb_inner{ display:none; position:fixed; left:0; top:55px; right:0; z-index:900; background-color:#f5f5f5;text-align:center; }
+.hitejinro_gnb_inner{ 
+	display:none; 
+	position:absolute; 
+	left:0; 
+	top:55px; 
+	right:0; 
+	z-index:900; 
+	background-color:#f5f5f5;
+	text-align:center; 
+}
 .hitejinro_gnb ol { width:980px; height:55px; margin:0 auto; }
 .hitejinro_gnb ol li{ display:inline-block; }
 
@@ -80,6 +89,7 @@ ul.hitejinro_gnb li div.inner {display:block; }
 	inset: 0;
 	z-index:3000;
 	background-color: rgba(0,0,0,0.5);
+	backdrop-filter: blur(10px);
 }
 .hitejinro_login_modal > .inner {
 	display: flex;
