@@ -223,7 +223,7 @@ const  hitejinro_searchs = (e) => {
         return location.href = `${location.origin}/hite/sub/recruit.html`;
     }else if ( value.includes('socialboard') || value.includes('social') || value.includes('sns') ) {
         return location.href = `${location.origin}/hite/sub/social_board.html`;
-    }else if ( value.includes('보도자료') || value.includes('media')) {
+    }else if ( value.includes('미디어') || value.includes('보도자료') || value.includes('media')) {
         return location.href = `${location.origin}/hite/sub/media.html`;
     }else if ( value.includes('사회공헌') || value.includes('csr') || value.includes('csrjoy') || 
         value.includes('joy') ) {
