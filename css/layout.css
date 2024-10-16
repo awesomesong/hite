@@ -207,11 +207,13 @@ ul.hitejinro_gnb li div.inner {display:block; }
     align-items: center;
     justify-content: center; 
 	width:55%; 
-	height:35px; 
+	min-height:35px; 
 	margin: 0 auto; 
 	background-color:#323232; 
 	font-size:13px; 
 	color:#efefef; 
+	text-align: center;
+	word-break: keep-all;
 }
 .hitejinro_login_service_area a:hover, 
 .hitejinro_login_service_area a:focus { background-color:#767676; }
@@ -377,8 +379,9 @@ ul.hitejinro_gnb li div.inner {display:block; }
 	.hitejinro_login_btn span{display:none;}
 
 	/* 로그인 모달창 크기 수정 */
-	.hitejinro_login_modal { width:300px;}
-	/* .hitejinro_login_service_area a {width:65%; } */
+	.hitejinro_login_modal > .inner > .content {
+		width: 300px;
+	}
 
 	/* 하이트진로 검색 */
 	.hitejinro_searchbox {position:absolute; right:5px;top:0; width:30px; padding-left:0;}

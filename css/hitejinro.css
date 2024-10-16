@@ -6,7 +6,7 @@
  .product_layout {width:100%; height:auto; margin:0 auto; }
  .product_layout h2 {width:100%; padding-top:18px; padding-bottom:10px; font-size:27px; text-indent:7%;
                     color:#efefef; background-color:#143e8d; }
-.product_scroll { position:absolute; left:50%; top: 70px; width:300px; margin-left:-135px; font-size:17px; color:#efefef;
+.product_scroll { position:absolute; left:50%; top: 70px; margin-left:-135px; font-size:17px; color:#efefef;
                     text-indent:15px; animation: scroll 0.6s infinite alternate .3s; }
     @keyframes scroll{
         from{ top: 70px; }
