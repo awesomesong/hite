@@ -234,7 +234,7 @@ const  hitejinro_searchs = (e) => {
     }else if ( value.includes('스포츠') || value.includes('sports')) {
         return location.href = `${location.origin}/hite/sub/sports.html`;
     }else if ( value.includes('faq') || value.includes('자주묻는질물')) {
-        return location.href = `${location.origin}/hite/sub/faq.html`;
+        return location.href = `${location.origin}/hite/sub/FAQ.html`;
     }else if ( value.includes('q&a') || value.includes('질의응답')) {
         return location.href = `${location.origin}/hite/sub/question_answer.html`;
     }else if ( value.includes('guide') || value.includes('가이드') ||
