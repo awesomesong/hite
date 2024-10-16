@@ -143,68 +143,68 @@ const  hitejinro_searchs = (e) => {
     if(isEmpty) return;
     const value = search.value.trim().split(' ').join('').toLowerCase();
     if( value.includes('카스') || value.includes('cass') ) {
-        location.href = `${location.origin}/sub/hite.html`;
+        return location.href = `${location.origin}/sub/hite.html`;
     }else if ( value.includes('맥스') || value.includes('max') ) {
-        location.href = `${location.origin}/sub/max.html`;
+        return location.href = `${location.origin}/sub/max.html`;
     }else if ( value.includes('드라이') || value.includes('dry') ) {
-        location.href = `${location.origin}/sub/dry.html`;
+        return location.href = `${location.origin}/sub/dry.html`;
     }else if ( value.includes('스타우트') || value.includes('stout') ) {
-        location.href = `${location.origin}/sub/stout.html`;
+        return location.href = `${location.origin}/sub/stout.html`;
     }else if ( value.includes('퀸즈에일') || value.includes('queensale') ) {
-        location.href = `${location.origin}/sub/queens_ale.html`;
+        return location.href = `${location.origin}/sub/queens_ale.html`;
     }else if ( value.includes('참이슬') || value.includes('참이슬프레시') || 
         value.includes('참이슬프레쉬') || value.includes('참이슬fresh') || 
         value.includes('chamisul') || value.includes('chamisulfresh') ) {
-        location.href = `${location.origin}/sub/chamisul.html`;
+        return location.href = `${location.origin}/sub/chamisul.html`;
     }else if ( value.includes('참이슬16.5') || value.includes('참이슬16') ||
         value.includes('chamisul16') || value.includes('chamisul16.5')) {
-        location.href = `${location.origin}/sub/chamisul_16.html`;
+        return location.href = `${location.origin}/sub/chamisul_16.html`;
     }else if ( value.includes('일품진로') || value.includes('ilpumjinro') ) {
-        location.href = `${location.origin}/sub/chamisul_ilpum.html`;
+        return location.href = `${location.origin}/sub/chamisul_ilpum.html`;
     }else if ( value.includes('진로골드') || value.includes('jinrogold') ) {
-        location.href = `${location.origin}/sub/jinro_gold.html`;
+        return location.href = `${location.origin}/sub/jinro_gold.html`;
     }else if ( value.includes('참이슬담금주') || value.includes('담금주') || 
         value.includes('damgeumju') || value.includes('chamisuldamgeumju') ) {
-        location.href = `${location.origin}/sub/damgeumju.html`;
+        return location.href = `${location.origin}/sub/damgeumju.html`;
     }else if ( value.includes('더클래스') || value.includes('클래스') ||
         value.includes('theclass') || value.includes('class') ) {
-        location.href = `${location.origin}/sub/theclass.html`;
+        return location.href = `${location.origin}/sub/theclass.html`;
     }else if ( value.includes('킹덤') || value.includes('kingdom')) {
-        location.href = `${location.origin}/sub/kingdom.html`;
+        return location.href = `${location.origin}/sub/kingdom.html`;
     }else if ( value.includes('필라이트') || value.includes('filite')) {
-        location.href = `${location.origin}/sub/filite.html`;
-    }else if ( value.includes('망고링고') || value.includes('mangolingo')) {
-        location.href = `${location.origin}/sub/mangolingo.html`;
+        return location.href = `${location.origin}/sub/filite.html`;
+    }else if ( value.includes('망고링고') || value.includes('링고') || value.includes('mangolingo')) {
+        return location.href = `${location.origin}/sub/mangolingo.html`;
     }else if ( value.includes('이슬톡톡') || value.includes('이슬톡톡피치') || 
         value.includes('isultoktok') || value.includes('isultoktokpeach')) {
-        location.href = `${location.origin}/sub/isultoktok_peach.html`;
+        return location.href = `${location.origin}/sub/isultoktok_peach.html`;
     }else if ( value.includes('이슬톡톡파인애플') || value.includes('isultoktokpineapple')) {
-        location.href = `${location.origin}/sub/isultoktok_pineapple.html`;
+        return location.href = `${location.origin}/sub/isultoktok_pineapple.html`;
     }else if ( value.includes('자몽에이슬') || value.includes('chamisulgrapefruit') ||
         value.includes('grapefruit')) {
-        location.href = `${location.origin}/sub/chamisul_grapefruit.html`;
+        return location.href = `${location.origin}/sub/chamisul_grapefruit.html`;
     }else if ( value.includes('청포도에이슬') || value.includes('chamisulgreengrape') ||
         value.includes('greengrape')) {
-        location.href = `${location.origin}/sub/chamisul_greengrape.html`;
+        return location.href = `${location.origin}/sub/chamisul_greengrape.html`;
     }else if ( value.includes('복분자') || value.includes('bokboonja')) {
-        location.href = `${location.origin}/sub/bokboonja.html`;
+        return location.href = `${location.origin}/sub/bokboonja.html`;
     }else if ( value.includes('매화수') || value.includes('meawhasu')) {
-        location.href = `${location.origin}/sub/meawhasu.html`;
+        return location.href = `${location.origin}/sub/meawhasu.html`;
     }else if ( value.includes('기린이치방시보리') || value.includes('이치방시보리') ||
         value.includes('기린시보리') || value.includes('기린') || value.includes('이치방') ||
         value.includes('시보리') || value.includes('kirinichiban') || value.includes('kirin') || 
         value.includes('ichiban') ) {
-        location.href = `${location.origin}/sub/kirinichiban.html`;
+        return location.href = `${location.origin}/sub/kirinichiban.html`;
     }else if ( value.includes('kronenbourg1664blanc') || value.includes('blanc') ||
         value.includes('1664') || value.includes('kronenbourgblanc') || value.includes('kronenbourgblanc') ||
         value.includes('블랑') || value.includes('크로넨버그1664블랑') || value.includes('크로넨버그블랑') || 
         value.includes('1664블랑') || value.includes('블랑1664') ) {
-        location.href = `${location.origin}/sub/blanc.html`;
+        return location.href = `${location.origin}/sub/blanc.html`;
     }else if ( value.includes('싱하') || value.includes('singha')) {
-        location.href = `${location.origin}/sub/singha.html`;
+        return location.href = `${location.origin}/sub/singha.html`;
     }else if ( value.includes('인사말') || value.includes('ceo') || 
         value.includes('ceogreetings') || value.includes('ceogreeting')) {
-        location.href = `${location.origin}/sub/ceo.html`;
+        return location.href = `${location.origin}/sub/ceo.html`;
     }else if ( value.includes('경영철학') || value.includes('철학') || value.includes('경영')||
         value.includes('managementphilosophy') || value.includes('management') || value.includes('philosophy')) {
         return location.href = `${location.origin}/sub/philosophy.html`;

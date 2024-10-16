@@ -44,3 +44,25 @@ a:active, a:hover {text-decoration:none}
 .text-center {
     text-align: center;
 }
+
+/* scroll bar */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #0d2aba #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #012C81;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
