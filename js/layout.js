@@ -237,7 +237,8 @@ const  hitejinro_searchs = (e) => {
         return location.href = `${location.origin}/hite/sub/faq.html`;
     }else if ( value.includes('q&a') || value.includes('질의응답')) {
         return location.href = `${location.origin}/hite/sub/question_answer.html`;
-    }else if ( value.includes('guide') || value.includes('가이드')) {
+    }else if ( value.includes('guide') || value.includes('가이드') ||
+        value.includes('주류상식 가이드') || value.includes('주류상식')) {
         return location.href = `${location.origin}/hite/sub/guide.html`;
     }else {
         return alert(`${search.value}와(과) 일치하는 검색결과가 없습니다.`);
