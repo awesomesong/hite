@@ -24,6 +24,9 @@ a:active, a:hover {text-decoration:none}
 .goto_top {margin-bottom:1px; }
 
 /* common style */
+.hitejinro_content {
+  margin: 0 auto;
+}
 .hitejinro_backdrop {
     display: none;
     position: fixed;
