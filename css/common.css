@@ -19,9 +19,28 @@ a:active, a:hover {text-decoration:none}
 .hitejinro_background,.hitejinro_background_login {display:none; position:fixed; left:0; top:0; right:0; bottom:0; background-color: rgba(0,0,0,0.5); z-index:100;}
 
 /* 하이트진로 top, bottom 버튼 */
-.hitejinro_btn {position:fixed; right:8%; bottom:7%; z-index:50; width:auto; height:auto;}
-.hitejinro_btn a{display:block; width:auto; height:auto; padding:0px 8px 5px 9px; background-color:rgba(0,0,0,0.6); font-size:25px; color:#fff; text-align:center; cursor:pointer;}
-.goto_top {margin-bottom:1px; }
+.hitejinro_btn {
+  position:fixed; 
+  right:60px; 
+  bottom:50px; 
+  z-index:50; 
+}
+.hitejinro_btn a {
+  display:block; 
+  width: 40px; 
+  height: 40px; 
+  background-color:#454545; 
+  text-align:center; 
+  cursor:pointer;
+}
+.goto_top {
+  margin-bottom:1px; 
+  background: url(../images/arrow_top.png) no-repeat center center;
+}
+.goto_bottom {
+  margin-bottom:1px; 
+  background: url(../images/arrow_bottom.png) no-repeat center center;
+}
 
 /* common style */
 .hitejinro_content {
