@@ -21,7 +21,7 @@ a:active, a:hover {text-decoration:none}
 /* 하이트진로 top, bottom 버튼 */
 .hitejinro_btn {position:fixed; right:8%; bottom:7%; z-index:50; width:auto; height:auto;}
 .hitejinro_btn a{display:block; width:auto; height:auto; padding:0px 8px 5px 9px; background-color:rgba(0,0,0,0.6); font-size:25px; color:#fff; text-align:center; cursor:pointer;}
-.hitejinro_btn a:not(:root:root){padding:2px 8px 0px 9px;}
+/* .hitejinro_btn a:not(:root:root){padding:2px 8px 0px 9px;} */
 .goto_top {margin-bottom:1px; }
 
 /* common style */

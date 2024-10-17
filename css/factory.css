@@ -62,7 +62,7 @@
 .img_ui {text-align:right;}
 .img_ui li{width:52px; height:auto; font-size:30px; text-align:center; border:1px solid #232323; box-sizing:border-box;}
 .img_ui li a{padding:0 0 5px 0px; background-color:#232323; color:#fff;}
-.img_ui li a:not(:root:root){padding:5px 0 0 0px;}
+/* .img_ui li a:not(:root:root){padding:5px 0 0 0px;} */
 .img_ui li a:hover, .img_ui li a:focus{color:#232323; background-color:#fff;}
 
 .factory_introduce_gallery {overflow:hidden; width:2160px; height:500px;}
