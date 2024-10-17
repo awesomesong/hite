@@ -378,11 +378,6 @@ ul.hitejinro_gnb li div.inner {display:block; }
 	.hitejinro_login {right:45px;top:0;width:45px;}
 	.hitejinro_login_btn span{display:none;}
 
-	/* 로그인 모달창 크기 수정 */
-	.hitejinro_login_modal > .inner > .content {
-		width: 300px;
-	}
-
 	/* 하이트진로 검색 */
 	.hitejinro_searchbox {position:absolute; right:5px;top:0; width:30px; padding-left:0;}
 	.hitejinro_search_area {top:9px; right:-5px; width:290px;}
